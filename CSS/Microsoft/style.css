@@ -1,0 +1,178 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          "Segoe UI Webfont",
+          -apple-system,
+          "Helvetica Neue",
+          "Lucida Grande",
+          "Roboto",
+          "Ebrima",
+          "Nirmala UI",
+          "Gadugi",
+          "Segoe Xbox Symbol",
+          "Segoe UI Symbol",
+          "Meiryo UI",
+          "Khmer UI",
+          "Tunga",
+          "Lao UI",
+          "Raavi",
+          "Iskoola Pota",
+          "Latha",
+          "Leelawadee",
+          "Microsoft YaHei UI",
+          "Microsoft JhengHei UI",
+          "Malgun Gothic",
+          "Estrangelo Edessa",
+          "Microsoft Himalaya",
+          "Microsoft New Tai Lue",
+          "Microsoft PhagsPa",
+          "Microsoft Tai Le",
+          "Microsoft Yi Baiti",
+          "Mongolian Baiti",
+          "MV Boli",
+          "Myanmar Text",
+          "Cambria Math";
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./image/bg.svg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+      }
+      .main {
+        /* border: 2px solid yellow; */
+        height: 350px;
+        max-width: 440px;
+        min-height: 338px;
+        min-width: 320px;
+        width: 400px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: white;
+
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border: 0px none rgb(27, 27, 27);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+        padding: 44px;
+      }
+
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 12px;
+      }
+      #email {
+        padding: 6px 10px 0 0;
+        border-width: 1px;
+        /* margin-top: 10px; */
+        border: none;
+        border-bottom: 1.25px solid rgba(0, 0, 0, 0.6);
+        width: 100%;
+        outline: none;
+        line-height: 30px;
+        font-size: 22.5px;
+        font-weight: 400;
+        max-width: 100%;
+        height: 36px;
+        font-family: "Segoe UI Webfont";
+        font-weight: 200;
+        font-style: normal;
+        padding-bottom: 0.227px;
+        padding-top: 0.227px;
+        cursor: text;
+        font-size: 19.5px;
+      }
+      .links {
+        font-size: 0.8125rem;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 16px;
+        margin-top: 15px;
+      }
+      #cant {
+        display: block;
+        margin-top: 20px;
+        margin-top: 12px;
+      }
+      .links a {
+        color: rgb(0, 103, 184);
+        cursor: pointer;
+        text-decoration-line: none;
+      }
+
+      .links a:hover {
+        color: rgb(102, 102, 102);
+        text-decoration-line: underline;
+      }
+      #btnselect {
+        display: flex;
+        float: right;
+        gap: 6px;
+      }
+      .btn {
+        padding: 4px 12px 4px 12px;
+        font-size: 22.5px;
+
+        text-align: center;
+        max-width: 100%;
+        min-height: 32px;
+        min-width: 108px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-color: rgb(0, 0, 0);
+        width: 100%;
+        font-family: "Segoe UI Webfont";
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+      .back {
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .back:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .next {
+        background: rgb(0, 103, 184);
+        color: white;
+        border-color: rgb(0, 103, 184);
+      }
+      .next:hover {
+        background: rgb(0, 93, 166);
+        border-color: rgba(0, 0, 0, 0.4);
+      }
+      .sign {
+        background: white;
+        display: flex;
+        align-items: center;
+        padding-left: 44px;
+        height: 44px;
+        width: 400px;
+        margin-top: 18px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+        cursor: pointer;
+      }
+
+      .sign span {
+        display: flex;
+        align-items: center;
+        font-size: 22.5px;
+      }
+
+      .sign img {
+        width: 31px;
+        margin-right: 12px;
+      }
+
+      .sign:hover {
+        background: rgba(0, 0, 0, 0.15);
+      }
