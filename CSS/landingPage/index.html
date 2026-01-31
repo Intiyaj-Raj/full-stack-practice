@@ -4,42 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      nav {
-        width: 100%;
-      }
-      .logo {
-        width: 20%;
-        display: flex;
-      }
-      .logo img {
-        width: 20%;
-        padding: 12px;
-      }
-      .features {
-        display: flex;
-        width: 60%;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
   </head>
   <body>
     <nav>
       <div class="logo">
         <img src="./images/logo.jpg" alt="" />
-        <h2>Warsty</h2>
+        <h4>Warsty</h4>
       </div>
       <div class="features">
-        <p>Product</p>
-        <p>Pricing</p>
-        <p>Features</p>
-        <p>Contacts</p>
+        <ul>
+          <li>Product</li>
+          <li>Pricing</li>
+          <li>Features</li>
+          <li>Contacts</li>
+        </ul>
       </div>
-      <div class="sign"></div>
+      <div class="sign">
+        <button>Sign in</button>
+      </div>
     </nav>
+
+    <div class="hero">
+      <div class="text">
+        <h1>Live and <br />on-demand <br />trading</h1>
+        <p>
+          Your guide to the world of an open financial system. Get started with
+          the easiest and most secure platform to buy and trade cryptocurrency.
+        </p>
+        <div class="btn">
+          <button>Explore Now</button>
+          <h2>01 - 03 →</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/heroImage.jpeg" alt="" />
+      </div>
+    </div>
   </body>
 </html>

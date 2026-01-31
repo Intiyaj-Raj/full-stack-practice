@@ -1,0 +1,84 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        background-color: rgb(2, 0, 36);
+      }
+      nav {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 75px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        width: 65px;
+        height: 65px;
+        padding: 10px;
+      }
+      .features {
+        width: 50%;
+      }
+      .features ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .features ul li {
+        /* padding-left: 10px; */
+        list-style: none;
+        display: flex;
+        width: 100%;
+      }
+      .sign {
+        display: flex;
+        justify-content: center;
+      }
+      .sign button {
+        border: 3px solid white;
+        padding: 5px 30px;
+        font-size: 22px;
+      }
+       .hero {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        margin-top: 50px;
+      }
+      .text {
+        width: 43%;
+        padding: 20px 70px;
+      }
+      .text h1 {
+        font-size: 90px;
+        font-weight: 500;
+        width: 100%;
+      }
+      .text p {
+            margin-top: 20px;
+    font-size: 22.5px;
+    padding-bottom: 30px;
+      }
+      .btn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .btn button {
+        border: 3px solid white;
+        padding: 10px 30px;
+        font-size: 22px;
+      }
+      .image {
+        width: 50%;
+        padding: 20px 72px;
+      }
+      .image img {
+        width: 100%;
+      }
