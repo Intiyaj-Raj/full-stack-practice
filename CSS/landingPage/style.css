@@ -96,6 +96,10 @@
 
 /* Tablet */
 @media (max-width: 450px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
   nav{
     padding: 15px;
   }
@@ -106,17 +110,18 @@
     display: flex;
     flex-direction: column-reverse;
     margin-top: 20px;
+    /* border: 2px solid red; */
   }
   .image{
     width: 100%;
-    padding: 30px;
+    padding: 15px;
   }
   .image img{
     width: 100%;
   }
   .text{
       width: 100%;
-      padding: 30px;
+      padding: 15px;
   }
   .text h1{
     display: none;
@@ -136,6 +141,7 @@
     width: 120px;
     font-size: 15px;
     padding: 10px;
+    font-weight: 600;
   }
   .btn h2{
     font-size: 18px;
