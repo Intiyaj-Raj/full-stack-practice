@@ -11,7 +11,7 @@
         height: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 75px;
+        padding: 20px 72px;
       }
       .logo {
         display: flex;
@@ -44,6 +44,7 @@
         border: 3px solid white;
         padding: 5px 30px;
         font-size: 22px;
+        height: 45px;
       }
        .hero {
         display: flex;
@@ -53,12 +54,15 @@
       }
       .text {
         width: 43%;
-        padding: 20px 70px;
+        padding: 20px 72px;
       }
       .text h1 {
         font-size: 90px;
         font-weight: 500;
         width: 100%;
+      }
+      .mobText{
+        display: none;
       }
       .text p {
             margin-top: 20px;
@@ -82,3 +86,59 @@
       .image img {
         width: 100%;
       }
+
+      /* responsive design */
+
+    /* Mobile (default) */
+.container {
+  padding: 10px;
+}
+
+/* Tablet */
+@media (max-width: 450px) {
+  nav{
+    padding: 15px;
+  }
+  .features{
+    display: none;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .image{
+    width: 100%;
+    padding: 30px;
+  }
+  .image img{
+    width: 100%;
+  }
+  .text{
+      width: 100%;
+      padding: 30px;
+  }
+  .text h1{
+    display: none;
+  }
+  .mobText{
+    display: block;
+    font-size: 40px;
+  }
+  .text p{
+    text-align: justify;
+  }
+  .btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn button{
+    width: 120px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .btn h2{
+    font-size: 18px;
+    margin-top: 12px;
+  }
+}
