@@ -4,6 +4,7 @@
         box-sizing: border-box;
         color: white;
         background-color: rgb(2, 0, 36);
+        overflow-x: hidden;
       }
       nav {
         display: flex;

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .mainNetflixContainer {
+        border: 2px solid red;
+        padding: 0rem 2rem;
+      }
+      nav {
+        border: 2px solid green;
+        height: 20vh;
+      }
+      .upperNavbarSection {
+        border: 2px solid blue;
+        display: flex;
+        height: 50%;
+      }
+      .upperNavbarLeftSection {
+        border: 2px solid red;
+        width: 50%;
+      }
+      .netflixLogo {
+        width: 25%;
+      }
+      .upperNavbarRightSection {
+        border: 2px solid green;
+        width: 50%;
+      }
+      .lowerNavbarSection {
+        border: 2px solid black;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainNetflixContainer">
+      <nav class="navContainer">
+        <div class="upperNavbarSection">
+          <div class="upperNavbarLeftSection">
+            <img src="./images/NetflixLogo.png" alt="" class="netflixLogo" />
+          </div>
+          <div class="upperNavbarRightSection">
+            <ul class="menulist">
+              <li class="menuListItems"></li>
+              <li class="menuListItems"></li>
+              <li class="menuListItems"></li>
+              <li class="menuListItems"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lowerNavbarSection"></div>
+      </nav>
+      <section class="bannerSection"></section>
+      <section class="carouselSection"></section>
+      <section class="planSection"></section>
+      <section class="reasonSection"></section>
+      <section class="faqSection"></section>
+      <section class="getStartedSection"></section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
