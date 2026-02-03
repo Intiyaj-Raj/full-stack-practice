@@ -19,6 +19,7 @@
 
       .main {
         background: rgb(248, 238, 226);
+        height: 100vh;
       }
       .header {
         display: flex;
@@ -52,7 +53,7 @@
         align-items: center;
         background: white;
         padding: 25px 50px;
-        margin: 30px 0px;
+        margin: 50px 0px;
       }
       #laptopIcon {
         /* border: 2px solid red; */
@@ -62,19 +63,76 @@
         width: 60%;
         /* border: 2px solid blue; */
       }
-      .box-first-text h1 {
+      .box-first-text h3 {
         /* border: 2px solid red; */
-        font-size: 50px;
+        font-size: 1.3rem;
       }
 
       .box-first-text p {
-        font-size: 22px;
+        /* border: 2px solid red; */
+        font-size: 1.2rem;
       }
       .box-first button {
         /* border: 3px solid yellow; */
         background-color: rgb(107, 216, 107);
         padding: 15px 30px;
         border-radius: 25px;
+      }
+      .box-second {
+        width: 65%;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding: 25px 50px;
+      }
+      .box-second-text {
+        /* border: 2px solid blue; */
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .box-second-text h1 {
+        padding: 10px;
+        font-size: 3.3rem;
+        font-weight: 500;
+      }
+      .box-second-text p {
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+      .box-second-text span {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .checkBox {
+        transform: scale(2);
+        cursor: pointer;
+      }
+      .checkBox p {
+        font-size: 1.2rem;
+      }
+      .qrImageSection {
+        width: 40%;
+        /* border: 2px solid; */
+      }
+      .qrImageSection img {
+        float: right;
+        width: 100%;
+        padding: 80px;
+      }
+      .qrImageSection p {
+        text-decoration-line: underline;
+        text-decoration-color: rgb(107, 216, 107);
+        font-size: 1.5rem;
+        margin-left: 30px;
       }
     </style>
   </head>
@@ -111,8 +169,13 @@
             <p>3. Scan the QR code again to link to your account</p>
             <p>Need help?</p>
             <span>
-              <input type="checkbox" /> &nbsp;Stay logged in on this browser
+              <input type="checkbox" class="checkBox" />
+              <p>Stay logged on this browser</p>
             </span>
+          </div>
+          <div class="qrImageSection">
+            <img src="./images/qr.png" alt="" />
+            <p>Log in with phone number ></p>
           </div>
         </div>
       </div>
