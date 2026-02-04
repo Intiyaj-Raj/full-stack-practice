@@ -78,7 +78,7 @@
       .box-second-text {
         /* border: 2px solid blue; */
         width: 50%;
-        height: 50vh;
+        height: 45vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
