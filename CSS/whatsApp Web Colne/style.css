@@ -7,31 +7,37 @@
       .main {
         background: rgb(248, 238, 226);
         height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
       }
+
       .header {
         display: flex;
         align-items: center;
         padding: 20px 55px;
       }
+
       .header i {
         font-size: 2.7rem;
         color: rgb(107, 216, 107);
         font-weight: 500;
         padding: 0px 10px;
       }
+
       .header span {
         font-size: 1.7rem;
         font-weight: 500;
         color: rgb(107, 216, 107);
       }
+
       .box {
         /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+
       .box-first {
-        width: 65%;
+        width: 50%;
         padding: 20px;
         border: 1px solid black;
         border-radius: 30px;
@@ -42,14 +48,17 @@
         padding: 25px 50px;
         margin: 50px 0px;
       }
+
       #laptopIcon {
         /* border: 2px solid red; */
         width: 10%;
       }
+
       .box-first-text {
         width: 60%;
         /* border: 2px solid blue; */
       }
+
       .box-first-text h3 {
         /* border: 2px solid red; */
         font-size: 1.3rem;
@@ -59,14 +68,16 @@
         /* border: 2px solid red; */
         font-size: 1.2rem;
       }
+
       .box-first button {
         /* border: 3px solid yellow; */
         background-color: rgb(107, 216, 107);
         padding: 15px 30px;
         border-radius: 25px;
       }
+
       .box-second {
-        width: 65%;
+        width: 50%;
         padding: 20px;
         border: 1px solid black;
         border-radius: 30px;
@@ -75,6 +86,7 @@
         background: white;
         padding: 25px 50px;
       }
+
       .box-second-text {
         /* border: 2px solid blue; */
         width: 50%;
@@ -83,41 +95,133 @@
         flex-direction: column;
         justify-content: space-between;
       }
+
       .box-second-text h1 {
         padding: 10px;
         font-size: 3.3rem;
         font-weight: 500;
       }
+
       .box-second-text p {
-        padding: 10px;
-        font-size: 1.5rem;
+        padding: 8px;
+        font-size: 1.2rem;
       }
+
+      .needBtn a {
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 4px solid rgb(12, 209, 12);
+        color: black;
+        font-size: 1.1rem;
+      }
+
+      .needBtn a:hover {
+        color: rgb(107, 216, 107);
+      }
+
       .box-second-text span {
         /* border: 2px solid red; */
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 8px;
+      }
+
+      .check-container {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
       }
 
       .checkBox {
-        transform: scale(2);
+        width: 25px;
+        height: 25px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        margin-right: 6px;
         cursor: pointer;
       }
-      .checkBox p {
-        font-size: 1.2rem;
-      }
+
       .qrImageSection {
-        width: 40%;
-        /* border: 2px solid; */
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        text-align: left;
       }
+
       .qrImageSection img {
-        float: right;
-        width: 100%;
-        padding: 80px;
+        width: 90%;
+        height: auto;
+        padding: 40px;
+        box-sizing: border-box;
       }
+
       .qrImageSection p {
-        text-decoration-line: underline;
-        text-decoration-color: rgb(107, 216, 107);
-        font-size: 1.5rem;
-        margin-left: 30px;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: 0 40px 0 40px;
+        font-weight: 300;
+        margin-right: 80px;
+      }
+
+      .underline-text {
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 2px solid rgb(12, 209, 12);
+        transition: border-color 0.3s ease;
+        padding-bottom: 2px;
+        cursor: pointer;
+        color: black;
+
+      }
+
+      .underline-text:hover {
+        color: rgb(107, 216, 107);
+      }
+
+      /* footer section */
+      .started {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1.2rem;
+        color: #3a3939;
+        padding-top: 50px;
+      }
+
+      .started p {
+        font-weight: 500;
+      }
+
+      .started a {
+        font-weight: 300;
+        color: #3a3939;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 4px solid rgb(12, 209, 12);
+      }
+
+      .started a:hover {
+        color: rgb(107, 216, 107);
+      }
+
+      .ftext {
+        font-size: 1.2rem;
+        color: #9a9898;
+        text-align: center;
+        padding: 15px;
+        font-weight: lighter;
+      }
+
+      .ftext i {
+        padding-right: 12px;
+      }
+
+      .termsText {
+        font-size: 1rem;
+        color: #222121;
+        text-align: center;
+        font-weight: 100;
+        padding: 15px;
       }

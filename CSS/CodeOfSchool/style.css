@@ -2,25 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .main {
   color: white;
+  background-color: rgb(0, 0, 0);
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 45px;
+  padding: 18px 50px;
 }
+
 nav img {
-  width: 4%;
+  width: 5%;
 }
+
 nav ul {
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
+
 nav ul li {
   list-style: none;
   font-size: 16px;
@@ -28,86 +34,114 @@ nav ul li {
   transition: color 0.4s ease;
   cursor: pointer;
 }
+
 nav ul li:hover {
   color: blue;
 }
+
 .scholarBtn {
-  width: 5%;
-  background-color: blueviolet;
+  width: 7%;
+  border: none;
+  outline: none;
+  background-color: #8a2be2;
   color: white;
-  padding: 10px 0px;
+  padding: 14px 10px;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
 }
+
 .scholarBtn:hover {
   color: blue;
   background: white;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle,
+      rgb(119, 39, 193) 0%, rgba(3, 1, 4, 1) 40%, rgba(0, 0, 0, 1) 100%);
+
+}
+
 .contactHeading {
   text-align: center;
   text-decoration: underline;
   font-size: 2.2rem;
   padding-top: 120px;
+
 }
-.hero {
+
+.heroInnerSection {
   display: flex;
   justify-content: center;
   font-weight: 600;
 }
+
 .heroTextSection {
   /* border: 5px solid red; */
   width: 30%;
-  padding: 150px 40px;
+  padding: 130px 40px 0 70px;
 }
+
 .heroTextSection p {
-  margin-top: 20px;
-  font-size: 24px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .socialIcon {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 .socialIcon i {
   font-size: 32px;
-  margin-left: -130px;
-  padding-top: 120px;
+  padding-top: 90px;
 }
+
 .socialIcon i:hover {
   color: aqua;
 }
+
 .heroContactSection {
   width: 30%;
   /* border: 5px solid blue; */
   padding: 0 40px;
   margin-top: 50px;
 }
+
 .heroContactSection form {
   display: flex;
   flex-direction: column;
 }
+
 .heroContactSection label {
-  font-size: 18px;
+  font-size: 22px;
   padding-top: 10px;
 }
+
 .heroContactSection input,
 select {
   border-radius: 14px;
-  padding: 6px;
+  padding: 14px;
   margin: 10px 10px 10px 0px;
   background: rgb(231, 234, 252);
+  border: none;
   outline: none;
   width: 80%;
 }
+
 .submitBtn {
   display: flex;
   justify-content: center;
   width: 80%;
 }
+
 .submitBtn button {
+  border: none;
+  outline: none;
   width: 25%;
   background-color: blueviolet;
   color: white;
@@ -115,27 +149,25 @@ select {
   border-radius: 25px;
   font-size: 14px;
   font-weight: 600;
-  margin-top: 20px;
+  margin: 40px;
+  cursor: pointer;
 }
+
 .submitBtn button:hover {
   background: blue;
 }
+
 .map {
   width: 100%;
   height: 400px;
   padding: 40px 80px;
-  border-top: 1px dotted rgb(255, 253, 253);
+  border-top: 1px solid #cfcfcf;
 }
 
 .map iframe {
   width: 100%;
   height: 100%;
   border: 0;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .footer {
@@ -150,9 +182,11 @@ select {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
-.flogo{
-    width: 85%;
+
+.flogo {
+  width: 85%;
 }
+
 .footer-box p,
 .footer-box li {
   font-size: 14px;
@@ -160,6 +194,7 @@ select {
   line-height: 1;
   padding-top: 20px;
 }
+
 .social i {
   margin-right: 12px;
   font-size: 18px;
@@ -193,9 +228,10 @@ select {
   cursor: pointer;
   font-size: 14px;
 }
-.login-btn:hover{
-    background: white;
-    color: black;
+
+.login-btn:hover {
+  background: white;
+  color: black;
 }
 
 .footer-box i {

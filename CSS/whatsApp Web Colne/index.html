@@ -1,58 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhatsApp web clone</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <div class="main">
-      <div class="header">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        <span>WhatsApp</span>
-      </div>
-      <div class="box">
-        <div class="box-first">
-          <img src="./images/lapto.png" alt="" id="laptopIcon" />
-          <div class="box-first-text">
-            <h3>Download WhatsApp for Windows</h3>
-            <p>
-              Make calls, share your screen and get a faster experience when you
-              download the Windows app.
-            </p>
-          </div>
-          <button>
-            Download &nbsp;&nbsp;<i
-              class="fa fa-download"
-              aria-hidden="true"
-              id="downloadIcon"
-            ></i>
-          </button>
-        </div>
 
-        <div class="box-second">
-          <div class="box-second-text">
-            <h1>Steps to log in</h1>
-            <p>1. Scan the QR code with your phone's camera</p>
-            <p>2. Tap the link to open WhatsApp</p>
-            <p>3. Scan the QR code again to link to your account</p>
-            <p>Need help?</p>
-            <span>
-              <input type="checkbox" class="checkBox" />
-              <p>Stay logged on this browser</p>
-            </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp web clone</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Free Version -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </div>
+    <div class="box">
+      <div class="box-first">
+        <img src="./images/lapto.png" alt="" id="laptopIcon" />
+        <div class="box-first-text">
+          <h3>Download WhatsApp for Windows</h3>
+          <p>
+            Make calls, share your screen and get a faster experience when you
+            download the Windows app.
+          </p>
+        </div>
+        <button>
+          Download &nbsp;&nbsp;<i class="fa fa-download" aria-hidden="true" id="downloadIcon"></i>
+        </button>
+      </div>
+
+      <div class="box-second">
+        <div class="box-second-text">
+          <h1>Steps to log in</h1>
+          <p>1. Scan the QR code with your phone's camera</p>
+          <p>2. Tap the link to open WhatsApp</p>
+          <p>3. Scan the QR code again to link to your account</p>
+          <div class="needBtn">
+            <a href="https://faq.whatsapp.com/1317564962315842/?cms_platform=android&lang=en" target="_blank">Need
+              help?</a>
           </div>
-          <div class="qrImageSection">
-            <img src="./images/qr.png" alt="" />
-            <p>Log in with phone number ></p>
-          </div>
+          <span class="check-container">
+            <input type="checkbox" class="checkBox" />
+            <p>Stay logged on this browser</p>
+          </span>
+
+        </div>
+        <div class="qrImageSection">
+          <img src="./images/qr.png" alt="QR Code" />
+          <p>
+            <a class="underline-text" href="https://web.whatsapp.com/">Log in with phone number
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </p>
         </div>
       </div>
     </div>
-  </body>
+    <footer>
+      <div class="started">
+        <p>Don't have a WhatsApp account?</p>
+        <a href="https://faq.whatsapp.com/497209988909970/?cms_platform=android" target="_blank">Get
+          started <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <p class="ftext"><i class="fa-solid fa-lock"></i>Your personal messages are end-to-end encrypted</p>
+      <p class="termsText">Terms & Privacy Policy</p>
+    </footer>
+  </div>
+</body>
+
 </html>
