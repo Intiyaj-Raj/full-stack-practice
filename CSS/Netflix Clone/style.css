@@ -1,0 +1,206 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .mainNetflixContainer {
+     /* border: 2px solid r ed; */
+     /* padding: 0rem 2rem; */
+ }
+
+ .backgroundContainer {
+     background-image: url("./images/bannerImage.jpg");
+     filter: blur(16px);
+     height: 100vh;
+     position: relative;
+ }
+
+ .pinkOverlay {
+     background-color: rgba(104, 3, 20, 0.404);
+     width: 100%;
+     height: 100%;
+ }
+
+ .contentContainer {
+     position: absolute;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     padding: 0 2rem;
+ }
+
+ nav {
+     /* border: 2px solid green; */
+     height: 20vh;
+ }
+
+ .upperNavbarSection {
+     /* border: 2px solid blue; */
+     display: flex;
+     height: 50%;
+ }
+
+ .upperNavbarLeftSection {
+     /* border: 2px solid red; */
+     width: 50%;
+ }
+
+ .netflixLogo {
+     width: 28%;
+     margin: 15px 0;
+ }
+
+ .navBarButtonContainer {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     /* border: 2px solid green; */
+     height: 100%;
+ }
+
+ .languageButton {
+     display: flex;
+     padding: .4rem 1rem;
+     border-radius: 50px;
+     background: transparent;
+     border: 1px solid white;
+     outline: none;
+     color: white;
+     font-size: 1rem;
+ }
+
+ .languageButton p {
+     margin-left: 6px;
+ }
+
+ .signInButton {
+     background: white;
+     padding: .4rem .5rem;
+     border-radius: 50px;
+     outline: none;
+     border: none;
+     margin-left: 10px;
+     font-size: 1rem;
+ }
+
+ .netflixLogo {
+     width: 25%;
+ }
+
+ .upperNavbarRightSection {
+     /* border: 2px solid green; */
+     width: 50%;
+ }
+
+ .lowerNavbarSection {
+     /* border: 2px solid red; */
+     height: 50%;
+     color: white;
+     display: flex;
+     justify-content: center;
+ }
+
+ .menulist {
+     /* border: 2px solid green; */
+     width: 40%;
+     list-style: none;
+     display: flex;
+     justify-content: space-evenly;
+     border-radius: 50px;
+     background: rgba(0, 0, 0, 0.5);
+     box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.329);
+     height: 7vh;
+ }
+
+ .menulist li {
+     /* border: 2px solid red; */
+     height: 100%;
+     display: flex;
+     align-items: center;
+     font-weight: 700;
+ }
+
+ .bannerSection {
+     /* border: 2px solid red; */
+     height: 90vh;
+     background-image: url("./images/bannerImage.jpg");
+     border-radius: 20px;
+     position: relative;
+ }
+
+ .overlay {
+     height: 100%;
+     width: 100%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), black);
+     border: radius 20px;
+
+ }
+
+ .bannerContainer {
+     /* border: 5px solid blue; */
+     width: 100%;
+     height: 80%;
+     position: absolute;
+     bottom: 0;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .bannerContainer h2 {
+     /* border: 2px solid green; */
+     font-size: 4rem;
+     width: 50%;
+     text-align: center;
+ }
+
+ .bannerContainer h4 {
+     font-size: 1.5rem;
+     margin: 20px;
+
+ }
+
+ .bannerContainer p {
+     font-size: 1rem;
+     margin: 20px;
+ }
+
+ .inputContainer {
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .emailInputBox {
+     padding: 1rem 2rem;
+     border-radius: 50px;
+     width: 65%;
+     border: none;
+     outline: none;
+     background-color: rgba(1, 1, 1, 0.3);
+     color: white;
+     border: 1px solid white;
+ }
+
+ .emailInputBox::placeholder {
+     color: white;
+ }
+
+ /* add fas fas icon b/w  */
+ .getStartedBtn {
+     width: 30%;
+     background-color: red;
+     border: none;
+     outline: none;
+     border-radius: 50px;
+     color: white;
+     font-size: 1rem;
+     font-weight: 800;
+ }
