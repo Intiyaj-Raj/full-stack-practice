@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet by Intiyaj Raj</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./prism.css">
+    <script src="prism.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span class="logo"><img src="./logo.png" alt=""></span>
+            <div class="content center">
+                This HTML Cheatsheet is For You!
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <ol>
+                <li>HTML Boilerplate
+                    <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </li>
+                <li>
+                    <strong>&lt;!DOCTYPE html&gt;</strong> – Defines HTML5 document type.
+                    <pre class="language-html"><code>&lt;!DOCTYPE html&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;html&gt;</strong> – Root element of the page.
+                    <pre class="language-html"><code>&lt;html&gt;...&lt;/html&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;head&gt;</strong> – Contains meta info and links.
+                    <pre class="language-html"><code>&lt;head&gt;...&lt;/head&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;title&gt;</strong> – Page title in browser tab.
+                    <pre class="language-html"><code>&lt;title&gt;My Page&lt;/title&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;meta&gt;</strong> – Page information.
+                    <pre class="language-html"><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;body&gt;</strong> – Visible page content.
+                    <pre class="language-html"><code>&lt;body&gt;Content&lt;/body&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;h1&gt; to &lt;h6&gt;</strong> – Headings.
+                    <pre class="language-html"><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;p&gt;</strong> – Paragraph text.
+                    <pre class="language-html"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;br&gt;</strong> – Line break.
+                    <pre class="language-html"><code>Line 1&lt;br&gt;Line 2</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;hr&gt;</strong> – Horizontal line.
+                    <pre class="language-html"><code>&lt;hr&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;a&gt;</strong> – Hyperlink.
+                    <pre class="language-html"><code>&lt;a href="#"&gt;Click here&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;img&gt;</strong> – Image display.
+                    <pre class="language-html"><code>&lt;img src="image.jpg" alt="image"&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;ul&gt;</strong> – Unordered list.
+                    <pre class="language-html"><code>&lt;ul&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;ol&gt;</strong> – Ordered list.
+                    <pre class="language-html"><code>&lt;ol&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;li&gt;</strong> – List item.
+                    <pre class="language-html"><code>&lt;li&gt;Item&lt;/li&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;div&gt;</strong> – Block container.
+                    <pre class="language-html"><code>&lt;div&gt;Content&lt;/div&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;span&gt;</strong> – Inline container.
+                    <pre class="language-html"><code>&lt;span&gt;Text&lt;/span&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;table&gt;</strong> – Table container.
+                    <pre class="language-html"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;tr&gt;</strong> – Table row.
+                    <pre class="language-html"><code>&lt;tr&gt;&lt;/tr&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;td&gt;</strong> – Table data cell.
+                    <pre class="language-html"><code>&lt;td&gt;Data&lt;/td&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;th&gt;</strong> – Table header cell.
+                    <pre class="language-html"><code>&lt;th&gt;Header&lt;/th&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;form&gt;</strong> – Form container.
+                    <pre class="language-html"><code>&lt;form&gt;...&lt;/form&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;input&gt;</strong> – Input field.
+                    <pre class="language-html"><code>&lt;input type="text"&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;textarea&gt;</strong> – Multi-line input.
+                    <pre class="language-html"><code>&lt;textarea&gt;&lt;/textarea&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;button&gt;</strong> – Clickable button.
+                    <pre class="language-html"><code>&lt;button&gt;Submit&lt;/button&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;select&gt;</strong> – Dropdown.
+                    <pre class="language-html"><code>&lt;select&gt;
+    &lt;option&gt;Option&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;label&gt;</strong> – Label for input.
+                    <pre class="language-html"><code>&lt;label&gt;Name&lt;/label&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;header&gt;</strong> – Page header.
+                    <pre class="language-html"><code>&lt;header&gt;Header&lt;/header&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;nav&gt;</strong> – Navigation section.
+                    <pre class="language-html"><code>&lt;nav&gt;Menu&lt;/nav&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;section&gt;</strong> – Content section.
+                    <pre class="language-html"><code>&lt;section&gt;Content&lt;/section&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;article&gt;</strong> – Independent content.
+                    <pre class="language-html"><code>&lt;article&gt;Post&lt;/article&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;aside&gt;</strong> – Sidebar.
+                    <pre class="language-html"><code>&lt;aside&gt;Sidebar&lt;/aside&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;footer&gt;</strong> – Page footer.
+                    <pre class="language-html"><code>&lt;footer&gt;Footer&lt;/footer&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;audio&gt;</strong> – Audio player.
+                    <pre class="language-html"><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3"&gt;
+&lt;/audio&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;video&gt;</strong> – Video player.
+                    <pre class="language-html"><code>&lt;video controls&gt;
+    &lt;source src="video.mp4"&gt;
+&lt;/video&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;iframe&gt;</strong> – Embed another page.
+                    <pre
+                        class="language-html"><code>&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;script&gt;</strong> – JavaScript code.
+                    <pre class="language-html"><code>&lt;script&gt;
+alert("Hello");
+&lt;/script&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>&lt;link&gt;</strong> – External CSS file.
+                    <pre class="language-html"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                </li>
+
+            </ol>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2026 Intiyaj Ansari. All rights reserved.</p>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/intiyaj_ansari_91/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/intiyaj-ansari/" target="_blank">
+                        <i class="fa-brands fa-square-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/IntiyajAnsari0786/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://x.com/intiyaj_ra91615" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.google.com/" target="_blank">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

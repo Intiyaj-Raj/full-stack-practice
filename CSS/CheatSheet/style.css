@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: rgba(106, 0, 255, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #272822;
+    color: white;
+    height: 56px;
+    font-size: 1.5rem;
+}
+
+.content {
+    font-family: "Potta One", system-ui;
+}
+
+.container {
+
+    width: 75vw;
+    margin: auto;
+    padding: 32px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 0 6px;
+
+}
+
+.logo img {
+    width: 40px;
+    mix-blend-mode: screen;
+}
+
+.toolbar-item button {
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 6px !important;
+    padding: 2px 14px !important;
+}
+
+.footer {
+    background: linear-gradient(135deg, #000000, #26272c);
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #cbd5f5;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.social a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #06b6d4;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4);
+}
