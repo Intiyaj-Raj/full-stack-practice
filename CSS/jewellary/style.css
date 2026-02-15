@@ -1,0 +1,400 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: 'DM Sans', -apple-system, sans-serif;
+     font-size: 18px;
+     line-height: 1.6;
+     color: #1C1C1C;
+     background-color: #FFFBF5;
+ }
+
+ nav {
+     display: flex;
+     height: 60px;
+     width: 100%;
+     align-items: center;
+     padding: 40px;
+     font-family: 'DM Sans', -apple-system, sans-serif;
+     background: pink;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+ }
+
+ nav a {
+     width: 20%;
+ }
+
+ nav h3 {
+     width: 100%;
+ }
+
+ nav ul {
+     display: flex;
+     width: 80%;
+     justify-content: space-between;
+     list-style: none;
+     align-items: center;
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+     transition: .3s linear;
+ }
+
+ ul a:hover {
+     color: #B8860B;
+ }
+
+
+ ul button {
+     padding: 10px;
+     font-weight: 500;
+     border: 1px solid black;
+     outline: none;
+     cursor: pointer;
+ }
+
+ ul button:hover {
+     background: black;
+     color: white;
+     border: 1px solid white;
+ }
+
+ .hero {
+     display: flex;
+     width: 91%;
+     height: 340px;
+     padding: 20px;
+     justify-content: space-between;
+     border: 1px solid rgb(202, 228, 236);
+     margin: 140px 0 40px 40px;
+     border-radius: 10px;
+     background: rgb(221, 247, 255);
+     box-shadow: 3px 4px lightblue;
+ }
+
+
+ .heroText {
+     width: 43%;
+     position: relative;
+ }
+
+ .heroSubText {
+     width: 100%;
+     padding-top: 70px;
+ }
+
+ .heroSubTextHeading,
+ .feaatureSubTextHeading {
+     text-transform: uppercase;
+     color: #8B6914 !important;
+     letter-spacing: 0.2rem;
+     font-size: 12px !important;
+ }
+
+ .heroSubText p,
+ .featureSubText p {
+     font-size: 14px;
+     text-align: justify;
+     color: rgb(64, 64, 64);
+ }
+
+ .heroSubText h1,
+ .featureSubText h1 {
+     font-size: 28px;
+     font-weight: 400;
+     padding: 6px 0;
+     font-family: 'Cormorant Garamond', Georgia, serif;
+ }
+
+ .heroSubText h1 i {
+     font-style: italic;
+ }
+
+ .heroBtn {
+     width: 100%;
+     height: 50px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: absolute;
+     bottom: 0;
+ }
+
+ .multi-btn {
+     font-size: 12px;
+     color: white;
+     background: black;
+     padding: 12px 16px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     transition: .3s linear;
+     text-transform: uppercase;
+     letter-spacing: 0.2rem;
+ }
+
+ .multi-btn:hover {
+     background: #B8860B;
+ }
+
+ #ourHeritageBtn {
+     font-size: 12px;
+     color: blue;
+     transition: .3s linear;
+     border-bottom: 1px solid blue;
+ }
+
+ #ourHeritageBtn:hover {
+     color: #B8860B;
+     border-bottom: 1px solid #B8860B;
+ }
+
+ .heroImg {
+     width: 50%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     border-radius: 12px;
+     background: pink;
+
+ }
+
+ .heroSubImg {
+     width: 100%;
+     height: 100%;
+ }
+
+ .heroSubImg img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+
+ .heroImageBtn {
+     position: absolute;
+     bottom: 5px;
+     right: 20px;
+     background: rgba(190, 190, 190, 0.5);
+     padding: 4px 18px;
+     border-radius: 8px;
+     font-weight: 200;
+     box-shadow: 3px 4px rgb(237, 183, 193);
+ }
+
+ .featureSection {
+     display: flex;
+     width: 100%;
+     height: 500px;
+     padding: 40px;
+     justify-content: space-between;
+
+ }
+
+ .featureImage {
+     width: 45%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .featureImage img {
+     width: 100%;
+     height: 100%;
+     transition: .3s ease-in-out;
+ }
+
+ .featureImage img:hover {
+     transform: scale(1.1)
+ }
+
+ .featureImageText {
+     background: #B8860B;
+     color: white;
+     display: inline-block;
+     padding: 5px 10px;
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     font-size: 7px;
+ }
+
+ .featureText {
+     width: 50%;
+     padding: 25px 20px;
+ }
+
+ .featureSubText {
+     width: 100%;
+ }
+
+ .featureSubText2 {
+     margin-top: 20px;
+     border-top: 1px solid #8B6914;
+     border-bottom: 1px solid #8B6914;
+     padding: 20px 0;
+ }
+
+ .featureSubText2 span {
+     display: flex;
+     justify-content: space-between;
+     font-size: 13px;
+     font-weight: 200;
+ }
+
+ .featureSubText2Item {
+     color: #8B6914;
+
+ }
+
+ .featureBtn p {
+     color: #B8860B;
+     font-family: 'Cormorant Garamond', Georgia, serif;
+     font-weight: 400;
+     padding: 20px 0;
+ }
+
+ .collection {
+     /* border: 2px solid red; */
+     width: 100%;
+ }
+
+ .collectionText {
+     width: 100%;
+     height: 90vh;
+     position: relative;
+ }
+
+ .collectionSubText {
+     position: absolute;
+     bottom: 40px;
+     left: 40px;
+     right: 40px;
+ }
+
+ .collectionSubText h1 {
+     font-family: 'Cormorant Garamond', Georgia, serif;
+     font-weight: 400;
+     padding: 20px 0;
+ }
+
+ .collectionInnerText {
+     display: flex;
+     justify-content: space-between;
+     color: #8B6914;
+ }
+
+ .collectionBtn:hover {
+     color: #8B6914;
+ }
+
+
+ .collection {
+     width: 100%;
+ }
+
+
+ .collectionText {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+ }
+
+ .collectionSubText {
+     position: absolute;
+     bottom: 40px;
+     left: 40px;
+     right: 40px;
+ }
+
+
+ .collectionImage {
+     width: 100%;
+     height: 80vh;
+     padding: 0 40px;
+     cursor: pointer;
+ }
+
+
+
+ .collectionUpperImg {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     gap: 20px;
+ }
+
+ .collectionUpperImg1 {
+     width: 50%;
+     position: relative;
+     overflow: hidden;
+ }
+
+
+ .collectionUpperImg1 img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 0.4s ease;
+ }
+
+ .collectionUpperImg1:hover img {
+     transform: scale(1.1);
+ }
+
+ .collectionUpperImg1::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: rgba(0, 0, 0, 0);
+     transition: background 0.3s ease;
+ }
+
+ .collectionUpperImg1:hover::after {
+     background: rgba(0, 0, 0, 0.4);
+ }
+
+ .imgOverlayText {
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     color: white;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+ }
+
+ .imgOverlayText h1 {
+     margin: 0;
+     font-size: 32px;
+     font-family: 'Cormorant Garamond', Georgia, serif;
+
+ }
+
+ .imgOverlayText p {
+     margin: 5px 0 0;
+     font-size: 16px;
+ }
+
+ .collectionUpperImg1:hover .imgOverlayText {
+     opacity: 1;
+ }
+
+ .collectionLowerImg {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     padding: 20px 0;
+     gap: 20px;
+     height: 85vh;
+ }
