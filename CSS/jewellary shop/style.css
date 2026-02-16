@@ -120,7 +120,7 @@ ul button:hover {
 .featureSubText h1,
 .craftmanshipLeftText h1,
 .visitSubText h1 {
-    /* font-size: 2px; */
+    font-size: 30px;
     font-weight: 500;
     padding: 6px 0;
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -546,7 +546,7 @@ ul button:hover {
 .requestForm {
     width: 45%;
     border: 2px solid rgba(255, 0, 0, 0.3);
-    border-radius: 20px 0 20px 0;
+    border-radius: 40px 0 40px 0;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
@@ -572,6 +572,7 @@ label {
 
 form input,
 textarea {
+    border-radius: 15px 0 15px 0;
     border: 1px solid #C4B5A5;
     padding: 10px;
     outline: none;
@@ -581,4 +582,9 @@ textarea {
 form input:focus,
 textarea:focus {
     border: 1px solid black;
+}
+
+.req-btn {
+    margin-top: 25px;
+    border-radius: 15px 0 15px 0;
 }
