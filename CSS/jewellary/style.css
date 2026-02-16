@@ -405,4 +405,31 @@ ul button:hover {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-style: italic;
     padding-top: 20px;
+    font-size: 32px;
+}
+
+.storyImage {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.storyLeftImage,
+.storyRightImage {
+    width: 45%;
+    height: 20vh;
+
+}
+
+.storyLeftImage img,
+.storyRightImage img {
+    width: 200px;
+    height: 270px;
+    padding-left: 20px;
+}
+
+.storyLeftImage img {
+    margin-top: 120px;
+    margin-left: 50px;
 }
