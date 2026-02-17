@@ -214,8 +214,7 @@ select {
 }
 
 .social i {
-  margin-right: 12px;
-  font-size: 25px;
+  font-size: 22px;
   cursor: pointer;
   color: white;
   margin-top: 20px;
@@ -252,6 +251,7 @@ a {
   color: white;
 }
 
+a:hover i,
 a:hover {
   color: purple;
 }
@@ -340,7 +340,10 @@ a:hover {
     font-weight: 300;
   }
 
-
+  .footer-container {
+    padding: 60px 40px;
+    gap: 30px;
+  }
 }
 
 @media (max-width:970px) {
@@ -360,6 +363,22 @@ a:hover {
     width: 50%;
   }
 
+  .footerSection {
+    font-size: 13px;
+  }
+
+  .footer-box p,
+  .footer-box ul li {
+    font-size: 11px;
+  }
+
+  .social i {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    padding: 6px 18px;
+  }
 }
 
 @media (max-width:850px) {
@@ -402,5 +421,3 @@ a:hover {
     width: 100%;
   }
 }
-
-@media screen {}
