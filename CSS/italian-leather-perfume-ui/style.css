@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 45%;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 11px;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    width: 60%;
+}
+
+.nav-btn ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    /* padding: 50px; */
+    background: #000;
+    color: white;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 50px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+.hero-text h5 {
+    padding: 40px 0;
+    font-weight: 350;
+    font-size: 25px;
+    color: #868380;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #868380;
+    line-height: 1.6;
+    font-weight: 350;
+}
+
+.hero-text h3 {
+    padding: 20px 0;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.hero-text-image img {
+    border: 2px solid white;
+    width: 15%;
+}
+
+.multi-use-btn {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    outline: none;
+}
+
+
+.hero-img {
+    width: 50%;
+    display: flex;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-img img {
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 70px;
+}
+
+.features-sub-section {
+    width: 33%;
+}
+
+.features-sub-section h3 {
+    line-height: 1.5;
+    padding-bottom: 36px;
+    /* border: 2px solid blue; */
+    font-weight: 500;
+}
+
+.features-sub-section p {
+    line-height: 1.5;
+    padding-bottom: 36px;
+}
+
+.image-section {
+    width: 100%;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.image-text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 140px;
+}
+
+.image-text-section img {
+    width: 12%;
+    height: 12%;
+    padding-left: 10px;
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    border: 1px solid white;
+    width: 80%;
+    height: 80%;
+}
+
+.about-text {
+    width: 50%;
+    padding: 100px 50px;
+}
+
+.about-text h1 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #868380;
+    font-weight: 350;
+    line-height: 1.5;
+}
+
+.about-text h1,
+p {
+    padding-bottom: 40px;
+}
+
+.insta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: 50vh;
+}
+
+.insta h1 {
+    font-weight: 500;
+    padding-bottom: 40px;
+    font-size: 24px;
+}
+
+.insta a {
+    color: black;
+    background: #d3b7b7;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.hero2 {
+    flex-direction: row-reverse;
+    background: white;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    /* height: 100vh; */
+    background: #000;
+    color: white;
+}
+
+.f-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    padding: 20px 80px;
+}
+
+.f-div ul {
+    list-style: none;
+    font-size: 13px;
+}
+
+.f-div ul a {
+    line-height: 2.3;
+}
+
+footer span {
+    padding: 40px 80px;
+}
+
+footer button {
+    padding: 7px 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}

@@ -10,245 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-
-    <style>
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2) format('woff2');
-            unicode-range: U +0900 -097F, U +1CD0 -1CF9, U +200C -200D, U +20A8, U +20B9, U +20F0, U +25CC, U + A830-A839, U + A8E0-A8FF, U +11B00 -11B09;
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-        }
-
-        .logo {
-            width: 45%;
-        }
-
-        h3 {
-            font-size: 1.17em;
-            font-weight: bold;
-        }
-
-        .logo span {
-            font-size: 11px;
-            color: orangered;
-            text-transform: uppercase;
-        }
-
-        .nav-btn {
-            width: 60%;
-        }
-
-        .nav-btn ul {
-            display: flex;
-            list-style: none;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .hero-section {
-            display: flex;
-            width: 100%;
-            /* padding: 50px; */
-            background: #000;
-            color: white;
-        }
-
-        .hero-text {
-            width: 50%;
-            padding: 50px;
-        }
-
-        .hero-text h2 {
-            font-size: 40px;
-            font-weight: 350;
-            text-transform: uppercase;
-        }
-
-        .hero-text h5 {
-            padding: 40px 0;
-            font-weight: 350;
-            font-size: 25px;
-            color: #868380;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            color: #868380;
-            line-height: 1.6;
-            font-weight: 350;
-        }
-
-        .hero-text h3 {
-            padding: 20px 0;
-            font-size: 45px;
-            font-weight: 500;
-        }
-
-        .hero-text-image img {
-            border: 2px solid white;
-            width: 15%;
-        }
-
-        .multi-use-btn {
-            font-size: 18px;
-            padding: 12px 20px;
-            margin-top: 20px;
-            outline: none;
-        }
-
-
-        .hero-img {
-            width: 50%;
-            display: flex;
-            /* border: 2px solid blue; */
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .hero-img img {
-            width: 80%;
-            height: 80%;
-            border: 1px solid white;
-        }
-
-        .features {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 80px 70px;
-        }
-
-        .features-sub-section {
-            width: 33%;
-        }
-
-        .features-sub-section h3,
-        .features-sub-section p {
-            line-height: 1.5;
-            padding-bottom: 36px;
-        }
-
-        .image-section {
-            width: 100%;
-            position: relative;
-        }
-
-        .image-section img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        .image-text-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 10px;
-            right: 140px;
-        }
-
-        .image-text-section img {
-            width: 12%;
-            height: 12%;
-            padding-left: 10px;
-        }
-
-        .about-section {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .about-image {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about-image img {
-            border: 1px solid white;
-            width: 80%;
-            height: 80%;
-        }
-
-        .about-text {
-            width: 50%;
-            padding: 100px 50px;
-        }
-
-        .about-text h1 {
-            font-weight: 400;
-            font-size: 40px;
-        }
-
-        .about-text p {
-            font-size: 18px;
-            color: #868380;
-            font-weight: 350;
-            line-height: 1.5;
-        }
-
-        .about-text h1,
-        p {
-            padding-bottom: 40px;
-        }
-
-        .insta {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            /* border: 2px solid blue; */
-            height: 50vh;
-        }
-
-        .insta h1 {
-            font-weight: 500;
-            padding-bottom: 40px;
-            font-size: 24px;
-        }
-
-        .insta a {
-            color: black;
-            background: #d3b7b7;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .hero2 {
-            flex-direction: row-reverse;
-            background: white;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -304,13 +66,13 @@
         <!-- features section -->
         <div class="features">
             <div class="features-sub-section">
-                <h2 style="line-height: 1.5;">What makes us different?</h2>
+                <h2 style="line-height: 1.5; font-weight: 500;">What makes us different?</h2>
                 <img src="image/white.jpg" alt="">
             </div>
             <div class="features-sub-section">
                 <img src="image/images (1).jpg" alt="" style="padding-top: 80px;">
             </div>
-            <div class="features-sub-section fcol3">
+            <div class="features-sub-section">
                 <h3>Dermatologically Tested/Clinically Tested/Nickel Tested No GMOS,paraben free.
                 </h3>
                 <p>A moment of pleasure and lightness all to yourself.</p>
@@ -377,7 +139,44 @@
             </div>
         </div>
 
+        <!-- footer section -->
 
+        <footer>
+            <p style="padding: 50px 80px 0 80px; ">Questions? Call 000-800-919-1694</p>
+            <div class="f-div">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <span>
+                <button><i class="fa fa-globe"></i>&nbsp; English &nbsp;<i class="fa fa-caret-down"
+                        aria-hidden="true"></i></button>
+            </span>
+        </footer>
     </div>
 </body>
 
