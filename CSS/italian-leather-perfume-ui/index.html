@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>italian-leather-perfume</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 
     <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2) format('woff2');
+            unicode-range: U +0900 -097F, U +1CD0 -1CF9, U +200C -200D, U +20A8, U +20B9, U +20F0, U +25CC, U + A830-A839, U + A8E0-A8FF, U +11B00 -11B09;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -53,29 +67,193 @@
         a {
             text-decoration: none;
             color: white;
-
         }
 
         .hero-section {
-            width: 100%;
             display: flex;
-            padding: 20px 50px;
+            width: 100%;
+            /* padding: 50px; */
+            background: #000;
+            color: white;
         }
 
-        .hero-text,
+        .hero-text {
+            width: 50%;
+            padding: 50px;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            font-weight: 350;
+            text-transform: uppercase;
+        }
+
+        .hero-text h5 {
+            padding: 40px 0;
+            font-weight: 350;
+            font-size: 25px;
+            color: #868380;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #868380;
+            line-height: 1.6;
+            font-weight: 350;
+        }
+
+        .hero-text h3 {
+            padding: 20px 0;
+            font-size: 45px;
+            font-weight: 500;
+        }
+
+        .hero-text-image img {
+            border: 2px solid white;
+            width: 15%;
+        }
+
+        .multi-use-btn {
+            font-size: 18px;
+            padding: 12px 20px;
+            margin-top: 20px;
+            outline: none;
+        }
+
+
         .hero-img {
             width: 50%;
+            display: flex;
+            /* border: 2px solid blue; */
+            justify-content: center;
+            align-items: center;
+
         }
 
-
         .hero-img img {
+            width: 80%;
+            height: 80%;
+            border: 1px solid white;
+        }
+
+        .features {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 80px 70px;
+        }
+
+        .features-sub-section {
+            width: 33%;
+        }
+
+        .features-sub-section h3,
+        .features-sub-section p {
+            line-height: 1.5;
+            padding-bottom: 36px;
+        }
+
+        .image-section {
+            width: 100%;
+            position: relative;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .image-text-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
+            right: 140px;
+        }
+
+        .image-text-section img {
+            width: 12%;
+            height: 12%;
+            padding-left: 10px;
+        }
+
+        .about-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-image {
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image img {
+            border: 1px solid white;
+            width: 80%;
+            height: 80%;
+        }
+
+        .about-text {
+            width: 50%;
+            padding: 100px 50px;
+        }
+
+        .about-text h1 {
+            font-weight: 400;
+            font-size: 40px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #868380;
+            font-weight: 350;
+            line-height: 1.5;
+        }
+
+        .about-text h1,
+        p {
+            padding-bottom: 40px;
+        }
+
+        .insta {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid blue; */
+            height: 50vh;
+        }
+
+        .insta h1 {
+            font-weight: 500;
+            padding-bottom: 40px;
+            font-size: 24px;
+        }
+
+        .insta a {
+            color: black;
+            background: #d3b7b7;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .hero2 {
+            flex-direction: row-reverse;
+            background: white;
+            color: black;
         }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <!-- header -->
         <nav>
             <div class="logo">
                 <h3>Adze. <span>Design</span></h3>
@@ -92,36 +270,113 @@
             </div>
         </nav>
 
+        <!-- hero section -->
         <div class="hero-section">
             <div class="hero-text">
                 <h2>Italian leather</h2>
                 <h5>A Lucid Dream.</h5>
 
                 <div class="hero-text-img">
-                    <img src="./images/new1.webp" alt="">
+                    <!-- <img src="./image/new1.webp" alt=""> -->
                 </div>
 
                 <p>
-                    Italian leather speaks the Italian of Rome, the one drowsily
-                    murmured in the seat of a cabrilot
+                    Italian leather speaks the Italian of Rome,<br> the one drowsily
+                    murmured in the seat of <br>a cabrilot
+                </p>
+
+                <h3>205.00 <i class="fa fa-euro"></i></h3>
+
+                <div class="hero-text-image">
+                    <img src="./image/home.png" alt="">
+                    <img src="./image/images.jpg" alt="">
+                </div>
+
+                <span>
+                    <button class="multi-use-btn">Buy now</button>
+                </span>
+            </div>
+            <div class="hero-img">
+                <img src="./image/new1.webp" alt="">
+            </div>
+        </div>
+
+        <!-- features section -->
+        <div class="features">
+            <div class="features-sub-section">
+                <h2 style="line-height: 1.5;">What makes us different?</h2>
+                <img src="image/white.jpg" alt="">
+            </div>
+            <div class="features-sub-section">
+                <img src="image/images (1).jpg" alt="" style="padding-top: 80px;">
+            </div>
+            <div class="features-sub-section fcol3">
+                <h3>Dermatologically Tested/Clinically Tested/Nickel Tested No GMOS,paraben free.
+                </h3>
+                <p>A moment of pleasure and lightness all to yourself.</p>
+                <button class="multi-use-btn">Buy now</button>
+            </div>
+        </div>
+
+        <!-- image seciton -->
+        <div class="image-section">
+            <img src="image/fogg.webp" alt="">
+
+            <div class="image-text-section">
+                <h2 style="color: white;">Discover </h2>
+                <img src="image/down-right.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- About Us -->
+        <div class="about-section">
+            <div class="about-image">
+                <img src="image/perfume l2.webp" alt="">
+            </div>
+            <div class="about-text">
+                <h1>Customer talking <br><b>about us</b></h1>
+                <h1>The eye of a <br>tuberose</h1>
+                <p>" This soap contains a rich complex of moisturiting elements, Idal for repeated <br> use.
+                    <br><br>
+                    " A moment of pleasure and lightness <br>all to yourself.
+                </p>
+            </div>
+        </div>
+
+        <!-- Instagram seciton  -->
+        <div class="insta">
+            <h1>We on Instagram</h1>
+            <a href="#">insta icon Follow Us</a>
+        </div>
+
+        <!-- hero  section 2 -->
+        <div class="hero-section hero2">
+            <div class="hero-text">
+                <h2>Italian leather</h2>
+                <h5>A Lucid Dream.</h5>
+
+                <div class="hero-text-img">
+                    <!-- <img src="./image/new1.webp" alt=""> -->
+                </div>
+
+                <p>
+                    Italian leather speaks the Italian of Rome,<br> the one drowsily
+                    murmured in the seat of <br>a cabrilot
                 </p>
 
                 <h3>205.00 <i class="fa fa-euro"></i></h3>
 
                 <span>
-                    <img src="./image/home.png" alt="">
-                    <img src="./image/images.jpg" alt="">
-                </span>
 
-                <span>
-                    <button>Buy now</button>
+                    <button class="multi-use-btn">Add to Cart</button>
+                    <button class="multi-use-btn">Buy now</button>
                 </span>
             </div>
-
             <div class="hero-img">
-                <img src="./image/new1.webp" alt="">
+                <img src="./image/ee.jpeg" alt="">
             </div>
         </div>
+
 
     </div>
 </body>
