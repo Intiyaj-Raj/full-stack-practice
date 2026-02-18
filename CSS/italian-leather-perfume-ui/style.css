@@ -48,7 +48,6 @@ a {
 .hero-section {
     display: flex;
     width: 100%;
-    /* padding: 50px; */
     background: #000;
     color: white;
 }
@@ -125,7 +124,7 @@ a {
 
 .features-sub-section h3 {
     line-height: 1.5;
-    padding-bottom: 36px;
+    padding: 36px 0;
     /* border: 2px solid blue; */
     font-weight: 500;
 }
@@ -282,4 +281,42 @@ footer button {
     cursor: pointer;
     margin-top: 35px;
     margin-bottom: 60px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        padding: 0 0 0 50px;
+    }
+
+    .hero-text-image img {
+        width: 20%;
+    }
+
+    .multi-use-btn {
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+
+    .image-text-section {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .features-sub-section {
+        width: 100%;
+    }
 }
