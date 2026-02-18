@@ -300,6 +300,7 @@ a:hover {
 
   .socialIcon {
     gap: 14px;
+    flex-wrap: wrap;
   }
 }
 
@@ -343,6 +344,10 @@ a:hover {
   .footer-container {
     padding: 60px 40px;
     gap: 30px;
+  }
+
+  #legal {
+    font-weight: bold;
   }
 }
 
@@ -420,4 +425,45 @@ a:hover {
     padding: 8px;
     width: 100%;
   }
+}
+
+@media (max-width:650px) {
+  .heroInnerSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactHeading {
+    padding: 40px 20px 0 0;
+  }
+
+  .heroContactSection,
+  .heroTextSection {
+    width: 90%;
+    padding: 50px 50px 0 50px;
+    margin: -10px;
+  }
+
+  .socialIcon i {
+    font-size: 32px;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid red; */
+  }
+
+  .footer-box,
+  .footerContact {
+    width: 100%;
+  }
+
+  .flogo {
+    width: 20%;
+  }
+
 }
