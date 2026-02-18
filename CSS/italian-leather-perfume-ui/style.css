@@ -209,19 +209,33 @@ p {
     align-items: center;
     justify-content: center;
     /* border: 2px solid blue; */
-    height: 50vh;
+    height: 70vh;
 }
 
 .insta h1 {
     font-weight: 500;
-    padding-bottom: 40px;
     font-size: 24px;
+    margin-top: 100px;
+}
+
+.insta-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+    gap: 20px;
+}
+
+.insta-image img {
+    width: 18%;
+
 }
 
 .insta a {
     color: black;
     background: #d3b7b7;
     padding: 10px;
+    margin-bottom: 150px;
     font-size: 16px;
 }
 
