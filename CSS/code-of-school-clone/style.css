@@ -460,6 +460,13 @@ a:hover {
   .footer-box,
   .footerContact {
     width: 100%;
+    border: 2px solid red;
+    font-size: 20px;
+  }
+
+  .footer-box p,
+  .footer-box ul li {
+    font-size: 18px;
   }
 
   .flogo {
