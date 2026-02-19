@@ -145,7 +145,7 @@ select {
 .submitBtn {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 .submitBtn button {
@@ -154,11 +154,11 @@ select {
   width: 25%;
   background-color: blueviolet;
   color: white;
-  padding: 14px 20px;
+  padding: 10px 16px;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 600;
-  margin: 40px;
+  margin: 40px 0;
   cursor: pointer;
 }
 
@@ -298,6 +298,10 @@ a:hover {
     width: 55%;
   }
 
+  .submitBtn button {
+    padding: 10px 12px;
+  }
+
   .socialIcon {
     gap: 14px;
     flex-wrap: wrap;
@@ -425,12 +429,34 @@ a:hover {
     padding: 8px;
     width: 100%;
   }
+
+  .map {
+    height: 40vh;
+  }
+
 }
 
 @media (max-width:650px) {
+  nav {
+    padding: 18px 25px;
+  }
+
+  nav img {
+    width: 16%;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
   .heroInnerSection {
     flex-direction: column;
     align-items: center;
+  }
+
+  .heroTextSection p,
+  .heroContactSection label {
+    font-size: 18px;
   }
 
   .contactHeading {
@@ -440,12 +466,11 @@ a:hover {
   .heroContactSection,
   .heroTextSection {
     width: 90%;
-    padding: 50px 50px 0 50px;
-    margin: -10px;
+    padding: 50px 0 0 0;
   }
 
   .socialIcon i {
-    font-size: 32px;
+    font-size: 25px;
     padding: 30px 0 0 0;
     margin: 0;
   }
@@ -461,16 +486,27 @@ a:hover {
   .footerContact {
     width: 100%;
     /* border: 2px solid red; */
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .footer-box p,
   .footer-box ul li {
-    font-size: 18px;
+    font-size: 19px;
+  }
+
+  .social i {
+    font-size: 20px;
+  }
+
+  .footer-container {
+    padding: 10px 35px;
   }
 
   .flogo {
-    width: 20%;
+    width: 25%;
   }
 
+  .login-btn {
+    padding: 9px 22px;
+  }
 }
