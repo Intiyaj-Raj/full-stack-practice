@@ -102,13 +102,16 @@ a {
     /* border: 2px solid blue; */
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-img img {
     width: 80%;
     height: 80%;
     border: 1px solid white;
+}
+
+.hero-mob-img img {
+    display: none;
 }
 
 .features {
@@ -126,7 +129,7 @@ a {
     line-height: 1.5;
     padding: 36px 0;
     /* border: 2px solid blue; */
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .features-sub-section p {
@@ -171,6 +174,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(253, 210, 210, .7);
 }
 
 .about-image img {
@@ -182,6 +186,7 @@ a {
 .about-text {
     width: 50%;
     padding: 100px 50px;
+    background: rgba(253, 210, 210, .7);
 }
 
 .about-text h1 {
@@ -194,6 +199,8 @@ a {
     color: #868380;
     font-weight: 350;
     line-height: 1.5;
+    background: rgb(255, 255, 255);
+    padding: 0 10px;
 }
 
 .about-text h1,
@@ -243,10 +250,15 @@ p {
 }
 
 footer {
-    width: 100%;
-    /* height: 100vh; */
-    background: #000;
+    background-color: black;
     color: white;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .f-div {
@@ -254,7 +266,7 @@ footer {
     display: flex;
     justify-content: space-between;
     /* border: 2px solid blue; */
-    padding: 20px 80px;
+
 }
 
 .f-div ul {
@@ -266,19 +278,15 @@ footer {
     line-height: 2.3;
 }
 
-footer span {
-    padding: 40px 80px;
-}
-
 footer button {
-    padding: 7px 30px;
+    padding: 5px 30px;
     background: transparent;
     border: 1px solid white;
     color: white;
     outline: none;
     cursor: pointer;
     margin-top: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .menu-bar {
@@ -303,21 +311,15 @@ footer button {
     }
 
     .features-sub-section {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         /* border: 2px solid blue; */
-        width: 100%;
     }
 
     .features-sub-section img {
-        width: 70%;
+        width: 100%;
         object-fit: contain;
-    }
-
-    .features-sub-section h3 {
-        text-align: center;
     }
 
     .insta-image {
@@ -331,11 +333,15 @@ footer button {
 
 @media (max-width:700px) {
     .logo {
-        width: 30%;
+        width: 34%;
     }
 
     .nav-btn {
         width: 66%;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
     }
 
     .hero-text h3 {
@@ -369,6 +375,10 @@ footer button {
 }
 
 @media (max-width: 585px) {
+    .logo {
+        width: 45%;
+    }
+
     .nav-btn {
         display: none;
     }
@@ -386,7 +396,11 @@ footer button {
     .hero-text,
     .hero-img {
         width: 100%;
-        padding: 50px;
+        padding: 50px 50px 0 50px;
+    }
+
+    .hero-text h3 {
+        padding: 5px 0 15px 0;
     }
 
     .hero-text p {
@@ -394,6 +408,8 @@ footer button {
         color: #868380;
         line-height: 1.6;
         font-weight: 350;
+        /* border: 2px solid blue; */
+        padding-top: 22px;
     }
 
     .hero-text-image img {
@@ -401,8 +417,19 @@ footer button {
     }
 
     .hero-img img {
+        display: none;
+    }
+
+    .hero-mob-img {
         width: 100%;
-        height: auto;
+        padding: 30px 0;
+    }
+
+    .hero-mob-img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid white;
     }
 
     .multi-use-btn {
@@ -429,7 +456,7 @@ footer button {
 
     .image-text-section {
         bottom: 10px;
-        right: -25px;
+        right: -100px;
     }
 
     .about-section {
@@ -440,14 +467,28 @@ footer button {
     .about-image,
     .about-text {
         width: 100%;
+        padding-top: 50px;
     }
 
-    footer p {
-        padding: 40px 40px 0 !important;
+    .hero2-btn {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    .f-div {
-        flex-direction: column;
-        padding: 20px 40px;
+    .hero2-btn button {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10% 2%;
+    }
+
+    .footer-media {
+        display: none;
+    }
+
+    footer button {
+        width: 100%;
     }
 }
