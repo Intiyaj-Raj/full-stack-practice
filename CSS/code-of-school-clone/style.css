@@ -442,7 +442,7 @@ a:hover {
   }
 
   nav img {
-    width: 16%;
+    width: 18%;
   }
 
   .hero {
@@ -498,6 +498,11 @@ a:hover {
     font-size: 20px;
   }
 
+  .map {
+    height: 35vh;
+    padding: 40px 8px;
+  }
+
   .footer-container {
     padding: 10px 35px;
   }
@@ -508,5 +513,9 @@ a:hover {
 
   .login-btn {
     padding: 9px 22px;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
   }
 }
