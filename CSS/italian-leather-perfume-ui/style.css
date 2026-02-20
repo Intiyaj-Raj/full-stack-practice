@@ -174,7 +174,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(253, 210, 210, .7);
+    background: rgba(247, 235, 235, 0.9);
 }
 
 .about-image img {
@@ -186,7 +186,7 @@ a {
 .about-text {
     width: 50%;
     padding: 100px 50px;
-    background: rgba(253, 210, 210, .7);
+    background: rgba(247, 235, 235, 0.9);
 }
 
 .about-text h1 {
