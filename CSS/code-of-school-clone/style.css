@@ -467,12 +467,14 @@ a:hover {
   .heroTextSection {
     width: 90%;
     padding: 50px 0 0 0;
+    margin: 0;
   }
 
   .socialIcon i {
-    font-size: 25px;
-    padding: 30px 0 0 0;
-    margin: 0;
+    /* font-size: 25px; */
+    padding: 0 0 0 0;
+    margin: 40px 0 0 0;
+    /* border: 2px solid blue; */
   }
 
   .footer-container {
@@ -508,7 +510,10 @@ a:hover {
   }
 
   .flogo {
-    width: 25%;
+    width: 50%;
+    border: 2px solid blue;
+    display: flex;
+    margin: 20px auto;
   }
 
   .login-btn {
