@@ -5,8 +5,7 @@
       box-sizing: border-box;
   }
 
-  /* declare global property */
-
+  /* declare  property */
   h1 {
       font-size: 40px;
       line-height: 64px;
@@ -32,7 +31,7 @@
   p {
       font-size: 16px;
       color: #465b52;
-      margin: 15px 0 20px 0;
+      margin: 15px 0;
   }
 
   /* header section */
@@ -456,4 +455,71 @@
       color: white;
       font-size: 14px;
       cursor: pointer;
+  }
+
+  #footer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: #d5dbf8;
+      padding: 50px;
+  }
+
+  .contact {
+      width: 40%;
+      /* border: 2px solid rgb(34, 178, 53); */
+      padding: 0 10px 0 0;
+  }
+
+  .myaccount,
+  .about,
+  .install {
+      width: 20%;
+      /* border: 2px solid red; */
+  }
+
+  .contact a img {
+      /* border: 2px solid red; */
+      width: 30%;
+  }
+
+  #footer p,
+  #footer a {
+      color: rgb(109, 109, 109);
+      text-decoration: none;
+      font-size: 14px;
+  }
+
+  #footer a:hover {
+      color: #088178;
+  }
+
+  .socials i {
+      font-size: 20px;
+  }
+
+  .about a {
+      display: block;
+      padding: 8px 0;
+  }
+
+  .myaccount a {
+      display: block;
+      padding: 8px 0;
+  }
+
+  .download {
+      width: 100%;
+      display: flex;
+      gap: 5px;
+  }
+
+  .download img {
+      border: 1px solid #08817969;
+      border-radius: 7px;
+      width: 50%;
+  }
+
+  .install img {
+      width: 100%;
   }
