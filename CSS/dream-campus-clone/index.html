@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            width: 40%;
+            padding: 5px 15px;
+        }
+
+        .logo img {
+            width: 35%;
+
+        }
+
+        .menu-list {
+            width: 60%;
+        }
+
+        .menu-list ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-bar {
+            display: none;
+        }
+
+        .heading {
+            color: #1d243c;
+            font-size: 37px;
+            margin: 50px 0 0 0;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            width: 100%;
+            margin: 35px 0;
+        }
+
+        .card img {
+            width: 85px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 22px;
+            color: #1d243c;
+            margin-bottom: 20px;
+        }
+
+        .connect-btn {
+            background: #2d3a7e;
+            color: white;
+            font-size: 14px;
+            border-radius: 25px;
+            padding: 12px 25px;
+        }
+
+        .connect-btn:hover {
+            background-color: #3a4fbd;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./logo.jpg" alt="">
+        </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Courses </a></li>
+                <li><a href="#">Partner University</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- partner university section -->
+    <h1 class="heading">Partner University</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/Alliane-university-1.jpg" alt="">
+            <p>Alliance University</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/logo.png" alt="">
+            <p>Sindhi College</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/Atrai-1.jpeg" alt="">
+            <p>Atria Institute of Technology</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/abbs-300x131.jpg" alt="">
+            <p>Acharya Bangalore Business School</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/surana.jpeg" alt="">
+            <p>Surana college</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+        <div class="card">
+            <img src="https://dream-campus.in/wp-content/uploads/2025/11/jain-universsity-1-300x300.png" alt="">
+            <p>Jain University</p>
+            <a href="https://wa.me/919117392461" target="_blank" class="connect-btn">Connect with Counsellor</a>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
