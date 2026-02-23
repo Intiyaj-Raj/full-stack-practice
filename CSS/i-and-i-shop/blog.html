@@ -75,7 +75,7 @@
 
         #blog-section {
             background-color: #d5dbf8;
-            padding: 50px;
+            padding: 50px 0;
         }
 
         .blog-title {
@@ -83,7 +83,7 @@
         }
 
         .blog-title h2 {
-            font-size: 36px;
+            font-size: 28px;
             color: #1a1a2e;
             margin-bottom: 10px;
         }
@@ -95,19 +95,35 @@
 
         .blog-img {
             display: flex;
-            padding: 50px 0;
+            padding: 50px;
             gap: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .blog-img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
         }
 
         .blog-img-inner {
-            width: 50%;
+            width: 40%;
             position: relative;
+            overflow: hidden;
+            border-radius: 20px 0 0 20px;
         }
 
         .blog-img-inner img {
             width: 100%;
-            border-radius: 20px 0 0 20px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
         }
+
+        .blog-img:hover img {
+            transform: scale(1.15);
+        }
+
 
         .blog-img-inner span {
             position: absolute;
@@ -148,14 +164,15 @@
             color: #088178;
         }
 
-        .blog-img-text h2 {
+        .blog-img-text h3 {
             margin-bottom: 12px;
             color: #1a1a2e;
             line-height: 1.4;
             transition: color .3s ease;
+            font-style: 28px;
         }
 
-        .blog-img:hover .blog-img-text h2 {
+        .blog-img:hover .blog-img-text h3 {
             color: #088178;
         }
 
@@ -224,7 +241,7 @@
 
     <section id="blog-section">
         <div class="blog-title">
-            <h1>Latest Articles</h1>
+            <h2>Latest Articles</h2>
             <p>Stay updated with the newest fashion trends and styling advice</p>
         </div>
         <div class="blog-img">
@@ -237,7 +254,58 @@
                     <span class="blog-date"><i class="far fa-calendar"></i> June 20, 2024</span>
                     <span class="blog-author"><i class="far fa-user"></i> Emma Wilson</span>
                 </div>
-                <h2>The Ultimate Guide to Sustainable Fashion</h2>
+                <h3>The Ultimate Guide to Sustainable Fashion</h3>
+                <p>Discover how to build an eco-friendly wardrobe without compromising on style. Learn about
+                    sustainable materials, ethical brands, and tips for reducing your fashion footprint while
+                    looking fabulous.</p>
+                <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-img">
+            <div class="blog-img-inner">
+                <img src="./image/blog/b1.jpg" alt="">
+                <span>Trending</span>
+            </div>
+            <div class="blog-img-text">
+                <div class="blog-meta">
+                    <span class="blog-date"><i class="far fa-calendar"></i> June 20, 2024</span>
+                    <span class="blog-author"><i class="far fa-user"></i> Emma Wilson</span>
+                </div>
+                <h3>The Ultimate Guide to Sustainable Fashion</h3>
+                <p>Discover how to build an eco-friendly wardrobe without compromising on style. Learn about
+                    sustainable materials, ethical brands, and tips for reducing your fashion footprint while
+                    looking fabulous.</p>
+                <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-img">
+            <div class="blog-img-inner">
+                <img src="./image/blog/b1.jpg" alt="">
+                <span>Trending</span>
+            </div>
+            <div class="blog-img-text">
+                <div class="blog-meta">
+                    <span class="blog-date"><i class="far fa-calendar"></i> June 20, 2024</span>
+                    <span class="blog-author"><i class="far fa-user"></i> Emma Wilson</span>
+                </div>
+                <h3>The Ultimate Guide to Sustainable Fashion</h3>
+                <p>Discover how to build an eco-friendly wardrobe without compromising on style. Learn about
+                    sustainable materials, ethical brands, and tips for reducing your fashion footprint while
+                    looking fabulous.</p>
+                <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-img">
+            <div class="blog-img-inner">
+                <img src="./image/blog/b1.jpg" alt="">
+                <span>Trending</span>
+            </div>
+            <div class="blog-img-text">
+                <div class="blog-meta">
+                    <span class="blog-date"><i class="far fa-calendar"></i> June 20, 2024</span>
+                    <span class="blog-author"><i class="far fa-user"></i> Emma Wilson</span>
+                </div>
+                <h3>The Ultimate Guide to Sustainable Fashion</h3>
                 <p>Discover how to build an eco-friendly wardrobe without compromising on style. Learn about
                     sustainable materials, ethical brands, and tips for reducing your fashion footprint while
                     looking fabulous.</p>
