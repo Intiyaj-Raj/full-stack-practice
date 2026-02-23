@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         #blog-hero {
-            margin: 80px 0;
+            margin-top: 180px;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             padding: 30px;
             height: 50vh;
@@ -184,7 +184,7 @@
         }
 
         .read-more-btn {
-            width: 60%;
+            width: 50%;
             border: 2px solid #088178;
             text-align: center;
             text-decoration: none;
@@ -202,6 +202,10 @@
             transform: translateX(5px);
             box-shadow: 0 5px 20px rgba(8, 129, 120, 0.4);
 
+        }
+
+        .blog-post-section {
+            display: flex;
         }
     </style>
 </head>
@@ -261,7 +265,10 @@
                 <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="blog-img">
+    </section>
+
+    <section class="blog-post-section">
+        <div class="blog-post">
             <div class="blog-img-inner">
                 <img src="./image/blog/b1.jpg" alt="">
                 <span>Trending</span>
@@ -278,7 +285,7 @@
                 <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="blog-img">
+        <div class="blog-post">
             <div class="blog-img-inner">
                 <img src="./image/blog/b1.jpg" alt="">
                 <span>Trending</span>
@@ -295,7 +302,24 @@
                 <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="blog-img">
+        <div class="blog-post">
+            <div class="blog-img-inner">
+                <img src="./image/blog/b1.jpg" alt="">
+                <span>Trending</span>
+            </div>
+            <div class="blog-img-text">
+                <div class="blog-meta">
+                    <span class="blog-date"><i class="far fa-calendar"></i> June 20, 2024</span>
+                    <span class="blog-author"><i class="far fa-user"></i> Emma Wilson</span>
+                </div>
+                <h3>The Ultimate Guide to Sustainable Fashion</h3>
+                <p>Discover how to build an eco-friendly wardrobe without compromising on style. Learn about
+                    sustainable materials, ethical brands, and tips for reducing your fashion footprint while
+                    looking fabulous.</p>
+                <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="blog-post">
             <div class="blog-img-inner">
                 <img src="./image/blog/b1.jpg" alt="">
                 <span>Trending</span>
@@ -313,6 +337,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- footer section -->
     <footer>
         <div id="footer">
