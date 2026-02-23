@@ -45,7 +45,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 14px 50px;
-      background-color: #dce0f2;
+      background: linear-gradient(360deg, #c2dbf5 0%, #ecdbdb 100%);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
       z-index: 999;
       position: fixed;
@@ -468,7 +468,7 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      background-color: #d5dbf8;
+      background: linear-gradient(180deg, #c2dbf5 0%, #ecdbdb 100%);
       padding: 50px;
       border-top: 1px solid #c5cfff;
       box-shadow: 0px 0 4px #8597f1;
