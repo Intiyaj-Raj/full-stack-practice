@@ -133,6 +133,7 @@
   #hero h4 {
       padding-bottom: 15px;
       font-size: 40px;
+      color: rgb(12, 12, 44, .9);
   }
 
   #hero h2 {
@@ -256,10 +257,6 @@
       font-size: 13px;
   }
 
-  .product-cart .price {
-      color: #088178;
-      padding: 4px 0;
-  }
 
   .buy-icon {
       color: #088178;
@@ -446,7 +443,7 @@
       padding: 0 40px;
   }
 
-  .form input {
+  .newsletter-sign-in {
       padding: 10px;
       background-color: #d1d0d0;
       border: none;
@@ -454,7 +451,7 @@
       width: 70%;
   }
 
-  .form button {
+  .sign-in {
       margin-left: 0;
       padding: 10px 20px;
       border: none;
@@ -462,6 +459,10 @@
       color: white;
       font-size: 14px;
       cursor: pointer;
+  }
+
+  .mobile-newsletter {
+      display: none;
   }
 
   #footer {
@@ -811,7 +812,7 @@
       text-align: center;
   }
 
-  .about-hero h1 {
+  .about-hero h2 {
       color: white;
       animation: fadeInDown .8s ease-out;
   }
@@ -898,4 +899,177 @@
 
   .about-product-img img {
       width: 33%;
+  }
+
+  .menu-bar {
+      display: none;
+  }
+
+  /* Small devices (phones) */
+  @media (max-width: 575px) {
+      .header-logo {
+          width: 20%;
+      }
+
+      .header-list {
+          display: none;
+      }
+
+      .menu-bar {
+          display: block;
+          font-size: 30px;
+      }
+  }
+
+  /* Large phones */
+  @media (min-width: 576px) and (max-width: 767px) {
+      nav ul li a {
+          font-size: 12px;
+      }
+
+      nav ul li {
+          padding: 0 10px;
+      }
+
+      /* hero section */
+      #hero {
+
+          height: 140vh;
+          margin-top: 40px;
+      }
+
+      #hero h4 {
+          font-size: 28px;
+      }
+
+      #hero h2 {
+          font-size: 32px;
+      }
+
+      #hero h1 {
+          font-size: 28px;
+          color: #088178;
+      }
+
+      /* features section */
+      #features .f-box {
+          height: 140px;
+          padding: 25px 8px;
+      }
+
+      /* product section */
+
+      .product-cart {
+          width: 33%;
+      }
+
+      .product-section h1 {
+          font-size: 35px;
+      }
+
+      /* banner section */
+      .big-banners-1 h4,
+      .big-banners-2 h4 {
+          font-size: 20px;
+      }
+
+      .big-banners-1 h2,
+      .big-banners-2 h2 {
+          font-size: 25px;
+          line-height: 1.2;
+          margin: 20px 0;
+      }
+
+      /* small banner section */
+      .small-banners h2 {
+          line-height: 1.2;
+          margin-bottom: 20px;
+      }
+
+      .newsletter-text h3 {
+          font-size: 20px;
+          width: 100%;
+      }
+
+      .form {
+          width: 70%;
+      }
+
+      .form input {
+          padding: 8px;
+          width: 70%;
+      }
+
+      .form button {
+          padding: 8px 20px;
+          font-size: 12px;
+      }
+  }
+
+  @media (min-width: 576px) and (max-width: 640px) {
+
+      .contact,
+      .myaccount,
+      .about {
+          width: 33%;
+      }
+
+      .myaccount a,
+      .about a,
+      .contact p {
+          font-size: 12px !important;
+      }
+
+      .socials a i {
+          font-size: 16px;
+      }
+
+      .newsletter-text {
+          display: none;
+      }
+
+      .form {
+          display: none;
+      }
+
+      .mobile-newsletter {
+          display: block;
+          width: 100%;
+      }
+
+      .mobile-newsletter h3 {
+          text-align: center;
+      }
+
+      .mobile-newsletter h5 {
+          font-size: 12px;
+      }
+
+      .newsletter-sign-in,
+      .sign-in {
+          margin-top: 20px;
+          padding: 8px;
+          font-size: 12px;
+      }
+
+      .install {
+          display: none;
+      }
+  }
+
+  /* Tablets */
+  @media (min-width: 768px) and (max-width: 900px) {
+      #hero {
+          margin-top: 5vh;
+      }
+
+      #hero h4,
+      #hero h1 {
+          font-size: 38px;
+      }
+
+      #hero h2 {
+          font-size: 42px;
+      }
+
   }
