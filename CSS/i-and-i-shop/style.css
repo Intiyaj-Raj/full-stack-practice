@@ -893,7 +893,7 @@
   .about-product-img {
       display: flex;
       justify-content: space-between;
-      gap: 15px;
+      gap: 20px;
   }
 
   .about-product-img img {
