@@ -6,6 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>i&i-shop-about</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .about-hero {
+            background-image: url("image/about/banner.png");
+            background-size: cover;
+            background-position: center;
+            margin: 140px 0 50px 0;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            color: white;
+            animation: fadeInDown .8s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-hero h4 {
+            color: #e6ae2c;
+            margin-bottom: 90px;
+            animation: fadeInUp .8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-video-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+
+        }
+
+        .about-video {
+            width: 60%;
+        }
+
+        .about-video video {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .video-text {
+            width: 35%;
+        }
+
+        .video-text p {
+            font-size: 12px;
+        }
+
+        .about-products {
+            width: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 50px;
+
+        }
+
+        .about-product-text {
+            margin: 20px 0;
+            text-align: center;
+            background-image: url("./image/about/a5.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 20px 0;
+        }
+
+        .about-product-img {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .about-product-img img {
+            width: 33%;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +135,46 @@
         </div>
     </header>
 
+
+    <!-- about section -->
+
+    <div class="about-section">
+        <div class="about-hero">
+            <h2>Shop Smart. Shop Easy.</h2>
+            <h4>Best quality products at best prices. Fast delivery and easy return.</h4>
+            <a href="./index.html" class="banner-btn">Start Shopping</a>
+        </div>
+
+
+        <div class="about-video-section">
+            <div class="about-video">
+                <video src="./image/about/1.mp4" autoplay></video>
+            </div>
+            <div class="video-text">
+                <h2>I & I Ecommerce</h2>
+                <p> I & I Ecommerce is your trusted online shopping destination.
+                    We offer high-quality products at affordable prices so everyone can shop without worry.
+                </p>
+                <p>Our mission is to make online shopping simple, fast, and secure.
+                    We focus on customer satisfaction, smooth website experience, and quick delivery.</p>
+                <p> Watch this video to learn more about our journey, our vision, and how we are building a better
+                    shopping experience for you.</p>
+                <a href="#" class="read-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="about-products">
+            <div class="about-product-text">
+                <h1>Quality Products</h1>
+                <h4 style="color: #771818;">We carefully choose products that give you value and trust.</h4>
+            </div>
+            <div class="about-product-img">
+                <img src="./image/about/a1.png" alt="">
+                <img src="./image/about/a2.jpg" alt="">
+                <img src="./image/about/a3.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <!-- footer section -->
     <footer>
