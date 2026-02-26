@@ -228,7 +228,6 @@
       padding: 13px;
       margin-bottom: 30px;
       border-radius: 25px;
-      position: relative;
       box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
       transition: box-shadow 0.2s ease;
 
@@ -261,15 +260,19 @@
       font-size: 13px;
   }
 
+  .price-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 10px;
+  }
 
-  .buy-icon {
+  .price-box a {
+      text-decoration: none;
       color: #088178;
       background-color: #c7e9e75e;
-      padding: 15px;
-      border-radius: 50px;
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
+      padding: 5px;
+      border-radius: 50%;
   }
 
   #off-banner {
