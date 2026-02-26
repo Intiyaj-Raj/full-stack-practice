@@ -167,7 +167,6 @@
   #features {
       display: flex;
       justify-content: space-around;
-      align-items: center;
   }
 
   #features .f-box {
@@ -230,7 +229,6 @@
       border-radius: 25px;
       box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
       transition: box-shadow 0.2s ease;
-
   }
 
   .product-cart:hover {
@@ -325,8 +323,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      /* border: 2px solid red;
-            background: black; */
       gap: 10px;
   }
 
@@ -934,19 +930,33 @@
 
       /* hero section */
       #hero {
-          height: 70vh;
+          height: 63vh;
           padding: 20px;
           margin: 0;
-          background: linear-gradient(to right, #eec5d5, #a1cad8);
+          background-image:
+              linear-gradient(rgba(159, 233, 63, 0.5), rgba(249, 184, 184, 0.5)),
+              url("./image/about/a5.jpg");
+          background-size: cover;
+          background-position: center;
+          align-items: center;
       }
 
-      #hero h4,
+      #hero h4 {
+          font-size: 35px;
+          margin-top: 80px;
+          color: #771818;
+      }
+
       #hero h1 {
           font-size: 35px;
       }
 
       #hero h2 {
           font-size: 40px;
+      }
+
+      #hero p {
+          font-size: 20px;
       }
 
       #hero .btn {
@@ -956,6 +966,14 @@
       #features {
           flex-wrap: wrap;
           padding: 0 20px;
+      }
+
+      .product-section h1 {
+          font-size: 32px;
+      }
+
+      .product-section p {
+          font-size: 20px;
       }
 
       #features .f-box {
@@ -975,6 +993,49 @@
 
       .product-cart img {
           border-radius: 0;
+      }
+
+      #footer {
+          background: linear-gradient(180deg, #c2dbf5 0%, #ecdbdb 100%);
+          padding: 20px 10px;
+      }
+
+      .contact,
+      .myaccount {
+          width: 25%;
+      }
+
+      .about,
+      .install {
+          width: 20%;
+          /* border-right: 2px solid red; */
+      }
+
+      .contact a img {
+          width: 50%;
+      }
+
+      .myaccount h3,
+      .about h3,
+      .contact h3,
+      .install h3,
+      .myaccount a,
+      .about a,
+      .contact p,
+      .install p {
+          font-size: 5px;
+      }
+
+      .twitter {
+          display: none;
+      }
+
+      .download {
+          flex-direction: column;
+      }
+
+      .download img {
+          width: 100%;
       }
   }
 
@@ -1063,24 +1124,8 @@
       }
   }
 
-  @media (min-width: 576px) and (max-width: 640px) {
-
-      .contact,
-      .myaccount,
-      .about {
-          width: 33%;
-      }
-
-      .myaccount a,
-      .about a,
-      .contact p {
-          font-size: 12px !important;
-      }
-
-      .socials a i {
-          font-size: 16px;
-      }
-
+  /* @media (min-width: 576px) and (max-width: 640px) { */
+  @media (max-width: 640px) {
       .newsletter-text {
           display: none;
       }
@@ -1109,8 +1154,33 @@
           font-size: 12px;
       }
 
+      /* footer section */
+      .contact {
+          width: 30%;
+      }
+
+      .myaccount,
+      .about,
       .install {
-          display: none;
+          width: 20%;
+      }
+
+      .myaccount h3,
+      .about h3,
+      .contact h3,
+      .install h3 {
+          font-size: 14px;
+      }
+
+      .myaccount a,
+      .about a,
+      .contact p,
+      .install p {
+          font-size: 12px !important;
+      }
+
+      .socials a i {
+          font-size: 16px;
       }
   }
 
