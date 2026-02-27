@@ -337,6 +337,7 @@
       padding: 25px;
       background-size: cover;
       backdrop-filter: blur(8%);
+      background-position: center;
   }
 
   .big-banners-1 {
@@ -380,6 +381,7 @@
       justify-content: center;
       flex-direction: column;
       background-size: cover;
+      background-position: center;
       margin-bottom: 50px;
 
   }
@@ -396,15 +398,15 @@
   }
 
   .small-banners-1 {
-      background-image: url("./image/banner/b7.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b7.jpg");
   }
 
   .small-banners-2 {
-      background-image: url("./image/banner/b4.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b4.jpg");
   }
 
   .small-banners-3 {
-      background-image: url("./image/banner/b18.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b18.jpg");
   }
 
   #newsletter {
@@ -464,9 +466,9 @@
       cursor: pointer;
   }
 
-  .mobile-newsletter {
+  /* .mobile-newsletter {
       display: none;
-  }
+  } */
 
   #footer {
       display: flex;
@@ -933,9 +935,7 @@
           height: 63vh;
           padding: 20px;
           margin: 0;
-          background-image:
-              linear-gradient(rgba(159, 233, 63, 0.5), rgba(249, 184, 184, 0.5)),
-              url("./image/about/a5.jpg");
+          background-image: linear-gradient(rgba(159, 233, 63, 0.5), rgba(249, 184, 184, 0.5)), url("./image/about/a5.jpg");
           background-size: cover;
           background-position: center;
           align-items: center;
@@ -980,6 +980,7 @@
           width: 33%;
       }
 
+      /* product or new arrival section */
       .product-collection {
           padding: 0 20px;
           width: 100%;
@@ -995,6 +996,77 @@
           border-radius: 0;
       }
 
+      /* off banner section */
+      #off-banner {
+          height: 30vh;
+      }
+
+      #off-banner h4 {
+          font-size: 30px;
+      }
+
+      #off-banner h2 {
+          font-size: 18px;
+      }
+
+      .explore-btn {
+          padding: 12px 20px;
+          font-size: 16px;
+          margin-top: 10px;
+      }
+
+      /* banner section */
+
+      #banners {
+          margin: 0;
+      }
+
+      .big-banners div {
+          height: 250px;
+          width: 50%;
+          padding: 20px;
+          margin: 10px 0;
+      }
+
+      .big-banners div h2 {
+          font-size: 25px;
+          margin: 20px 0;
+          line-height: 1.2;
+      }
+
+      .banner-btn {
+          margin-top: 10px;
+      }
+
+      .small-banners div {
+          height: 200px;
+          margin: 35px 0;
+      }
+
+      .small-banners h2 {
+          line-height: 1.2;
+          margin-bottom: 10px;
+          padding: 0 10px;
+      }
+
+      .small-banners h5 {
+          padding: 0 10px;
+          font-size: 16px;
+          background: rgba(0, 0, 0, 0.4);
+      }
+
+      .small-banners-1 {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b7.jpg");
+      }
+
+      .small-banners-2 {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b4.jpg");
+      }
+
+      .small-banners-3 {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/banner/b18.jpg");
+      }
+
       #footer {
           background: linear-gradient(180deg, #c2dbf5 0%, #ecdbdb 100%);
           padding: 20px 10px;
@@ -1008,7 +1080,6 @@
       .about,
       .install {
           width: 20%;
-          /* border-right: 2px solid red; */
       }
 
       .contact a img {
@@ -1078,7 +1149,8 @@
       /* product section */
 
       .product-cart {
-          width: 33%;
+          width: 30%;
+          height: 300px;
       }
 
       .product-section h1 {
@@ -1125,16 +1197,17 @@
   }
 
   /* @media (min-width: 576px) and (max-width: 640px) { */
-  @media (max-width: 640px) {
-      .newsletter-text {
-          display: none;
-      }
+  @media (max-width: 670px) {
 
-      .form {
+      /* .newsletter-text {
           display: none;
-      }
+      } */
 
-      .mobile-newsletter {
+      /* .form {
+          display: none;
+      } */
+
+      /* .mobile-newsletter {
           display: block;
           width: 100%;
       }
@@ -1145,14 +1218,14 @@
 
       .mobile-newsletter h5 {
           font-size: 12px;
-      }
+      } */
 
-      .newsletter-sign-in,
+      /* .newsletter-sign-in,
       .sign-in {
           margin-top: 20px;
           padding: 8px;
           font-size: 12px;
-      }
+      } */
 
       /* footer section */
       .contact {
@@ -1181,6 +1254,26 @@
 
       .socials a i {
           font-size: 16px;
+      }
+
+      /* newletter section */
+
+      #newsletter {
+          background-position: center;
+          justify-content: space-evenly;
+          flex-direction: column;
+          margin: 0 0 40px 0;
+          height: 210px;
+      }
+
+      .newsletter-text,
+      .form {
+          width: 100%;
+          text-align: center;
+      }
+
+      .newsletter-text h5 {
+          font-size: 15px;
       }
   }
 
