@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: rgb(255, 246, 246);
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+        .logo img {
+            width: 85%;
+        }
+
+        .menu-list {
+            width: 81%;
+        }
+
+        .menu-list ul {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            list-style: none;
+            gap: 15px;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: "Cormorant Infant", serif;
+        }
+
+        .menu-list ul li a::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 1.5px;
+            bottom: -5px;
+            left: 0;
+            background-color: #ccaa6b;
+            transition: 0.4s ease;
+        }
+
+        .menu-list ul li a:hover::before {
+            width: 100%;
+        }
+
+        .drop-down {
+            font-size: 10px;
+        }
+
+        .menu-bar i {
+            background: #ccaa6b;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            display: none;
+        }
+
+        .menu-icon {
+            width: 9%;
+            position: relative;
+        }
+
+        .search-bar {
+            display: flex;
+            position: absolute;
+            bottom: -40px;
+            right: 100px;
+            display: none;
+        }
+
+        .search-bar input {
+            outline: none;
+            border: 1px solid #ccaa6b;
+            padding: 10px;
+        }
+
+        .search-btn {
+            background: #ccaa6b;
+            position: relative;
+            color: white;
+        }
+
+        #up-icon {
+            width: 20px;
+            position: absolute;
+            top: -15px;
+            right: 23px;
+        }
+
+        .search-icon:hover+.search-bar {
+            display: block;
+            display: flex;
+        }
+
+        .hero-slider {
+            margin-top: 108px;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: heroSlide 8s infinite;
+        }
+
+        .hero-slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 100%;
+        }
+
+        @keyframes heroSlide {
+
+            0%,
+            20% {
+                transform: translateX(0);
+            }
+
+            25%,
+            40% {
+                transform: translateX(-100%);
+            }
+
+            45%,
+            60% {
+                transform: translateX(-200%);
+            }
+
+            65%,
+            80% {
+                transform: translateX(-300%);
+            }
+
+            85%,
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+
+        .hero-btn {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .hero-btn a i {
+            background: white;
+            padding: 18px 25px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+                0 0 30px rgba(255, 255, 255, 0.7),
+                0 0 45px rgba(255, 255, 255, 0.5);
+        }
+
+        .stone-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stone-heading {
+            margin: 40px auto;
+        }
+
+        .stone-heading h2 {
+            font-size: 45px;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+
+        .stone-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 50px;
+        }
+
+        .stone-img span p {
+            padding: 20px 0;
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav seciton -->
+    <nav>
+        <div class="logo">
+            <img src="./image/logo.png" alt="">
+        </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="#">JEWELRY <span class="drop-down"><sup>▼</sup></span></a></li>
+                <li><a href="#">DIAMONDS <span class="drop-down"><sup>▼</sup></span></a></li>
+                <li><a href="#">GEMSTONES</a></li>
+                <li><a href="#">WATCHES</a></li>
+                <li><a href="#">CATALOG</a></li>
+                <li><a href="#">CUSTOM</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <span class="search-bar">
+                <input type="search" name="" id="" placeholder="Search Here...">
+                <input type="button" value="Search" class="search-btn"><img src="./image/up.png" alt="" id="up-icon">
+            </span>
+            <a href="https://fdg-us.com/login?referer="> <i class="fa-regular fa-user"></i></a>
+            <a href="https://fdg-us.com/login?referer=login"> <i class="fa-regular fa-heart"></i></a>
+        </div>
+        <!-- mobile menu -->
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero-slider">
+        <div class="hero-slides">
+            <img src="./image/hero/valentines.jpg" alt="">
+            <img src="./image/hero/banner1.jpg" alt="">
+            <img src="./image/hero/banner2.jpg" alt="">
+            <img src="./image/hero/banner3.jpg" alt="">
+            <img src="./image/hero/banner4.jpg" alt="">
+        </div>
+        <div class="hero-btn">
+            <a href="#" class="hero-left-btn" class="hero-left-btn"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#" class="hero-right-btn" class="hero-right-btn"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <!-- stone section -->
+    <div class="stone-section">
+        <div class="stone-heading">
+            <h2>Select Your Stone</h2>
+        </div>
+        <div class="stone-img">
+            <span>
+                <img src="./image/stone/round-home.png" alt="">
+                <p>Diamond</p>
+            </span>
+            <span>
+                <img src="./image/stone/lab_grown-home.png" alt="">
+                <p> Lab Grown Diamond</p>
+            </span>
+
+            <span>
+                <img src="./image/stone/blue_saphhire-home.png" alt="">
+                <p>Blue Sapphire</p>
+            </span>
+            <span>
+
+                <img src="./image/stone/ruby-home.png" alt="">
+                <p> Ruby</p>
+            </span>
+            <span>
+                <img src="./image/stone/emerald-home.png" alt="">
+                <p>Emerald</p>
+            </span>
+            <span>
+                <img src="./image/stone/semi_pricious-home.png" alt="">
+                <p> Semi-Precious</p>
+            </span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
