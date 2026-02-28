@@ -30,6 +30,7 @@
             left: 0;
             z-index: 1;
             background: rgb(255, 246, 246);
+
         }
 
         .logo {
@@ -201,6 +202,7 @@
         .stone-section {
             display: flex;
             flex-direction: column;
+            padding: 0 20px;
         }
 
         .stone-heading {
@@ -225,6 +227,48 @@
             padding: 20px 0;
             text-align: center;
             font-family: sans-serif;
+        }
+
+        .stone-buy {
+            height: 80vh;
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            align-items: center;
+        }
+
+        .stone-buy span img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .stone-buy-img {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stone-buy-img a {
+            outline: none;
+            padding: 12px 0;
+            border: 2px solid #6c757d;
+            width: 70%;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-family: sans-serif;
+            margin-top: 30px;
+        }
+
+        .stone-buy-text {
+            font-family: 'Cormorant Infant';
+            text-align: center;
+            letter-spacing: 3px;
+            line-height: 40px;
+        }
+
+        .stone-buy-text h1 {
+            font-size: 35px;
         }
     </style>
 </head>
@@ -275,6 +319,7 @@
             <a href="#" class="hero-left-btn" class="hero-left-btn"><i class="fa-solid fa-angle-left"></i></a>
             <a href="#" class="hero-right-btn" class="hero-right-btn"><i class="fa-solid fa-angle-right"></i></a>
         </div>
+
     </div>
 
     <!-- stone section -->
@@ -310,9 +355,23 @@
                 <p> Semi-Precious</p>
             </span>
         </div>
+
+        <div class="stone-buy">
+            <span class="stone-buy-img">
+                <img src="./image/stone/ring-ban.png" alt="">
+                <a href="" class="stone-btn">SHOP GEMSTONE JEWELRY</a>
+            </span>
+            <span class="stone-buy-text">
+                <h1>The World of Color
+                    <i> Forever Yours</i>
+                </h1>
+            </span>
+            <span class="stone-buy-img">
+                <img src="./image/stone/gems.png" alt="">
+                <a href="" class="stone-btn">SHOP GEMSTONES</a>
+            </span>
+        </div>
     </div>
-
-
 </body>
 
 </html>
