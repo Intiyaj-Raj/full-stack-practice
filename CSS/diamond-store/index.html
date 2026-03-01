@@ -13,6 +13,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .story {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .story-menu {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .story-list {
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            background: #9A9A97;
+            border-radius: 25px;
+            padding: 14px 20px;
+            color: white;
+            margin: 70px 0;
+        }
+
+        .story-img {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            object-fit: contain;
+        }
+
+        .story-img img {
+            width: 100%;
+        }
+
+        .story-btn {
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            padding: 25px 22px;
+            border-radius: 50%;
+            background: #C4C4BE;
+            top: 27%;
+            right: 15%;
+            font-size: 28px;
+            color: white;
+            margin-left: 40px;
+        }
+
+        .story-btn:hover {
+            background: #b0b1b3;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -204,87 +264,83 @@
 
     <!-- story section -->
     <div class="story">
-        <div class="story-bar">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-backward"></i>
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-solid fa-arrow-right"></i>
-            <i class="fa-solid fa-forward"></i>
-            <i class="fa-solid fa-expand"></i>
+        <div class="story-menu">
+            <span class="story-list">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> <i class="fa-solid fa-play"></i> <i
+                    class="fa-solid fa-backward"></i> <i class="fa-solid fa-arrow-left"></i> <i
+                    class="fa-solid fa-arrow-right"></i> <i class="fa-solid fa-forward"></i> <i
+                    class="fa-solid fa-expand"></i>
+            </span>
+            <span class="story-img"> <img src="./image/story/1.jpg" alt="">
+            </span>
+            <a href="#" class="story-btn"><i class="fa-solid fa-angle-right"></i></a>
         </div>
-
-        <div class="story-img">
-            <img src="./image/story/1.jpg" alt="">
-
-            <div class="story-sub-img">
-                <span>
-                    <img src="./image/story/1-thumb.jpg" alt="">
-                    <img src="./image/story/2-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/3-thumb.jpg" alt="">
-                    <img src="./image/story/4-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/5-thumb.jpg" alt="">
-                    <img src="./image/story/6-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/7-thumb.jpg" alt="">
-                    <img src="./image/story/8-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/9-thumb.jpg" alt="">
-                    <img src="./image/story/10-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/11-thumb.jpg" alt="">
-                    <img src="./image/story/12-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/13-thumb.jpg" alt="">
-                    <img src="./image/story/14-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/15-thumb.jpg" alt="">
-                    <img src="./image/story/16-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/17-thumb.jpg" alt="">
-                    <img src="./image/story/18-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/19-thumb.jpg" alt="">
-                    <img src="./image/story/20-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/21-thumb.jpg" alt="">
-                    <img src="./image/story/22-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/23-thumb.jpg" alt="">
-                    <img src="./image/story/24-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/25-thumb.jpg" alt="">
-                    <img src="./image/story/26-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/27-thumb.jpg" alt="">
-                    <img src="./image/story/28-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/29-thumb.jpg" alt="">
-                    <img src="./image/story/30-thumb.jpg" alt="">
-                </span>
-                <span>
-                    <img src="./image/story/31-thumb.jpg" alt="">
-                    <img src="./image/story/32-thumb.jpg" alt="">
-                </span>
-            </div>
+        <div class="story-thumbnail">
+            <span>
+                <img src="./image/story/1-thumb.jpg" alt="">
+                <img src="./image/story/2-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/3-thumb.jpg" alt="">
+                <img src="./image/story/4-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/5-thumb.jpg" alt="">
+                <img src="./image/story/6-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/7-thumb.jpg" alt="">
+                <img src="./image/story/8-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/9-thumb.jpg" alt="">
+                <img src="./image/story/10-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/11-thumb.jpg" alt="">
+                <img src="./image/story/12-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/13-thumb.jpg" alt="">
+                <img src="./image/story/14-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/15-thumb.jpg" alt="">
+                <img src="./image/story/16-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/17-thumb.jpg" alt="">
+                <img src="./image/story/18-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/19-thumb.jpg" alt="">
+                <img src="./image/story/20-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/21-thumb.jpg" alt="">
+                <img src="./image/story/22-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/23-thumb.jpg" alt="">
+                <img src="./image/story/24-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/25-thumb.jpg" alt="">
+                <img src="./image/story/26-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/27-thumb.jpg" alt="">
+                <img src="./image/story/28-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/29-thumb.jpg" alt="">
+                <img src="./image/story/30-thumb.jpg" alt="">
+            </span>
+            <span>
+                <img src="./image/story/31-thumb.jpg" alt="">
+                <img src="./image/story/32-thumb.jpg" alt="">
+            </span>
         </div>
-
     </div>
 </body>
 
