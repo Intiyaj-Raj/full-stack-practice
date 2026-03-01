@@ -24,3 +24,355 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(255, 246, 246);
+
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 85%;
+}
+
+.menu-list {
+    width: 81%;
+}
+
+.menu-list ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Cormorant Infant", serif;
+}
+
+.menu-list ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ccaa6b;
+    transition: 0.4s ease;
+}
+
+.menu-list ul li a:hover::before {
+    width: 100%;
+}
+
+.drop-down {
+    font-size: 10px;
+}
+
+.menu-bar i {
+    background: #ccaa6b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+.menu-icon {
+    width: 9%;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    right: 100px;
+    display: none;
+}
+
+.search-bar input {
+    outline: none;
+    border: 1px solid #ccaa6b;
+    padding: 10px;
+}
+
+.search-btn {
+    background: #ccaa6b;
+    position: relative;
+    color: white;
+}
+
+#up-icon {
+    width: 20px;
+    position: absolute;
+    top: -15px;
+    right: 23px;
+}
+
+.search-icon:hover+.search-bar {
+    display: block;
+    display: flex;
+}
+
+.hero-slider {
+    margin-top: 108px;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: heroSlide 10s infinite;
+}
+
+.hero-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+@keyframes heroSlide {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    40% {
+        transform: translateX(-100%);
+    }
+
+    45%,
+    60% {
+        transform: translateX(-200%);
+    }
+
+    65%,
+    80% {
+        transform: translateX(-300%);
+    }
+
+    85%,
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.hero-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.multi-use-left-btn,
+.multi-use-right-btn {
+    background: rgb(255, 255, 255, .1);
+    border: 2px solid rgb(213, 218, 224, 0.8);
+    padding: 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+        0 0 30px rgba(255, 255, 255, 0.7),
+        0 0 45px rgba(255, 255, 255, 0.5);
+}
+
+.stone-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.heading {
+    color: #212529;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.heading h2 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Cormorant Infant';
+}
+
+.stone-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.stone-img span p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.stone-buy {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    align-items: center;
+}
+
+.stone-buy span img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.stone-buy-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stone-buy-img a {
+    outline: none;
+    padding: 12px 0;
+    border: 2px solid #6c757d;
+    width: 75%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.stone-buy-text {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 40px;
+
+}
+
+.stone-buy-text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+/* birthstone section */
+.birthstone-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slidder2 {
+    display: flex;
+    gap: 20px;
+    animation: birthstoneSlide 15s linear infinite;
+}
+
+.slidder2 img {
+    width: 150px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+@keyframes birthstoneSlide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slidderBtn {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+/* jewelery style section */
+
+.heading p {
+    font-size: 18px;
+    padding: 10px 20px 0 20px;
+}
+
+.jewelery-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.jewelery-card-img {
+    width: 24%;
+    height: 100vh;
+}
+
+.jewelery-card-img a {
+    display: block;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.jewelery-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.jewelery-card-img:hover img {
+    transform: scale(1.2);
+}
+
+.jewelery-card-img p {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}

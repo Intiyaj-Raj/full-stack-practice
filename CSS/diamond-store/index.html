@@ -12,264 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        nav {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 10px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background: rgb(255, 246, 246);
-
-        }
-
-        .logo {
-            width: 10%;
-        }
-
-        .logo img {
-            width: 85%;
-        }
-
-        .menu-list {
-            width: 81%;
-        }
-
-        .menu-list ul {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            list-style: none;
-            gap: 15px;
-        }
-
-        a {
-            position: relative;
-            text-decoration: none;
-            color: #000;
-            font-weight: 700;
-            font-size: 14px;
-            font-family: "Cormorant Infant", serif;
-        }
-
-        .menu-list ul li a::before {
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 1.5px;
-            bottom: -5px;
-            left: 0;
-            background-color: #ccaa6b;
-            transition: 0.4s ease;
-        }
-
-        .menu-list ul li a:hover::before {
-            width: 100%;
-        }
-
-        .drop-down {
-            font-size: 10px;
-        }
-
-        .menu-bar i {
-            background: #ccaa6b;
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: white;
-            font-size: 20px;
-            display: none;
-        }
-
-        .menu-icon {
-            width: 9%;
-            position: relative;
-        }
-
-        .search-bar {
-            display: flex;
-            position: absolute;
-            bottom: -40px;
-            right: 100px;
-            display: none;
-        }
-
-        .search-bar input {
-            outline: none;
-            border: 1px solid #ccaa6b;
-            padding: 10px;
-        }
-
-        .search-btn {
-            background: #ccaa6b;
-            position: relative;
-            color: white;
-        }
-
-        #up-icon {
-            width: 20px;
-            position: absolute;
-            top: -15px;
-            right: 23px;
-        }
-
-        .search-icon:hover+.search-bar {
-            display: block;
-            display: flex;
-        }
-
-        .hero-slider {
-            margin-top: 108px;
-            width: 100%;
-            height: 80vh;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .hero-slides {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            animation: heroSlide 8s infinite;
-        }
-
-        .hero-slides img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: 100%;
-        }
-
-        @keyframes heroSlide {
-
-            0%,
-            20% {
-                transform: translateX(0);
-            }
-
-            25%,
-            40% {
-                transform: translateX(-100%);
-            }
-
-            45%,
-            60% {
-                transform: translateX(-200%);
-            }
-
-            65%,
-            80% {
-                transform: translateX(-300%);
-            }
-
-            85%,
-            100% {
-                transform: translateX(-400%);
-            }
-        }
-
-        .hero-btn {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-
-        .hero-btn a i {
-            background: white;
-            padding: 18px 25px;
-            border-radius: 50%;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
-                0 0 30px rgba(255, 255, 255, 0.7),
-                0 0 45px rgba(255, 255, 255, 0.5);
-        }
-
-        .stone-section {
-            display: flex;
-            flex-direction: column;
-            padding: 0 20px;
-        }
-
-        .stone-heading {
-            margin: 40px auto;
-        }
-
-        .stone-heading h2 {
-            font-size: 45px;
-            font-weight: 500;
-            letter-spacing: 3px;
-        }
-
-        .stone-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            gap: 50px;
-        }
-
-        .stone-img span p {
-            padding: 20px 0;
-            text-align: center;
-            font-family: sans-serif;
-        }
-
-        .stone-buy {
-            height: 80vh;
-            display: grid;
-            grid-template-columns: 33% 34% 33%;
-            align-items: center;
-        }
-
-        .stone-buy span img {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .stone-buy-img {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .stone-buy-img a {
-            outline: none;
-            padding: 12px 0;
-            border: 2px solid #6c757d;
-            width: 75%;
-            text-align: center;
-            letter-spacing: 2px;
-            font-weight: 200;
-            font-family: sans-serif;
-            margin-top: 30px;
-        }
-
-        .stone-buy-text {
-            font-family: 'Cormorant Infant';
-            text-align: center;
-            letter-spacing: 3px;
-            line-height: 40px;
-        }
-
-        .stone-buy-text h1 {
-            font-size: 35px;
-        }
     </style>
 </head>
 
@@ -316,15 +62,15 @@
             <img src="./image/hero/banner4.jpg" alt="">
         </div>
         <div class="hero-btn">
-            <a href="#" class="hero-left-btn" class="hero-left-btn"><i class="fa-solid fa-angle-left"></i></a>
-            <a href="#" class="hero-right-btn" class="hero-right-btn"><i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" class="multi-use-left-btn"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#" class="multi-use-right-btn"><i class="fa-solid fa-angle-right"></i></a>
         </div>
 
     </div>
 
     <!-- stone section -->
     <div class="stone-section">
-        <div class="stone-heading">
+        <div class="heading">
             <h2>Select Your Stone</h2>
         </div>
         <div class="stone-img">
@@ -377,7 +123,63 @@
         </div>
     </div>
 
-
+    <!-- Birthstone  section -->
+    <div class="birthstone-section">
+        <div class="heading">
+            <h2>Shop By Birthstone</h2>
+        </div>
+        <div class="slidder2">
+            <a href="#"><img src="./image/birth-stone/JAN.jpg" alt="January"></a>
+            <a href="#"><img src="./image/birth-stone/FEB.jpg" alt="February"></a>
+            <a href="#"><img src="./image/birth-stone/MARCH.jpg" alt="March"></a>
+            <a href="#"><img src="./image/birth-stone/APRIL.jpg" alt="April"></a>
+            <a href="#"><img src="./image/birth-stone/MAY.jpg" alt="May"></a>
+            <a href="#"><img src="./image/birth-stone/JUNE.jpg" alt="June"></a>
+            <a href="#"><img src="./image/birth-stone/JULY.jpg" alt="July"></a>
+            <a href="#"><img src="./image/birth-stone/AUG.jpg" alt="August"></a>
+            <a href="#"><img src="./image/birth-stone/SEPT.jpg" alt="September"></a>
+            <a href="#"><img src="./image/birth-stone/OCT.jpg" alt="October"></a>
+            <a href="#"><img src="./image/birth-stone/NOV.jpg" alt="November"></a>
+            <a href="#"><img src="./image/birth-stone/DEC.jpg" alt="December"></a>
+        </div>
+        <div class="slidderBtn">
+            <a href="#" class="multi-use-left-btn"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#" class="multi-use-right-btn"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </div>
+    <!-- Jewelery-style-section -->
+    <div class="jewelery-style-section">
+        <div class="heading">
+            <h2>Select Your Jewelry Style</h2>
+            <p>Pick jewelry that your customer would love to bits.</p>
+        </div>
+        <div class="jewelery-card">
+            <div class="jewelery-card-img">
+                <a href="">
+                    <img src="./image/jewelry-style/ring.png" alt="">
+                </a>
+                <p>Rings</p>
+            </div>
+            <div class="jewelery-card-img">
+                <a href="">
+                    <img src="./image/jewelry-style/earring.png" alt="">
+                </a>
+                <p>Earrings</p>
+            </div>
+            <div class="jewelery-card-img">
+                <a href="">
+                    <img src="./image/jewelry-style/pendents.png" alt="">
+                </a>
+                <p> Pendents</p>
+            </div>
+            <div class="jewelery-card-img">
+                <a href="">
+                    <img src="./image/jewelry-style/bracelets.png" alt="">
+                </a>
+                <p>Bracelets</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
