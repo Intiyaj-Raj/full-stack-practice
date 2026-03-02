@@ -343,7 +343,7 @@ a {
     display: block;
     width: 100%;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .jewelery-card-img img {
@@ -361,6 +361,9 @@ a {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding: 10px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .banner img {
@@ -496,7 +499,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 20px;
+    padding: 100px 0;
 }
 
 .choose-card {
@@ -594,7 +597,6 @@ footer {
 }
 
 .f-border {
-    border-right: 1px solid #b0b1b3;
     border-left: 1px solid #b0b1b3;
 }
 
@@ -648,10 +650,10 @@ footer {
     /* stone section */
 
     .stone-img {
-        width: 70%;
+        width: 80%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .stone-img span {
@@ -659,9 +661,12 @@ footer {
         text-align: center;
     }
 
+    .stone-img {
+        width: 75%;
+    }
+
     .stone-img span img {
-        width: 90%;
-        object-fit: contain;
+        width: 70%;
     }
 
     /* story section */
@@ -686,7 +691,7 @@ footer {
     .choose-container {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .choose-card {
@@ -717,4 +722,73 @@ footer {
     }
 }
 
-@media (max-width:770px) {}
+@media (max-width:770px) {
+    .stone-img {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .stone-img span {
+        width: 33%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .stone-img {
+        width: 70%;
+    }
+
+    .stone-buy {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 80px 20px;
+    }
+
+    .stone-buy span img {
+        width: 65%;
+        object-fit: contain;
+    }
+
+    .stone-buy-img a {
+        margin: 20px 0;
+        width: 40%;
+    }
+
+    .stone-buy-text {
+        margin: 80px 0;
+    }
+
+    .stone-buy-text h1 {
+        font-size: 45px;
+        line-height: 1.3;
+    }
+
+    .jewelery-card {
+        flex-wrap: wrap;
+    }
+
+    .jewelery-card-img {
+        width: 48%;
+        padding-top: 20px;
+    }
+
+    .choose-container {
+        padding: 100px 20px;
+        gap: 40px;
+    }
+
+    .choose-card {
+        width: 100%;
+    }
+
+    .f-logo,
+    .f-div {
+        width: 50%;
+    }
+
+    .f-logo img {
+        width: 120% !important;
+    }
+}
+
+@media (max-width:575px) {}
