@@ -70,12 +70,7 @@ a {
     font-size: 10px;
 }
 
-.menu-bar i {
-    background: #ccaa6b;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
+.menu-bar {
     display: none;
 }
 
@@ -193,13 +188,16 @@ a {
 .stone-section {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .heading {
     color: #212529;
     text-align: center;
-    margin: 35px 0;
+    margin: 50px 0;
 }
 
 .heading h2 {
@@ -217,16 +215,24 @@ a {
     gap: 50px;
 }
 
+.stone-img span {
+    text-align: center;
+}
+
+
 .stone-img span p {
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
 .stone-buy {
-    height: 80vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 33% 34% 33%;
     align-items: center;
+    background: #d6d6d8;
+    margin-top: 50px;
+    padding: 50px 20px;
 }
 
 .stone-buy span img {
@@ -281,8 +287,8 @@ a {
 }
 
 .slidder2 img {
-    width: 150px;
-    height: 200px;
+    width: 220px;
+    height: 250px;
     flex-shrink: 0;
 }
 
@@ -314,7 +320,7 @@ a {
 /* jewelery style section */
 .jewelery-style-section {
     background-color: rgb(215, 215, 208);
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .heading p {
@@ -409,6 +415,7 @@ a {
     gap: 20px;
     position: relative;
     background-color: rgb(215, 215, 208);
+    padding: 50px 0;
 }
 
 .story-menu {
@@ -431,7 +438,6 @@ a {
 
 .story-img {
     width: 50%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     object-fit: contain;
@@ -460,7 +466,7 @@ a {
 }
 
 .story-thumbnail {
-    width: 50%;
+    width: 49%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -488,10 +494,9 @@ a {
 .choose-container {
     width: 100%;
     display: flex;
-    height: 90vh;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 100px 20px;
 }
 
 .choose-card {
@@ -499,8 +504,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    height: 300px;
     padding: 15px 20px;
-    min-height: 250px;
     width: 23.5%;
     border: 1px solid #ccaa6b;
     border-radius: 10px;
@@ -510,7 +515,7 @@ a {
     border: 1px solid #ccaa6b;
     border-radius: 50%;
     padding: 10px;
-    width: 60px;
+    width: 70px;
     object-fit: contain;
 }
 
@@ -532,7 +537,7 @@ a {
 
 /* footer section */
 footer {
-    R width: 100%;
+    width: 100%;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -588,6 +593,11 @@ footer {
     font-weight: 400;
 }
 
+.f-border {
+    border-right: 1px solid #b0b1b3;
+    border-left: 1px solid #b0b1b3;
+}
+
 .copyright span {
     display: flex;
     justify-content: center;
@@ -613,3 +623,98 @@ footer {
 .whatsApp-icon img {
     width: 50px;
 }
+
+
+
+/* responsive design */
+
+@media (max-width:990px) {
+
+    /* navbar  */
+    .menu-list,
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        background: #ccaa6b;
+        border-radius: 5px;
+        color: white;
+        padding: 6px 10px;
+        font-size: 22px;
+    }
+
+    /* stone section */
+
+    .stone-img {
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .stone-img span {
+        width: 30%;
+        text-align: center;
+    }
+
+    .stone-img span img {
+        width: 90%;
+        object-fit: contain;
+    }
+
+    /* story section */
+    .story-img {
+        width: 60%;
+    }
+
+    .story-thumbnail {
+        display: none;
+    }
+
+    .story-btn {
+        top: 55%;
+        right: 8%;
+    }
+
+    .story-list {
+        width: 42%;
+    }
+
+    /* choose section */
+    .choose-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .choose-card {
+        width: 45%;
+    }
+
+    /* footer sectoin */
+
+    .f-container {
+        flex-wrap: wrap;
+    }
+
+    .f-logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .f-logo img {
+        width: 150% !important;
+    }
+
+    .f-div {
+        width: 33%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:770px) {}
