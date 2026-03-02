@@ -295,6 +295,11 @@ a {
     }
 }
 
+.slidder2 img:hover {
+    transform: scaleY(1.1);
+    transition: transform 1s linear;
+}
+
 .slidderBtn {
     width: 100%;
     position: absolute;
