@@ -1,0 +1,91 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: sans-serif;
+   }
+
+   #gallery {
+       width: 100%;
+       padding: 40px 0;
+       background-color: #ccc;
+   }
+
+   h2 {
+       text-align: center;
+       padding: 40px;
+       background: rgba(215, 188, 215, 0.667);
+   }
+
+   .galleryMid {
+       max-width: 1320px;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 10px;
+       margin-top: 40px;
+       padding: 10px;
+   }
+
+   .galleryItem {
+       overflow: hidden;
+       border-radius: 40px 0px;
+       border: 3px #baba solid;
+   }
+
+   .galleryItem img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
+       transition: .3s linear;
+
+   }
+
+   .galleryItem img:hover {
+       scale: 1.5;
+   }
+
+
+   .galleryItem:nth-child(1),
+   .galleryItem:nth-child(3),
+   .galleryItem:nth-child(5),
+   .galleryItem:nth-child(10),
+   .galleryItem:nth-child(13) {
+       grid-row: span 2;
+   }
+
+   .galleryItem:nth-child(12) {
+       grid-column: span 3;
+   }
+
+   .galleryItem:nth-child(8),
+   .galleryItem:nth-child(9) {
+       grid-column: span 2;
+   }
+
+   footer {
+       text-align: center;
+       padding: 40px;
+       font-size: 23px;
+       background: #baba;
+   }
+
+   .whatsappIcon {
+       position: absolute;
+       position: fixed;
+       bottom: 40px;
+       right: 20px;
+   }
+
+   @media (max-width:775px) {
+       .galleryMid {
+
+           grid-template-columns: repeat(3, 1fr);
+
+       }
+
+       footer {
+           font-size: 15px;
+       }
+   }
