@@ -4,78 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: white;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        nav {
+        header {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
             height: 65px;
-            align-items: center;
-            background: rgb(0, 0, 0, .5);
-            padding: 0 40px;
             position: fixed;
             top: 0;
             left: 0;
+            right: 0;
             backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
+        .right-nav {
+            background: rgb(0, 0, 0, 0.8);
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
+        }
+
+
+
         .menu-bar {
-            width: 12%;
+            padding: 0 40px;
+            width: 20%;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+            height: 100%;
         }
 
         .menu-bar span {
             display: block;
-            width: 30px;
+            width: 28px;
             height: 2px;
             background: white;
-            margin: 6px 0;
             transition: 0.3s;
         }
 
-        .menu-bar:hover .s1 {
-            transform: translateX(10px);
+
+        .menu-bar:hover span {
+            transform: translateX(66px);
         }
 
         .menu-bar:hover .s2 {
-            transform: translateX(-10px);
+            transform: translateX(-66px);
+        }
+
+        nav {
+            width: 75%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .menu-list {
-            width: 65%;
+            width: 90%;
         }
 
         .menu-list ul {
-            width: 100%;
             display: flex;
             list-style: none;
             justify-content: space-evenly;
-
         }
 
         .menu-list ul li a {
             text-decoration: none;
             color: white;
-
+            font-size: 14px;
         }
 
         .logo {
-            width: 14%;
+            background: transparent;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            width: 20%;
         }
 
         .logo img {
             width: 100%;
-            object-fit: cover;
-            object-position: center;
+
         }
 
         .home-video {
@@ -92,30 +119,37 @@
 </head>
 
 <body>
-    <nav>
-        <div class="menu-bar">
-            <span class="s1"></span>
-            <span></span>
-            <span class="s2"></span>
-        </div>
-        <div class="menu-list">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Racing</a></li>
-                <li><a href="#">Automotive</a></li>
-                <li><a href="#">GOLF</a></li>
-                <li><a href="#">Corporate</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Store</a></li>
-            </ul>
+
+    <header>
+        <div class="right-nav">
+            <div class="menu-bar">
+                <span class="s1"></span>
+                <span></span>
+                <span class="s2"></span>
+            </div>
+            <nav>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Racing</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Golf</a></li>
+                        <li><a href="#">Corporate</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         <div class="logo">
-            <img src="./logo.svg" alt="">
+            <img src="./logo.svg">
         </div>
-    </nav>
+    </header>
+
     <div class="home-video">
         <video src="./home.mp4" autoplay loop muted></video>
     </div>
+
 </body>
 
 </html>
