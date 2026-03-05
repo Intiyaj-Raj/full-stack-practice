@@ -20,13 +20,13 @@
             <nav>
                 <div class="menu-list">
                     <ul>
-                        <li><button>Home</button></li>
-                        <li><button>Racing</button></li>
-                        <li><button>Automotive</button></li>
-                        <li><button>Golf</button></li>
-                        <li><button>Corporate</button></li>
-                        <li><button>Careers</button></li>
-                        <li><button>Store</button></li>
+                        <li><button onclick="home()">Home</button></li>
+                        <li><button onclick="showRacingVid()">Racing</button></li>
+                        <li><button onclick="showAutomotiveVid()">Automotive</button></li>
+                        <li><button onclick="showGolfVid()">Golf</button></li>
+                        <li><button onclick="showCorporateVid()">Corporate</button></li>
+                        <li><button onclick="showCarrierVid()">Careers</button></li>
+                        <li><button onclick="showStoreVid()">Store</button></li>
                     </ul>
                 </div>
             </nav>
@@ -36,15 +36,33 @@
         </div>
     </header>
 
-    <div class="home-video">
-        <video src="./home.mp4" autoplay loop muted></video>
+    <div class="home home-video">
+        <video src="./video/home.mp4" autoplay loop muted></video>
     </div>
 
     <div class="racing-video home-video">
-        <video src="./racing.mp4" autoplay muted loop></video>
+        <video src="./video/racing.mp4" autoplay muted loop></video>
     </div>
 
+    <div class="automotive home-video">
+        <video src="./video/automotive.mp4" muted loop autoplay></video>
+    </div>
+    <div class="golf home-video">
+        <video src="./video/golf.mp4" muted autoplay loop></video>
+    </div>
 
+    <div class="corporate home-video">
+        <video src="./video/corporatte.mp4" muted autoplay loop></video>
+    </div>
+
+    <div class="career home-video">
+        <video src="./video/career.mp4" muted autoplay loop></video>
+    </div>
+
+    <div class="store home-video">
+        <video src="./video/store.mp4" muted autoplay loop></video>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
