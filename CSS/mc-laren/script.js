@@ -7,6 +7,8 @@ function home() {
     document.querySelector(".golf").style.display = "none"
     document.querySelector(".store").style.display = "none"
 
+    document.querySelector(".rbtn").style.display = "none"
+
 }
 
 function showRacingVid() {
@@ -18,6 +20,8 @@ function showRacingVid() {
     document.querySelector(".store").style.display = "none"
     document.querySelector(".racing-video").style.display = "block";
 
+    // show btn
+    document.querySelector(".rbtn").style.display = "block"
 }
 
 function showAutomotiveVid() {
