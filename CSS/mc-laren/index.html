@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body onload="home()">
 
     <header>
         <div class="right-nav">
@@ -40,40 +40,67 @@
         <div class="home home-video">
             <video src="./video/home.mp4" autoplay loop muted></video>
         </div>
-        <div class="multi-use-btn">
-            <button>Racing</button>
-            <button>Automotive</button>
+        <div class="multi-use-btn home-btn">
+            <a>Racing</a>
+            <a>Automotive</a>
         </div>
     </div>
+
     <section class="racing-section">
         <div class="racing-video home-video">
             <video src="./video/racing.mp4" autoplay muted loop></video>
         </div>
         <div class="multi-use-btn rbtn">
-            <button> Formula 1</button>
-            <button>IndyCar</button>
-            <button>Endurance</button>
+            <a> Formula 1</a>
+            <a>IndyCar</a>
+            <a>Endurance</a>
         </div>
     </section>
 
-    <div class="automotive home-video">
-        <video src="./video/automotive.mp4" muted loop autoplay></video>
-    </div>
-    <div class="golf home-video">
-        <video src="./video/golf.mp4" muted autoplay loop></video>
-    </div>
+    <section class="automotive-section">
+        <div class="automotive home-video">
+            <video src="./video/automotive.mp4" muted loop autoplay></video>
+        </div>
+        <div class="multi-use-btn automotive-btn">
+            <a>Automotive</a>
+            <a>McLaren W1</a>
+        </div>
+    </section>
 
-    <div class="corporate home-video">
-        <video src="./video/corporatte.mp4" muted autoplay loop></video>
-    </div>
+    <section class="golf-section">
+        <div class="golf home-video">
+            <video src="./video/golf.mp4" muted autoplay loop></video>
+        </div>
+        <div class="multi-use-btn golf-btn">
+            <a>DISCOVER MORE</a>
+        </div>
+    </section>
 
-    <div class="career home-video">
-        <video src="./video/career.mp4" muted autoplay loop></video>
-    </div>
-
-    <div class="store home-video">
-        <video src="./video/store.mp4" muted autoplay loop></video>
-    </div>
+    <section class="corporate-section">
+        <div class="corporate home-video">
+            <video src="./video/corporatte.mp4" muted autoplay loop></video>
+        </div>
+        <div class="multi-use-btn corporate-btn">
+            <a>Corporate</a>
+        </div>
+    </section>
+    <section class="career-section">
+        <div class="career home-video">
+            <video src="./video/career.mp4" muted autoplay loop></video>
+        </div>
+        <div class="multi-use-btn career-btn">
+            <a>Racing Careers</a>
+            <a>Automotive Careers</a>
+        </div>
+    </section>
+    <section class="store-section">
+        <div class="store home-video">
+            <video src="./video/store.mp4" muted autoplay loop></video>
+        </div>
+        <div class="multi-use-btn store-btn">
+            <a>Shop now</a>
+        </div>
+    </section>
     <script src="./script.js"></script>
 </body>
 
