@@ -127,6 +127,7 @@
    }
 
    .multi-use-btn a {
+       color: black;
        display: inline-block;
        text-decoration: none;
        padding: 16px 25px;
