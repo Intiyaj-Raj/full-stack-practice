@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Animated Photo Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">✨ Personal Gallery ✨</h1>
+        <p class="subtitle">Hover • Click • Experience</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="people">People</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="gallery-item nature" data-category="nature">
+            <img src="./img/17.webp" alt="Nature 1">
+            <div class="overlay">
+                <h3>Mountain View</h3>
+                <p>Beautiful mountains</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item city" data-category="city">
+            <img src="./img/23.webp" alt="City 1" style="object-position: 0 5px;">
+            <img src="./img/23.webp" alt="City 1" style="object-position: 0% 0%;">
+            <div class="overlay">
+                <h3>City Lights</h3>
+                <p>Urban skyline</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item people" data-category="people">
+            <img src="https://picsum.photos/seed/people1/600/400" alt="People 1">
+            <div class="overlay">
+                <h3>Happy Faces</h3>
+                <p>Joyful moments</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item animals" data-category="animals">
+            <img src="https://picsum.photos/seed/animal1/600/400" alt="Animal 1">
+            <div class="overlay">
+                <h3>Wildlife</h3>
+                <p>Nature's creatures</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item nature" data-category="nature">
+            <img src="https://picsum.photos/seed/nature2/600/400" alt="Nature 2">
+            <div class="overlay">
+                <h3>Forest Path</h3>
+                <p>Peaceful woods</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item city" data-category="city">
+            <img src="https://picsum.photos/seed/city2/600/400" alt="City 2">
+            <div class="overlay">
+                <h3>Modern Building</h3>
+                <p>Architecture</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item people" data-category="people">
+            <img src="https://picsum.photos/seed/people2/600/400" alt="People 2">
+            <div class="overlay">
+                <h3>Portrait</h3>
+                <p>Beautiful portrait</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item animals" data-category="animals">
+            <img src="https://picsum.photos/seed/animal2/600/400" alt="Animal 2">
+            <div class="overlay">
+                <h3>Cute Pet</h3>
+                <p>Adorable animal</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item nature" data-category="nature">
+            <img src="https://picsum.photos/seed/nature3/600/400" alt="Nature 3">
+            <div class="overlay">
+                <h3>Ocean Waves</h3>
+                <p>Calm sea</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item city" data-category="city">
+            <img src="https://picsum.photos/seed/city3/600/400" alt="City 3">
+            <div class="overlay">
+                <h3>Night City</h3>
+                <p>City at night</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item people" data-category="people">
+            <img src="https://picsum.photos/seed/people3/600/400" alt="People 3">
+            <div class="overlay">
+                <h3>Friends</h3>
+                <p>Together forever</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item animals" data-category="animals">
+            <img src="https://picsum.photos/seed/animal3/600/400" alt="Animal 3">
+            <div class="overlay">
+                <h3>Birds</h3>
+                <p>Flying free</p>
+                <div class="icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slideshow Controls -->
+    <div class="slideshow-controls">
+        <button id="autoPlayBtn"><i class="fas fa-play"></i> Auto Slideshow</button>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <p>© 2026 Intiyaj. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
