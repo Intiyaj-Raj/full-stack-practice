@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 50px;
+            width: 150px;
+            margin-top: 40px;
+        }
+
+        button {
+            outline: none;
+        }
+
+        .box:hover {
+            box-shadow: 0px 0px 10px black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .resetBtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        #rbtn {
+            padding: 10px 20px;
+            background: rgb(99, 91, 91);
+            margin-top: 20px;
+            border: outset;
+            color: white;
+            outline: none;
+        }
+
+        #rbtn:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Click On the Box step By Step</h1>
+    <div>
+        <button id="my" class="box" onclick="mySec()"></button>
+
+        <button id="namee" class="box" onclick="nameeSec()"></button>
+
+        <button id="is" class="box" onclick="isSec()"></button>
+
+        <button id="yourName" class="box" onclick="yourNameSec()"></button>
+    </div>
+
+
+    <div class="resetBtn">
+        <button id="rbtn" onclick="resetBtn()">Reset</button>
+    </div>
+    <script>
+
+
+
+        function mySec() {
+            let a = document.getElementById("my")
+            a.innerHTML = "My"
+        }
+
+        function nameeSec() {
+            let b = document.getElementById("namee")
+            b.innerHTML = "Name"
+        }
+
+        function isSec() {
+            let c = document.getElementById('is')
+            c.innerHTML = "Is"
+        }
+
+        function yourNameSec() {
+            let c = document.getElementById("yourName")
+            c.innerHTML = "Intiyaj Ansari"
+        }
+        function resetBtn() {
+            document.getElementById("my").innerHTML = ""
+            document.getElementById("namee").innerHTML = ""
+            document.getElementById("is").innerHTML = ""
+            document.getElementById("yourName").innerHTML = ""
+        }
+    </script>
+</body>
+
+</html>

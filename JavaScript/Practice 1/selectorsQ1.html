@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        button {
+            padding: 6px 20px;
+            background: #ccc;
+            outline: none;
+            border: 1px solid #605c5c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click Box to Know your name</h1>
+
+    <h2 id="namee"></h2>
+    <br>
+
+    <button id="btn" onclick="btn()">
+        click me
+    </button>
+
+    <script>
+        function btn() {
+
+            let a = document.getElementById("namee")
+            a.innerHTML = "My name is Intiyaj Ansari"
+            a.style.background = "black"
+        }
+    </script>
+</body>
+
+</html>
