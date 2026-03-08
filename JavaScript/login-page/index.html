@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>System Login</h1>
+
+        <form id="lform">
+
+            <label>Email</label>
+            <input type="text" id="email" placeholder="enter email">
+
+            <label>Password</label>
+            <input type="password" id="pass" placeholder="enter password">
+
+            <label>Phone</label>
+            <input type="tel" id="phone" placeholder="enter phone">
+
+            <div id="question">
+                <img src="./qImg.png" alt="">
+                <input type="text" placeholder="enter answer" id="ans">
+            </div>
+
+            <button type="button" onclick="loginPage()">Login</button>
+
+        </form>
+
+        <div id="enter-answer">
+            Please answer the question to continue.
+        </div>
+        <div id="right">
+            Please enter right answer to continue.
+        </div>
+        <div class="succes">
+            ACCESS GRANTED ✅
+        </div>
+
+        <div class="denied">
+            ❌ All fields are required. Please complete the form.
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
