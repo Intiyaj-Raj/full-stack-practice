@@ -1,0 +1,145 @@
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Arial;
+     }
+
+     body {
+         background: #f5f5f5;
+     }
+
+     .contact {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding: 140px;
+         gap: 40px;
+     }
+
+     .left h1 {
+         font-size: 60px;
+         margin-bottom: 50px;
+     }
+
+     .left p {
+         color: #777;
+         line-height: 1.8;
+         margin-bottom: 40px;
+     }
+
+     .social {
+         display: flex;
+         gap: 40px;
+         padding: 50px 0;
+     }
+
+     .icon {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+     }
+
+     .icon i {
+         font-size: 70px;
+     }
+
+     .fa-instagram {
+         color: #e1306c;
+     }
+
+     .fa-facebook {
+         color: #3b5998;
+     }
+
+     .fa-whatsapp {
+         color: #25D366;
+     }
+
+     .right form {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .row {
+         display: flex;
+         gap: 20px;
+     }
+
+     .inputBox {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+     }
+
+     input,
+     textarea {
+         width: 100%;
+         margin-top: 10px;
+         padding: 14px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         outline: none;
+     }
+
+     button {
+         width: 120px;
+         padding: 14px 20px;
+         background: black;
+         color: white;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+         text-transform: uppercase;
+         letter-spacing: 1.3px;
+         font-weight: 600;
+         font-size: 20px;
+         margin-top: 25px;
+     }
+
+     button:hover {
+         background: #777;
+     }
+
+     @media (max-width:980px) {
+         .contact {
+             grid-template-columns: 1fr;
+             padding: 40px 80px;
+         }
+
+         .left h1 {
+             text-align: center;
+         }
+
+         .social {
+             gap: 40px;
+             padding: 0 0 50px 0;
+         }
+
+         .row {
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+         }
+
+         .inputBox {
+             flex: none;
+         }
+     }
+
+     @media (max-width:700px) {
+
+         .social {
+             justify-content: space-between;
+         }
+
+         .icon i {
+             font-size: 50px;
+         }
+
+         .icon {
+             font-size: 12px;
+         }
+
+     }
