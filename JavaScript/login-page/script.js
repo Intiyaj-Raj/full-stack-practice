@@ -11,8 +11,6 @@ function loginPage() {
     let answer2 = document.getElementById("enter-answer")
     let right = document.getElementById("right")
 
-
-
     if (email !== "" && pass !== "" && phone !== "") {
         question.style.display = "block";
 
@@ -35,4 +33,5 @@ function loginPage() {
         question.style.display = "none";
         denied.style.display = "block";
     }
+
 }
