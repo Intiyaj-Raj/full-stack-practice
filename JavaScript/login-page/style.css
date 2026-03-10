@@ -1,154 +1,176 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: monospace;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: black;
+        color: #00ff00;
+    }
+
+    /* heading */
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, #00ffcc, #00ffff);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        animation: glow 2s infinite alternate;
+        margin-bottom: 10px;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #00ffff;
         }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: black;
-            color: #00ff00;
-            margin: 50px 0;
+        to {
+            text-shadow: 0 0 25px #00ffff;
+        }
+    }
+
+    .container {
+        width: 350px;
+        padding: 30px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid #00ff00;
+        box-shadow: 0 0 20px #00ff00;
+        animation: fadeIn 1s ease;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px #00ff00;
+    }
+
+    /* inputs */
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+        background: black;
+        color: #00ff00;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #00ff00;
+        opacity: 0.6;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        box-shadow: 0 0 10px #00ff00;
+    }
+
+    /* button */
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: black;
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00ff00;
+        color: black;
+        box-shadow: 0 0 15px #00ff00;
+    }
+
+    /* question */
+
+    #question {
+        display: none;
+        padding: 10px;
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: 20px 0;
+        animation: slideDown 0.5s ease;
+    }
+
+    #question img {
+        width: 100%;
+    }
+
+    .succes {
+        display: none;
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px solid #00ff00;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 0 10px #00ff00;
+    }
+
+    .denied,
+    #enter-answer,
+    #right {
+        display: none;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px solid red;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 0 12px red;
+        border-radius: 5px;
+        animation: slideDown 0.5s ease;
+    }
+
+    #link {
+        margin-top: 15px;
+        display: none;
+        text-align: center;
+    }
+
+    #link a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
         }
 
-        .container {
-            width: 350px;
-            padding: 30px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            border: 1px solid #00ff00;
-            box-shadow: 0 0 20px #00ff00;
-            animation: fadeIn 1s ease;
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
         }
 
-
-        .container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            text-shadow: 0 0 10px #00ff00;
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
-
-
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #00ff00;
-            border-radius: 5px;
-            background: black;
-            color: #00ff00;
-        }
-
-        input::placeholder {
-            color: #00ff00;
-            opacity: 0.6;
-        }
-
-        input:focus {
-            outline: none;
-            box-shadow: 0 0 10px #00ff00;
-        }
-
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background: black;
-            color: #00ff00;
-            border: 1px solid #00ff00;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #00ff00;
-            color: black;
-            box-shadow: 0 0 15px #00ff00;
-        }
-
-
-
-        #question {
-            display: none;
-            padding: 10px;
-            border: 1px solid #ff0000;
-            border-radius: 5px;
-            margin: 20px 0;
-            animation: slideDown 0.5s ease;
-        }
-
-        #question img {
-            width: 100%;
-        }
-
-        #question input {
-            border: 1px solid #ff0000;
-            color: #00ff00;
-            box-shadow: 0 0 10px #d41717;
-        }
-
-
-        #question input::placeholder {
-            color: #ff0000;
-            opacity: 0.6;
-        }
-
-        .succes {
-            display: none;
-            margin-top: 15px;
-            padding: 10px;
-            border: 1px solid #00ff00;
-            background: black;
-            text-align: center;
-            font-weight: bold;
-            box-shadow: 0 0 10px #00ff00;
-        }
-
-        .denied,
-        #enter-answer,
-        #right {
-            display: none;
-            margin-top: 15px;
-            padding: 12px;
-            border: 1px solid #ff0000;
-            background: black;
-            color: #ff0000;
-            text-align: center;
-            font-weight: bold;
-            box-shadow: 0 0 12px #ff0000;
-            border-radius: 5px;
-            animation: slideDown 0.5s ease;
-            text-shadow: 0 0 8px #ff0000;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    }

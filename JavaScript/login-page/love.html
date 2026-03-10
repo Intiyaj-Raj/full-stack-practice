@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shayari</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: Georgia;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        #shayari {
+            font-size: 22px;
+            line-height: 35px;
+            min-height: 150px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all .6s ease;
+        }
+
+        #shayari.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btns {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            background: white;
+            color: #ff4d6d;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        button:hover {
+            background: #ffe6ea;
+            transform: scale(1.05);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 20px;
+            animation: zoom 2s linear infinite;
+            padding: 10px;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1.1);
+            }
+
+            50% {
+                transform: scale(1.1.5);
+            }
+
+            100% {
+                transform: scale(1.2);
+                background: #720217;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>A Few Lines For You ❤️</h1>
+
+        <div id="shayari"></div>
+
+        <div class="btns">
+            <button onclick="prevShayari()">Prev</button>
+            <button onclick="nextShayari()">Next</button>
+        </div>
+
+    </div>
+    <footer>
+        &copy; Intiyaj Raj | 9117392461
+    </footer>
+
+    <script>
+
+        let shayari = [
+
+            `Woh phir bhi naa samajh saka mere lafzon ki gehrai ko,
+Maine har woh lafz keh diya jiska matlab mohabbat tha.`,
+
+            `Mujh se daaman na chura,
+Mujh ko bacha kar rakh le.
+Mujh se ek roz tujhe pyar bhi ho sakta hai.`,
+
+            `Ek Ghazal Likhi Thi Use Pane Ke Liye 
+Ek Shayari Likhenge Use Bhulaane Ke.
+Wo aaye mere khwaab mein sulaane apni god mein mujhe,
+Aur agle din log rone lage mujhe jagaane ke liye...`,
+
+            `Ik tasvir hai teri mere sath,
+Majal hai maine khud ko bhi ik baar dekha ho.`,
+
+            `Ishq bepanah hai tumse,
+Ek baar jatane dogi kya?`,
+
+            `Ye nazrein hain tumpe atak si jaati hain,
+Aage ki shayari ban nahi paati hai.`,
+
+            `Baat batane ki to nahi hai,
+Par batane dogi kya?
+
+Ishq bepanah hai tumse,
+Ek baar jatane dogi kya?
+
+Tum titli ho, pahad ho, asmaan ho mera.
+Ek dibiya me sindoor rakha hai mere pass.
+Tum... lagane dogi kya?`,
+            `The End 😍👋🏻`
+
+        ];
+
+        let i = 0;
+        let box = document.getElementById("shayari");
+
+        function showText() {
+            box.classList.remove("show");
+
+            setTimeout(() => {
+                box.innerText = shayari[i];
+                box.classList.add("show");
+            }, 200);
+        }
+
+        showText();
+
+        function nextShayari() {
+
+            if (i < shayari.length - 1) {
+                i++;
+                showText();
+            }
+
+        }
+
+        function prevShayari() {
+
+            if (i > 0) {
+                i--;
+                showText();
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
