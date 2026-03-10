@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+</head>
+
+<body>
+
+    <h1>Click anywhere to play music</h1>
+
+    <audio id="song" src="./1.mp3" loop></audio>
+
+    <script>
+        window.addEventListener("click", function () {
+            let music = document.getElementById("song");
+            music.play();
+        });
+    </script>
+
+</body>
+
+</html>
