@@ -73,6 +73,44 @@
             border: 2px solid #ccc;
             transition: .5s linear;
         }
+
+        .hero-section {
+            width: 100%;
+            height: 88vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .hero-text {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding-right: 40px;
+            text-align: justify;
+        }
+
+        .hero-text p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+
+        .hero-video {
+            width: 55%;
+            /* border-radius: 50% 0; */
+        }
+
+        .hero-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 40%;
+            border-bottom-right-radius: 45%;
+        }
     </style>
 </head>
 
@@ -95,7 +133,23 @@
         <div id="btn">
             <button onclick="toggleBtn()">Light</button>
         </div>
+
     </header>
+
+    <!-- Hero section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>FERRARI OPENS A DIAGNOSTIC CENTRE FOR ITS EMPLOYEES AND THE COMMUNITY, IN COLLABORATION WITH PHILIPS AND
+                MED-EX</h1>
+
+            <p>Ferrari has opened a new Diagnostics Centre in Maranello, designed to provide preventive care and
+                advanced diagnostic services to both its employees and the local community.</p>
+        </div>
+        <div class="hero-video">
+            <video src="https://ferrari.scene7.com/is/content/ferrari/gateway-scuderia-ferrari-2026-main-launch-mob"
+                autoplay loop muted></video>
+        </div>
+    </div>
 
 
     <script>
