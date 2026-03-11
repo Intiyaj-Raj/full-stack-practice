@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle-btn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            height: 65px;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgb(217, 195, 195), #84897e);
+            padding: 25px;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        nav {
+            width: 75%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul li {
+            padding: 15px;
+        }
+
+        ul input {
+            padding: 6px 10px;
+            border: none;
+            outline: none;
+            width: 35%;
+            cursor: pointer;
+            margin-right: 15px;
+            background: transparent;
+        }
+
+        ul input:hover {
+            border: 2px solid #ccc;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: flex-end;
+            width: 20%;
+        }
+
+        #btn button {
+            padding: 6px 22px;
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #btn button:hover {
+            border: 2px solid #ccc;
+            transition: .5s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>I & I</h1>
+        </div>
+        <nav>
+            <ul>
+                <input type="search" name="" id="" placeholder="search here....">
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li>Search</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div id="btn">
+            <button onclick="toggleBtn()">Light</button>
+        </div>
+    </header>
+
+
+    <script>
+
+        let mode = "light";
+        function toggleBtn() {
+            const btn = document.querySelector("#btn button");
+            if (mode === "light") {
+                document.body.style.backgroundColor = "#111";
+                document.body.style.color = "white";
+                btn.innerText = "Dark";
+                mode = "dark";
+            }
+            else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                btn.innerText = "Light";
+                mode = "light";
+            }
+
+        };
+    </script>
+</body>
+
+</html>
