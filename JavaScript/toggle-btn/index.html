@@ -5,113 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toggle-btn</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        header {
-            display: flex;
-            height: 65px;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(90deg, rgb(217, 195, 195), #84897e);
-            padding: 25px;
-        }
+    <link rel="stylesheet" href="./style.css">
 
-        .logo {
-            width: 20%;
-        }
-
-        nav {
-            width: 75%;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        nav ul li {
-            padding: 15px;
-        }
-
-        ul input {
-            padding: 6px 10px;
-            border: none;
-            outline: none;
-            width: 35%;
-            cursor: pointer;
-            margin-right: 15px;
-            background: transparent;
-        }
-
-        ul input:hover {
-            border: 2px solid #ccc;
-        }
-
-        #btn {
-            display: flex;
-            justify-content: flex-end;
-            width: 20%;
-        }
-
-        #btn button {
-            padding: 6px 22px;
-            background: transparent;
-            outline: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        #btn button:hover {
-            border: 2px solid #ccc;
-            transition: .5s linear;
-        }
-
-        .hero-section {
-            width: 100%;
-            height: 88vh;
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-        }
-
-        .hero-text {
-            width: 45%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            gap: 50px;
-            padding-right: 40px;
-            text-align: justify;
-        }
-
-        .hero-text p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 100;
-        }
-
-        .hero-video {
-            width: 55%;
-            /* border-radius: 50% 0; */
-        }
-
-        .hero-video video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-top-left-radius: 40%;
-            border-bottom-right-radius: 45%;
-        }
-    </style>
 </head>
 
 <body>
@@ -119,7 +18,7 @@
         <div class="logo">
             <h1>I & I</h1>
         </div>
-        <nav>
+        <nav id="nav-menu">
             <ul>
                 <input type="search" name="" id="" placeholder="search here....">
                 <li>Home</li>
@@ -129,14 +28,15 @@
                 <li>Contact</li>
             </ul>
         </nav>
-
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars" id="menu-bar-btn" onclick="menuToggle()"></i>
+        </div>
         <div id="btn">
             <button onclick="toggleBtn()">Light</button>
         </div>
-
     </header>
 
-    <!-- Hero section -->
+
     <div class="hero-section">
         <div class="hero-text">
             <h1>FERRARI OPENS A DIAGNOSTIC CENTRE FOR ITS EMPLOYEES AND THE COMMUNITY, IN COLLABORATION WITH PHILIPS AND
@@ -151,26 +51,35 @@
         </div>
     </div>
 
+    <section class="about-section">
+        <div class="container">
+            <h2>About I & I</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to I & I, inspired by excellence like Ferrari. We provide premium diagnostic and
+                        automotive services to empower communities and professionals alike.</p>
+                    <p>Our new center in collaboration with leading partners offers state-of-the-art care, mirroring
+                        Ferrari's commitment to innovation and performance.</p>
+                    <ul>
+                        <li>Preventive health diagnostics</li>
+                        <li>Advanced automotive expertise</li>
+                        <li>Community-focused initiatives</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&fit=crop&crop=center"
+                        alt="Ferrari Excellence - I & I Diagnostic Center">
 
-    <script>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        let mode = "light";
-        function toggleBtn() {
-            const btn = document.querySelector("#btn button");
-            if (mode === "light") {
-                document.body.style.backgroundColor = "#111";
-                document.body.style.color = "white";
-                btn.innerText = "Dark";
-                mode = "dark";
-            }
-            else {
-                document.body.style.backgroundColor = "white";
-                document.body.style.color = "black";
-                btn.innerText = "Light";
-                mode = "light";
-            }
+    <!-- Menu backdrop for mobile -->
+    <div class="menu-backdrop" onclick="menuToggle()"></div>
 
-        };
+    <script src="./script.js">
+
     </script>
 </body>
 
