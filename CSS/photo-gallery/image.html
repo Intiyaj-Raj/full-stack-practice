@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .img4 {
+            column-span: 4 span;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <img src="https://picsum.photos/seed/pic2/300/200" alt="Image 2">
+        <img src="https://picsum.photos/seed/pic1/300/200" alt="Image 1">
+        <img src="https://picsum.photos/seed/pic33/300/200" alt="Image 3">
+        <img src="https://picsum.photos/seed/pic4/300/200" alt="Image 4" class="img4">
+    </div>
+</body>
+
+</html>
