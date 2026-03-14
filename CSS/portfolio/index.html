@@ -9,7 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-
+    <script src="./matter.js" defer></script>
 </head>
 
 <body>
@@ -26,31 +26,34 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <section id="hero">
-        <div class="hero-text">
-            <h2>Hello I'm <span>Intiyaj</span></h2>
-            <p>Frontend Developer who loves building modern websites with animations and creative UI.</p>
-            <button class="hire-me">
-                <span aria-hidden="true">Hire Me</span>
-                <span aria-hidden="true">Hire Me</span>
-                <span>Hire Me</span>
-            </button>
-        </div>
-
-        <div class="container">
-            <div id="cube">
-                <div class="face face1"></div>
-                <div class="face face2"></div>
-                <div class="face face3"></div>
-                <div class="face face4"></div>
+        <div id="wrapper-canvas"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Hello I'm <span>Intiyaj</span></h2>
+                <p>Frontend Developer who loves building modern websites with animations and creative UI.</p>
+                <button class="hire-me">
+                    <span aria-hidden="true">Hire Me</span>
+                    <span aria-hidden="true">Hire Me</span>
+                    <span>Hire Me</span>
+                </button>
+            </div>
+            <div class="container">
+                <div id="cube">
+                    <div class="face face1"></div>
+                    <div class="face face2"></div>
+                    <div class="face face3"></div>
+                    <div class="face face4"></div>
+                </div>
             </div>
         </div>
     </section>
+
+
     <section class="contact-container" style="height: 100vh;">
         <section class="section__container">
 
@@ -86,6 +89,9 @@
             <a href="./contact.html">Click here to open contact page</a>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
 </body>
 
 </html>
