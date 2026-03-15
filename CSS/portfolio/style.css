@@ -803,3 +803,116 @@ nav a:active {
 /* ==========================================
             footer section
 ======================================== */
+footer {
+    padding: 0 40px;
+}
+
+.fItem {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.fItem ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fItem ul li:nth-child(2) {
+    width: 16%;
+    padding-left: 30px;
+}
+
+.fItem ul li:nth-child(3) {
+    width: 24%;
+    padding: 0 20px;
+
+}
+
+.flogosection {
+    width: 34% !important;
+}
+
+.fcontact {
+    width: 25% !important;
+    padding: 0 !important;
+}
+
+.flogo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flogo img {
+    width: 50%;
+    border-radius: 50%;
+    padding: 30px 0 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.flogo p {
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.fIcon {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.fIcon a {
+    font-size: 25px;
+    transition: transform 0.5s ease;
+}
+
+.fIcon a i:hover {
+    transform: translateY(-5px);
+}
+
+.fItem ul li h3 {
+    margin: 20px 0;
+
+}
+
+.fItem ul li a,
+.fcontact a,
+.fItem ul li p {
+    color: white;
+    line-height: 2;
+    transition: all .5s ease;
+}
+
+.fItem ul li a:hover,
+.fcontact a:hover {
+    color: #00d4ff;
+}
+
+.copyright {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 203, 203);
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);/ border-radius: 10px;
+    background-color: #111;
+    font-weight: bold;
+    color: #6f726f;
+    padding: 20px 0;
+
+}
+
+.backToTop i {
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.backToTop i:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+}
