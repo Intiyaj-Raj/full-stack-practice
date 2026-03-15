@@ -525,8 +525,94 @@ nav a:active {
     object-fit: cover;
     height: 100%;
     border-radius: 40% 5% 55% 5%;
-    transition: transform 0.5s ease;
+    animation: zoom 10s linear 3s 1;
+    transition: transform 0.3s ease;
     border-bottom: 70px solid #969292;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.06);
+    }
+}
+
+/*
+==========================================================
+                        skill section
+===========================================================
+ */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px;
+    background-color: black;
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.skills h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    border-radius: 2px;
+}
+
+.skill-container {
+    width: 100%;
+}
+
+.skill-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-container ul li {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px #1a1a1a, -3px -4px 5px #242424;
+    transition: 0.4s ease;
+    border: 1px solid rgb(103, 99, 99);
+
+}
+
+
+.skill-container ul li h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.skill-container ul li p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 20px;
+}
+
+.project .certificate {
+    padding: 10px 0;
 }
 
 /*
