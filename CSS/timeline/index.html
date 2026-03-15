@@ -2,112 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>timeline project</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .main {
-            width: 100%;
-            height: auto;
-            background: rgb(245, 245, 245);
-            padding: 50px 0;
-            display: grid;
-            place-items: center;
-        }
-
-        .heading {
-            font-size: 27px;
-            font-weight: 500;
-            color: rgb(106, 6, 236);
-        }
-
-        .heading::after {
-            position: absolute;
-            content: "";
-
-            width: 50%;
-            height: 3px;
-            left: 50%;
-            bottom: -5px;
-            background: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-            transform: translateX(-50%);
-        }
-
-        .container {
-            width: 70%;
-            height: auto;
-            position: relative;
-        }
-
-        .container ul {
-
-            list-style: none;
-        }
-
-        .container ul li {
-            width: 50%;
-            height: auto;
-            padding: 15px 20px;
-            background: #fff;
-            box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.364);
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-
-        .container ul li:nth-child(odd) {
-            float: left;
-            clear: right;
-        }
-
-        .container ul li:nth-child(even) {
-            float: right;
-            clear: left;
-        }
-    </style>
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 <body>
     <div class="main">
-        <h3 class="heading">Responsive timeline</h3>
+        <h3 class="head">Responsive Timeline</h3>
         <div class="container">
             <ul>
                 <li>
-                    <h3 class="title">Frontend Developer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus recusandae
-                        molestiae sit minima.</p>
-                    <a href="">Read More</a>
+                    <h3 class="heading">FrontEnd Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
+                        totam </p>
+                    <a href="#">Read More ></a>
+                    <span class="date">January 2021</span>
                     <span class="circle"></span>
-                    <span class="date">January</span>
                 </li>
                 <li>
-                    <h3 class="title">Frontend Developer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus recusandae
-                        molestiae sit minima.</p>
-                    <a href="">Read More</a>
+                    <h3 class="heading">BackEnd Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
+                        totam </p>
+                    <a href="#">Read More ></a>
+                    <span class="date">February 2021</span>
                     <span class="circle"></span>
-                    <span class="date">January</span>
                 </li>
                 <li>
-                    <h3 class="title">Frontend Developer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus recusandae
-                        molestiae sit minima.</p>
-                    <a href="">Read More</a>
+                    <h3 class="heading">Full Stack Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
+                        totam </p>
+                    <a href="#">Read More ></a>
+                    <span class="date">March 2021</span>
                     <span class="circle"></span>
-                    <span class="date">January</span>
                 </li>
                 <li>
-                    <h3 class="title">Frontend Developer</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus recusandae
-                        molestiae sit minima.</p>
-                    <a href="">Read More</a>
+                    <h3 class="heading">App Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi accusamus minus
+                        totam </p>
+                    <a href="#">Read More ></a>
+                    <span class="date">April 2021</span>
                     <span class="circle"></span>
-                    <span class="date">January</span>
                 </li>
             </ul>
         </div>
