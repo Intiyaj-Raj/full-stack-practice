@@ -7,8 +7,135 @@
     , initial-scale=1.0">
     <title>about-section</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        #about2 p {
+            padding-top: 10px;
+            text-align: justify;
+        }
 
+        #about2 strong {
+            color: darkgrey;
+        }
+
+        .about-text2 {
+            width: 100%;
+            line-height: 1.6;
+            padding: 100px 40px 0;
+        }
+
+        .about-inner-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 30px 40px;
+            position: relative;
+        }
+
+        .about-text3 {
+            width: 58%;
+            line-height: 1.6;
+        }
+
+        .about-img2 {
+            width: 32%;
+            height: 450px;
+            background-image: url("hero1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: imag 6s infinite;
+            transition: all .5s linear;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+        }
+
+        @keyframes imag {
+            0% {
+                background-image: url("./image/hero1.jpg");
+            }
+
+            25% {
+                background-image: url("./image/hero2.jpg");
+            }
+
+            50% {
+                background-image: url("./image/hero1.jpg");
+            }
+
+            100% {
+                background-image: url("./image/hero2.jpg");
+            }
+
+        }
+
+        .about-btn {
+            padding: 60px 40px;
+        }
+
+        .about-btn a {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 15px;
+
+            background:
+                linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) 100%/300% no-repeat,
+                #02e9ca;
+
+            color: transparent;
+            border: none;
+
+            transform: perspective(500px) rotateY(-20deg);
+
+            text-shadow:
+                0.08em -0.01em 0 #fff,
+                -0.08em 0.01em 2px #0004;
+
+            outline-offset: .1em;
+            transition: 0.3s;
+
+            font-family: system-ui, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 40px;
+        }
+
+        .about-btn a:hover,
+        .about-btn a:focus-visible {
+            background:
+                linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) 0%/300% no-repeat,
+                #E97F02;
+
+            transform: perspective(500px) rotateY(20deg);
+        }
+
+        .about-btn a:active {
+            text-shadow: none;
+            color: #fff;
+            box-shadow: inset 0 0 9e9q #0005;
+            transition: 0s;
+        }
+
+        .icons {
+            padding: 40px;
+        }
+
+        .icons h2 {
+            margin: 20px 0;
+        }
+
+        .about-social-icon a {
+            padding-left: 20px;
+            font-size: 30px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .about-social-icon a:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
@@ -30,14 +157,130 @@
         </nav>
     </header>
 
-    <div id="about">
-        <div class="div-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eos! Perspiciatis consequatur
-            reiciendis vitae sequi quibusdam eveniet, excepturi fugit expedita modi dolore facilis voluptatibus aut
-            aspernatur nostrum corporis hic nemo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quasi,
+    <div id="about2">
+        <section class="section__container" style="margin: 60px 0;">
+
+            <!-- CONTACT-US -->
+            <div class="zigzag__container">
+                <div class="zigzag__item" style="--i:0;"><span><b>A</b></span></div>
+                <div class="zigzag__item" style="--i:1;"><span><b>B</b></span></div>
+                <div class="zigzag__item" style="--i:2;"><span><b>O</b></span></div>
+                <div class="zigzag__item" style="--i:3;"><span><b>U</b></span></div>
+                <div class="zigzag__item" style="--i:4;"><span><b>T</b></span></div>
+                <div class="zigzag__item" style="--i:5;"><span><b>-</b></span></div>
+                <div class="zigzag__item" style="--i:6;"><span><b>M</b></span></div>
+                <div class="zigzag__item" style="--i:7;"><span><b>E</b></span></div>
+            </div>
+
+            <!-- Bottom Border -->
+            <div class="zigzag__container">
+                <div class="zigzag__item" style="--i:0;"></div>
+                <div class="zigzag__item" style="--i:1;"></div>
+                <div class="zigzag__item" style="--i:2;"></div>
+                <div class="zigzag__item" style="--i:3;"></div>
+                <div class="zigzag__item" style="--i:4;"></div>
+                <div class="zigzag__item" style="--i:5;"></div>
+                <div class="zigzag__item" style="--i:6;"></div>
+                <div class="zigzag__item" style="--i:7;"></div>
+            </div>
+        </section>
+        <div class="about-text2">
+            <p>
+                Hi! I’m <strong>Intiyaj Ansari</strong>. I come from a <strong>small village</strong> and belong to a
+                <strong>farmer family</strong>. Growing up in a village, technology was not something we used every day.
+                Most people around me were connected with farming and a simple lifestyle. But from a young age,
+                I was always curious about <strong>computers and the internet</strong>. Whenever I got a chance to use
+                a computer or a mobile phone, I tried to explore how things worked.
+            </p>
+
+            <p>
+                During my school days, this curiosity slowly turned into a strong interest. I started wondering
+                how websites are created, how apps work, and how technology can solve real problems. Because of
+                this interest, I decided to choose <strong>Computer Science Engineering (CSE)</strong> in college
+                so I could learn more about computers and programming.
+            </p>
         </div>
-        <div class="image-sectiong">
-            <img src="./hero2.jpg" alt="">
+        <div class="about-inner-content">
+            <div class="about-text3">
+                <p>
+                    At the beginning of my college journey, learning programming was not easy for me. Coming from a
+                    village background, many things were new and sometimes difficult to understand. But instead of
+                    giving up, I kept learning step by step. I watched tutorials, practiced coding, and tried to build
+                    small things on my own.
+                </p>
+
+                <p>
+                    While learning web development, I started with <strong>HTML, CSS, and JavaScript</strong>. The
+                    moment
+                    I created my first web page and saw it working in a browser, it felt amazing. That experience
+                    motivated me to keep learning more about web development.
+                </p>
+
+                <p>
+                    Later, I discovered the <strong>MERN Stack — MongoDB, Express.js, React, and Node.js</strong>.
+                    I realized that with these technologies, I could build complete web applications from the
+                    front-end to the back-end. This made me even more excited about becoming a developer.
+                </p>
+
+                <p>
+                    To improve my skills, I started building projects. Some of the projects I created include a
+                    <strong>Netflix clone</strong>, an <strong>Office clone</strong>, and my
+                    <strong>personal portfolio website</strong>. Every project came with new challenges, bugs,
+                    and mistakes, but solving those problems helped me grow and gain confidence as a developer.
+                </p>
+
+                <p>
+                    Coming from a farmer family has taught me the value of <strong>hard work, patience, and
+                        consistency</strong>.
+                    I try to follow the same values in my learning journey as a developer.
+                </p>
+
+                <p>
+                    Today, my goal is to continue growing as a <strong>MERN Stack Developer</strong>, work on
+                    real-world applications, and create useful digital products that people enjoy using.
+                    I believe that with continuous learning and dedication, I can build a successful career
+                    in technology.
+                </p>
+            </div>
+            <a href="./index.html">
+                <div class="about-img2"></div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <span class="about-btn">
+        <a href="./contact.html">Hire Me</a>
+        <a href="https://github.com/Intiyaj-Raj?tab=repositories">View Projects</a>
+    </span>
+
+    <div class="icons">
+        <h2>Connect With Me</h2>
+        <div class="about-social-icon">
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram" style="color:#E4405F;"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/intiyaj-ansari/" target="_blank">
+                <i class="fa-brands fa-linkedin" style="color:#0A66C2;"></i>
+            </a>
+
+            <a href="https://github.com/Intiyaj-Raj" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="tel:9117392461">
+                <i class="fa-solid fa-phone" style="color:#28a745;"></i>
+            </a>
+
+            <a href="https://wa.me/9117392461" target="_blank">
+                <i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>
+            </a>
+
+            <a href="mailto:intiyajraj786@gmail.com">
+                <i class="fa-solid fa-envelope" style="color:#EA4335;"></i>
+            </a>
         </div>
     </div>
 </body>

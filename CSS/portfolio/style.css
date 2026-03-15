@@ -152,7 +152,14 @@ nav a:active {
     margin-bottom: 20px;
 }
 
-button.hire-me {
+.btn a {
+    padding: 0 30px;
+    font-weight: bold;
+    color: #ff00ff;
+    font-style: italic;
+}
+
+.btn a.hire-me {
     --hue: 76;
     --sat: 100%;
     --lum: 32%;
@@ -169,17 +176,17 @@ button.hire-me {
     cursor: pointer;
 }
 
-button.hire-me:focus,
-button.hire-me:hover {
+.btn a.hire-me:focus,
+.btn a.hire-me:hover {
     outline: none;
     filter: none;
 }
 
-button.hire-me:active {
+.btn a.hire-me:active {
     transform: translateY(0.25rem);
 }
 
-button.hire-me span {
+.btn a.hire-me span {
     position: absolute;
     top: 0;
     left: 0;
@@ -188,12 +195,12 @@ button.hire-me span {
     display: block;
 }
 
-button.hire-me span[aria-hidden="true"] {
+.btn a.hire-me span[aria-hidden="true"] {
     filter:
         drop-shadow(0.125rem 0.1875rem hsl(var(--hue), calc(var(--sat) - 25%), 25%)) drop-shadow(-0.1875rem -0.125rem hsl(var(--hue), calc(var(--sat) - 41%), 63%)) drop-shadow(1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.75));
 }
 
-button.hire-me span[aria-hidden="true"]:after {
+.btn a.hire-me span[aria-hidden="true"]:after {
     content: '';
     position: absolute;
     top: 0;
@@ -204,16 +211,16 @@ button.hire-me span[aria-hidden="true"]:after {
     clip-path: polygon(100% 0, 91% 91%, 13% 100%, 0 35%);
 }
 
-button.hire-me span[aria-hidden="true"]:nth-child(2) {
+.btn a.hire-me span[aria-hidden="true"]:nth-child(2) {
     --sat: 0%;
     --lum: 83%;
 }
 
-button.hire-me span[aria-hidden="true"]:nth-child(2):after {
+.btn a.hire-me span[aria-hidden="true"]:nth-child(2):after {
     clip-path: polygon(3% 21%, 85% 25%, 75% 93%, 14% 87%);
 }
 
-button.hire-me span:last-child {
+.btn a.hire-me span:last-child {
     background: radial-gradient(black, white 83%) 50% 0.125em / 0.5em 50%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -263,24 +270,24 @@ button.hire-me span:last-child {
 
 .face:nth-child(1) {
     transform: rotateY(0deg) translateZ(150px);
-    background-image: url("./hero1.jpg");
+    background-image: url("./image/hero1.jpg");
 }
 
 .face:nth-child(2) {
     transform: rotateY(90deg) translateZ(150px);
 
-    background-image: url("./hero2.jpg");
+    background-image: url("./image/hero2.jpg");
 }
 
 .face:nth-child(3) {
     transform: rotateY(180deg) translateZ(150px);
-    background-image: url("./hero1.webp");
+    background-image: url("./image/hero1.jpg");
 
 }
 
 .face:nth-child(4) {
     transform: rotateY(-90deg) translateZ(150px);
-    background-image: url("./hero2.jpg");
+    background-image: url("./image/hero2.jpg");
 
 }
 
@@ -474,6 +481,57 @@ button.hire-me span:last-child {
 .contactt-btn a:active {
     transform: translateY(4px);
     box-shadow: 0 2px 0 #7a0000;
+}
+
+/*
+==========================================================
+                        about section or page
+===========================================================
+ */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 150px 40px 0 40px;
+    align-items: center;
+}
+
+.about-text {
+    width: 68%;
+    line-height: 1.5;
+}
+
+.about-text p {
+    padding: 10px 0;
+}
+
+.about-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 28%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 55% 5% 55% 5%;
+    transition: transform 0.5s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.1);
 }
 
 /*
