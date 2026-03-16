@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <script src="./matter.js" defer></script>
 </head>
 
@@ -24,18 +25,24 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contatct-sec">Contact</a></li>
             </ul>
         </nav>
+        <div class="menu-bar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
     </header>
     <!-- hero section -->
     <section id="hero">
         <div id="wrapper-canvas"></div>
         <div class="hero-content">
             <div class="hero-text">
+                <div class="mobile-img">
+                    <img src="./image/hero2.jpg" alt="">
+                </div>
                 <h2>Hello I'm <span>Intiyaj</span></h2>
                 <p>Frontend Developer who loves building modern websites with animations and creative UI.</p>
                 <span class="btn">
@@ -48,6 +55,9 @@
                     <div class="face face2"></div>
                     <div class="face face3"></div>
                     <div class="face face4"></div>
+                </div>
+                <div class="hero-img">
+                    <img src="./image/hero2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -139,7 +149,7 @@
     </section>
 
     <!-- project section -->
-    <section class="project">
+    <section id="project">
         <section class="section__container">
 
             <!-- CONTACT-US -->
@@ -166,60 +176,60 @@
                 <div class="zigzag__item" style="--i:7;"></div>
             </div>
         </section>
-        <div class="skill-container" style="margin-top: 160px;padding: 40px;">
+        <div class="skill-container">
             <ul>
                 <li>
                     <h3>Online Learning Platform</h3>
-                    <p>Online Learning Platform by Intiyaj Ansari for smart education.</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <div class="certificate">
-                        <a href="https://mindlearneronlinelearningplatform.netlify.app/">[CLICK_TO_EXPLORE]</a>
-                    </div>
                     <p>
                         The Online Learning Platform by Intiyaj Ansari is a modern web-based solution designed to make
                         education more accessible and engaging. It allows students to learn anytime, anywhere with
                         interactive courses, quizzes, and resources. The platform offers a clean, responsive interface
                         that works smoothly across devices.
                     </p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <div class="certificate">
+                        <a href="https://mindlearneronlinelearningplatform.netlify.app/">[CLICK_TO_EXPLORE]</a>
+                    </div>
+
                 </li>
                 <li>
                     <h3>Rock Paper Scissor Game</h3>
-                    <p>Rock Paper Scissor Game by Intiyaj Ansari for fun battles.</p>
-                    <p>Technologies: HTML, CSS, JavaScript</p>
-                    <div class="certificate">
-                        <a href="https://intiyajansarirockgame.netlify.app/">[CLICK_TO_EXPLORE]</a>
-                    </div>
                     <p>
                         The Rock Paper Scissor Game by Intiyaj Ansari is a fun and interactive project designed to
                         provide quick entertainment with simple rules. Rock beats scissors, scissors cut paper, and
                         paper covers rock—making every round exciting and unpredictable.
                     </p>
+                    <p>Technologies: HTML, CSS, JavaScript</p>
+                    <div class="certificate">
+                        <a href="https://intiyajansarirockgame.netlify.app/">[CLICK_TO_EXPLORE]</a>
+                    </div>
+
                 </li>
                 <li>
                     <h3>Weather App</h3>
-                    <p>Weather App by Intiyaj Ansari built using React for real-time weather updates.</p>
-                    <p>Technologies: React, CSS, API</p>
-                    <div class="certificate">
-                        <a href="https://intiyajweatherapp.netlify.app/">[CLICK_TO_EXPLORE]</a>
-                    </div>
                     <p>
                         The Weather App by Intiyaj Ansari lets users check real-time weather information for any city.
                         It uses a weather API to fetch data like temperature, humidity, and weather conditions,
                         all presented in a clean and interactive interface.
                     </p>
+                    <p>Technologies: React, CSS, API</p>
+                    <div class="certificate">
+                        <a href="https://intiyajweatherapp.netlify.app/">[CLICK_TO_EXPLORE]</a>
+                    </div>
+
                 </li>
                 <li>
                     <h3>ToDo App</h3>
-                    <p>ToDo App by Intiyaj Ansari to manage daily tasks easily.</p>
-                    <p>Technologies: HTML, CSS, Bootstrap, React</p>
-                    <div class="certificate">
-                        <a href="https://intiyajansaritodoapp.netlify.app/">[CLICK_TO_EXPLORE]</a>
-                    </div>
                     <p>
                         Todo App by Intiyaj Ansari is designed to help users manage their daily tasks efficiently. With
                         a clean and responsive design, it allows users to add, edit, and delete tasks, keeping their
                         schedule organized.
                     </p>
+                    <p>Technologies: HTML, CSS, Bootstrap, React</p>
+                    <div class="certificate">
+                        <a href="https://intiyajansaritodoapp.netlify.app/">[CLICK_TO_EXPLORE]</a>
+                    </div>
+
                 </li>
             </ul>
         </div>
@@ -229,8 +239,8 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact-container" style="height: 100vh;">
-        <section class="section__container">
+    <section class="contact-container" id="contatct-sec">
+        <section class=" section__container">
 
             <!-- CONTACT-US -->
             <div class="zigzag__container">
@@ -349,6 +359,8 @@
 
         </div>
     </footer>
+
+
     <!-- script links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
