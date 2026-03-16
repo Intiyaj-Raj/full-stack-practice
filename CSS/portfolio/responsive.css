@@ -126,6 +126,20 @@
     .contact-container .contactt-btn {
         padding: 40px 0;
     }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form form {
+        width: 100%;
+
+    }
+
+    .social-icons {
+        width: 80%;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width:575px) {

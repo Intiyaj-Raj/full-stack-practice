@@ -644,6 +644,13 @@ nav ul li a:hover::after {
     padding: 40px;
 }
 
+.contact-form h3,
+.social-icons h3 {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .contact-form form {
     width: 50%;
     display: flex;
