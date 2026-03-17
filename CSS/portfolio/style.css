@@ -125,7 +125,7 @@ nav ul li a:hover::after {
     /* change from absolute */
     z-index: 1;
     /* show above wrapper */
-    padding: 100px 50px 0 50px;
+    padding: 50px 50px 100px 50px;
     /* instead of top/left */
 }
 
