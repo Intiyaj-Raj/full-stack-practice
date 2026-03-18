@@ -138,6 +138,12 @@
         border-bottom: 40px solid #969292;
     }
 
+    .about-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about-btn a {
         margin: 10px 0;
     }
