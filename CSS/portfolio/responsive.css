@@ -60,6 +60,39 @@
 
 
 @media (max-width:650px) {
+    .menu-bar {
+        display: block;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        /* right side se open hoga */
+        width: 50%;
+        /* 🔥 only 50% width */
+        height: 100vh;
+        background: #111;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+    }
+
     nav {
         display: none;
     }
