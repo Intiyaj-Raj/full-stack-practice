@@ -899,17 +899,17 @@ footer {
 }
 
 .fItem ul li:nth-child(3) {
-    width: 24%;
+    width: 30%;
     padding: 0 20px;
 
 }
 
 .flogosection {
-    width: 34% !important;
+    width: 20%;
 }
 
 .fcontact {
-    width: 25% !important;
+    width: 34%;
     padding: 0 !important;
 }
 
