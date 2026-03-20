@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetshop.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sweetshop.com</h1>
+        <p>The World's largest sweets & bakeris shop</p>
+    </header>
+    <nav>
+        <form>
+            <input id="search" type="search" placeholder="  Search your sweets here" name="search">
+            <input id="search_btn" type="submit" value="search">
+        </form>
+        <table id="menu-table">
+            <tr>
+                <td id="menu-item"><a href="index.html">Home</a></td>
+                <td id="menu-item"><a href="sweets.html">Sweets</a></td>
+                <td id="menu-item"><a href="bakeries.html">Bakeries</a></td>
+                <td id="menu-item"><a href="#abt_us">About Us</a></td>
+                <td id="menu-item"><a href="#Contact_Us">Contact Us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <section>
+        <address id="venue">Venue: Revati Range,Indore - 453555</address>
+        <address id="phone">Order Online : +91 9117392461, 9570690040</address>
+        <div class="popular-sweets-box">
+            <h1 id="popular-sweets-title">Our Pouplar Sweets</h1>
+            <img src="images/11.jpg" alt="laddu" id="popular-sweets-images">
+            <img src="images/4.jpeg" alt="gaja" id="popular-sweets-images">
+            <img src="images/9.jpg" alt="GulabJamun" id="popular-sweets-images">
+            <img src="images/6.jpeg" alt="Rasgulla" id="popular-sweets-images">
+        </div>
+        <table id="rate-list-box">
+            <tr>
+                <td id="rate-header">Sweets Name</td>
+                <td id="rate-header">Price</td>
+
+            </tr>
+            <tr>
+                <td id="rate-content">
+                    <ol>
+                        <li id="s-name">Rasgulla</li>
+                        <li id="s-name">Laddu</li>
+                        <li id="s-name">Barfee</li>
+                        <li id="s-name">Gulab Jamun</li>
+                        <li id="s-name">Rasmalai</li>
+                        <li id="s-name">Jalebi</li>
+                        <li id="s-name">Kaju Katli</li>
+                        <li id="s-name">Imarti</li>
+                        <li id="s-name">Balushahi</li>
+                    </ol>
+                </td>
+                <td id="rate-content">
+                    <ol id="rate">
+                        <li id="s-name">400</li>
+                        <li id="s-name">250</li>
+                        <li id="s-name">300</li>
+                        <li id="s-name">400</li>
+                        <li id="s-name">600</li>
+                        <li id="s-name">200</li>
+                        <li id="s-name">300</li>
+                        <li id="s-name">250</li>
+                        <li id="s-name">300</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <fieldset id="frm_box">
+            <legend>Order Online</legend>
+            <form id="Order_online">
+                Buyer Name<br>
+                <input type="text" name="Buyer name" id="Order_input"><br><br>
+                Mobile No.<br>
+                <input type="tel" name="mobile" id="Order_input"><br><br>
+                Choose Sweets<br>
+                <select name="choose_sweets" id="Order_input">
+                    <option value="Rasgulla">Rasgulla</option>
+                    <option value="Laddu">Laddu</option>
+                    <option value="Barfee">Barfee</option>
+                    <option value="Gulab Jamun">Gulab Jamun</option>
+                    <option value="Rasmalai">Rasmalai</option>
+                    <option value="Jalebi">Jalebi</option>
+                    <option value="Kaju Katli">Kaju Katli</option>
+                    <option value="Imarti">Imarti</option>
+                    <option value="Balushahi">Balushahi</option>
+                </select>
+                <br><br>
+                Quantity<br>
+                <input type="text" name="Quantity" id="Order_input">
+                <br><br>
+                Address<br>
+                <textarea name="address"></textarea>
+                <br><br>
+                <input type="submit" value="Order Now!" id="submit_btn">
+            </form>
+        </fieldset>
+
+        <!-- About Us -->
+        <div id="abt_us">
+            <h1 id="abt_title">About Us</h1>
+            <hr>
+            <p id="text">
+                A bakery is a place where different types of bread, cakes, pastries, cookies, and other sweet treats are
+                made and sold. It’s a magical place filled with the smell of fresh bread and sweet icing. Bakers start
+                their day early in the morning, even before the sun rises, to prepare fresh items for the day. They mix
+                ingredients like flour, sugar, eggs, and butter to create delicious treats. Bakers use special tools
+                like ovens, mixers, and baking sheets. They also use recipes, some of which may have been passed down
+                through generations. Baking is both a science and an art because it requires precise measurements and
+                creative decoration. Some bakeries also serve coffee or tea, making them a popular spot for breakfast or
+                snacks. There are different types of bakeries including retail bakeries, where we can walk in and buy
+                one or two items, and wholesale bakeries, which make large quantities of baked goods for stores and
+                restaurants. Some bakeries specialize in one or two items, like doughnuts or wedding cakes, while others
+                offer a wide variety of baked goods.
+            </p>
+        </div>
+        <!-- More Sweets -->
+        <div id="m_sweets">
+            <h1 id="more_sweets">More Sweets</h1>
+        </div>
+
+        <div id="sweets">
+            <img id="sweet_pic" src="images/1.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/2.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/3.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/4.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets_end">
+            <img id="sweet_pic" src="images/5.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/6.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/7.jpeg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/8.jpg">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets">
+            <img id="sweet_pic" src="images/10.png">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+        <div id="sweets_end">
+            <img id="sweet_pic" src="images/27.png">
+            <center>
+                <a href="#frm_box"><button id="buy_btn">Buy Now</button></a>
+            </center>
+        </div>
+    </section>
+    <footer>
+        <div id="Contact_Us">
+            <h1 id="Contact-title">Contact Us</h1>
+            <address id="contact_details">Website : www.sweetshop.com</address>
+            <address id="contact_details">Phone No : +91 9117392461</address>
+            <address id="contact_details">Email Id : sweetshopsupport@gmail.com</address>
+            <address id="contact_details">Address : Indore, Madhya Pradesh, 453555</address>
+        </div>
+        <div id="developer">Developed By : Intiyaj Raj</div>
+        <div id="social_link">
+            <h1 id="Contact-title">Follow Us</h1>
+            <a href="https://www.facebook.com/AdViK1a?mibextid=ZbWKwL" target="_blank"><img id="social_logo"
+                    src="images/facebook.png"></a>
+
+            <a href="https://www.instagram.com/raj9x1?igsh=MWY2czZnMWIxd2YzZw==" target="_blank"><img id="social_logo"
+                    src="images/instagram.png"></a>
+
+            <a href="#" target="_blank"><img id="social_logo" src="images/linkedin.png"></a>
+
+            <!-- <a href="#" target="_blank"><img id="social_logo" src="images/twitter.png"></a> -->
+        </div>
+    </footer>
+</body>
+
+</html>

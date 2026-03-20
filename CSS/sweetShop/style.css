@@ -1,0 +1,399 @@
+header {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    float: left;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* for sweetshop.com */
+header h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-left: 24px;
+    display: flex;
+}
+
+/* for tag */
+header p {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 24px;
+    font-family: century gothic;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(200, 237, 249);
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    align-content: space-around;
+}
+
+#search {
+    width: 400px;
+    height: 25px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-left: 22px;
+    cursor: auto;
+}
+
+#search_btn {
+    width: 80px;
+    height: 25px;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#search_btn:hover {
+    background-color: #d7cfcf;
+}
+
+#search_btn:active {
+    background-color: #fddde4;
+    color: blue;
+}
+
+#menu-table {
+    width: 600px;
+    height: 25px;
+    float: right;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+#menu-item {
+    background-color: transparent;
+    width: 20%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: century gothic;
+    font-weight: 600;
+}
+
+a:hover {
+    color: blue;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000000;
+    border-radius: 6px;
+}
+
+section {
+    width: 100%;
+    height: 1920px;
+    float: left;
+    /* border: 1px solid blue; */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#venue {
+    float: left;
+}
+
+#phone {
+    float: right;
+}
+
+.popular-sweets-box {
+    width: 720px;
+    height: 550px;
+    box-sizing: border-box;
+    float: left;
+    background-color: #dbe4f0;
+    border: 2px solid #d7cfcf;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+#popular-sweets-title {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#popular-sweets-images {
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    border: 4px solid white;
+    box-sizing: border-box;
+}
+
+#rate-list-box {
+    width: 400px;
+    height: 550px;
+    float: right;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border: 2px solid #d7cfcf;
+}
+
+#rate-header {
+    height: 50px;
+    background-color: #dbe4f0;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#rate-content {
+    background-color: #dbe4f0;
+}
+
+#s-name {
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #d0dceb;
+}
+
+#rate {
+    list-style: none;
+}
+
+fieldset {
+    /* width: 620px;
+    height: 520px; */
+    width: 695px;
+    height: 560px;
+    float: left;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #dbe4f0;
+    border: 2px solid #d7cfcf;
+
+}
+
+legend {
+    border: 2px solid #d7cfcf;
+    font-weight: 550;
+    font-family: century gothic;
+    font-size: 30px;
+}
+
+#Order_online {
+    font-family: sans-serif;
+    font-size: 17px;
+
+}
+
+#Order_input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 5px;
+    /* background-color: #e6ecf4; */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #e6ecf4; */
+}
+
+#submit_btn {
+    padding: 10px;
+    font-size: 15px;
+    float: right;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#submit_btn:hover {
+    /* background-color: #7396c3; */
+    background-color: rgb(247, 195, 203, 0.3);
+    color: blue;
+}
+
+#abt_us {
+    width: 400px;
+    height: 563px;
+    float: right;
+    border: 2px solid #ccc;
+    margin-top: 70px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-weight: 500;
+    background-color: #dbe4f0;
+}
+
+#abt_title {
+    text-align: center;
+    font-family: century gothic;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#text {
+    text-align: justify;
+    line-height: 20px;
+    background-color: #e6ecf4;
+}
+
+#m_sweets {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#more_sweets {
+    text-align: center;
+    font-family: century gothic;
+    font-size: 30px;
+    font-weight: 550;
+    border-radius: 4px;
+    background-color: #d0dceb;
+}
+
+#sweets {
+    width: 207px;
+    height: 250px;
+    border: 2px solid #ccc;
+    float: left;
+    background-color: #dbe4f0;
+    margin-right: 29px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#sweets_end {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #ccc;
+    float: left;
+    background-color: #dbe4f0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+#sweet_pic {
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+
+#buy_btn {
+    padding: 10px;
+    border: none;
+    border: 1px solid #ccc;
+    width: 100px;
+    background-color: #f6ecec;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buy_btn:hover {
+    background-color: rgb(247, 195, 203, 0.3);
+    color: blue;
+}
+
+#buy_btn:active {
+    background-color: #f6ecec;
+    color: #000000;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    float: left;
+    background-color: #000000;
+}
+
+#Contact_Us {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+#social_link {
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    float: right;
+}
+
+#Contact-title {
+    font-family: sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+#contact_details {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+#social_logo {
+    width: 60px;
+    padding: 10px;
+}
+
+#social_logo:hover {
+    background-color: rgb(180, 159, 159);
+    border-radius: 9px;
+}
+
+#developer {
+    float: left;
+    color: white;
+    font-family: century gothic;
+    margin-top: 200px;
+    margin-left: 120px;
+
+}
