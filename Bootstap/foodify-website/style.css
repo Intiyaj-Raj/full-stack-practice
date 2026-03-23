@@ -8,8 +8,9 @@
             transition: 1s ease;
         }
 
+        /* hero section */
         .hero {
-            background-image: url("./hero.jpg");
+            background-image: url("./image/hero.jpg");
             background-position: center;
             background-size: cover;
         }
