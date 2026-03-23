@@ -1,0 +1,13 @@
+        body {
+            scroll-behavior: smooth;
+            background: rgb(217, 226, 230);
+        }
+
+        .navbar .nav-link:hover {
+            color: white;
+            transition: 1s ease;
+        }
+
+        .hero {
+            background-image: url("./hero.jpg");
+        }
