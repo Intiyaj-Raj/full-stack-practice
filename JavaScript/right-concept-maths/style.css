@@ -228,7 +228,7 @@ nav a::before {
     height: 1.5px;
     bottom: -2px;
     left: 0;
-    background: white;
+    background: var(--glow-magenta);
     transition: 0.3s ease;
 }
 
@@ -239,14 +239,13 @@ nav a::after {
     right: 0;
     width: 0;
     height: 1.5px;
-    background: wheat;
+    background: var(--glow-cyan);
     transition: 0.3s ease;
 }
 
 nav a:hover::before,
 nav a:hover::after {
     width: 100%;
-    color: blue;
 }
 
 .btn {
