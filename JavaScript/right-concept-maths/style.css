@@ -176,3 +176,90 @@ body {
     color: var(--primary);
     text-transform: uppercase;
 }
+
+/*
+ ==========================================================
+                            header
+ ==========================================================
+ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.logo,
+.btn {
+    width: 20%;
+}
+
+nav {
+    width: 55%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -2px;
+    left: 0;
+    background: white;
+    transition: 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 1.5px;
+    background: wheat;
+    transition: 0.3s ease;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    width: 100%;
+    color: blue;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+.btn a {
+    border: 1px solid var(--secondary);
+    padding: 10px 20px;
+    border-radius: 10px 0 10px 0;
+}
+
+.btn a:hover {
+    background-color: var(--glow-magenta);
+}
