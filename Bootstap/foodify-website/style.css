@@ -45,6 +45,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        #testimonials {
-            background: rgb(217, 230, 235);
+        #testimonialCarousel {
+            width: 60%;
+        }
+
+        @media (max-width:768px) {
+            #testimonialCarousel {
+                width: 100%;
+            }
         }
