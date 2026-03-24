@@ -47,6 +47,7 @@
 
         #testimonialCarousel {
             width: 60%;
+            background-color: rgb(255, 150, 150);
         }
 
         @media (max-width:768px) {
