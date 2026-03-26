@@ -32,7 +32,7 @@
                         <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#our-prices">Our Prices</a>
+                        <a class="nav-link " aria-current="page" href="#our-courses">Our Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#our-services">Our Services</a>
@@ -90,6 +90,88 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <!-- our courses -->
+    <section id="our-courses">
+        <div class="container border border-danger-subtle mt-5">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="text-light text-center my-3">Our Courses</h1>
+                <p class="fs-5 text-info">
+                    Choose a plan and start your coding journey with simple and practical learning.
+                </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+                <!-- Basic -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-2">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">₹0<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-2 mb-3">
+                                <li>HTML & CSS basics</li>
+                                <li>5+ beginner projects</li>
+                                <li>Community support</li>
+                                <li>Free resources</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                                Start Free
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-2 bg-primary text-white">
+                            <h4 class="my-0 fw-normal">Standard</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">₹499<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-2 mb-3">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>15+ real projects</li>
+                                <li>Live doubt support</li>
+                                <li>Certificate</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-success">
+                        <div class="card-header py-2 bg-success text-white">
+                            <h4 class="my-0 fw-normal">Premium</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">₹999<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-2 mb-3">
+                                <li>Full stack development</li>
+                                <li>30+ advanced projects</li>
+                                <li>1:1 mentorship</li>
+                                <li>Job guidance</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-success">
+                                Join Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- our services -->
     <section id="our-services">
@@ -182,7 +264,7 @@
                             <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/services/main.webp" width="200" height="100%" alt="">
+                            <img src="./image/services/main.png" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
@@ -191,75 +273,32 @@
         </div>
     </section>
 
-    <!-- our prices -->
-    <section id="our-prices">
-        <div class="container border border-danger-subtle">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal text-white">Pricing</h1>
-                <p class="fs-5 text-info">Quickly build an effective pricing table for your potential customers
-                    with this Bootstrap example. It’s built with default Bootstrap components and utilities with little
-                    customization.</p>
-            </div>
+    <!-- contact form -->
+    <section id="contact-us">
+        <div class="container border border-primary my-5">
+            <h1 class="text-light text-center mt-5">Contact Us</h1>
 
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
-                                free</button>
-                        </div>
-                    </div>
+            <form class="p-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                        <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29<small
-                                    class="text-body-secondary fw-light">/mo</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-                        </div>
-                    </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-
     </section>
 
-    <footer class="py-3 text-center bg-dark mt-3">
+    <!-- footer -->
+    <footer class="py-3 text-center bg-dark mt-5">
         <p class="fw-bold text-white mb-1">
             © 2026 <a href="https://codeofschool.com/" class="text-decoration-none text-white ">Code of School</a>
         </p>
@@ -278,6 +317,8 @@
             <a href="#" class="text-primary text-decoration-none">Back to top ↑</a>
         </p>
     </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
