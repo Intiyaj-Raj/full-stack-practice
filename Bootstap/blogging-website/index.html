@@ -13,7 +13,7 @@
 <body class="bg-black">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">About Us</a>
+                        <a class="nav-link " aria-current="page" href="#our-prices">our-prices</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Our Services</a>
+                        <a class="nav-link " aria-current="page" href="#our-services">Our Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#">Contact Us</a>
@@ -61,15 +61,16 @@
             <div class="carousel-item">
                 <img src="./image/2.jpg" class="d-block w-100 object-fit-contain" alt="...">
                 <div class="carousel-caption d-none d-md-block text-light">
-                    <h1 class="fw-bolder">Welcome to Code of School</h1>
-                    <p class="fw-bold">We help you in all type of coding</p>
+                    <h1 class="fw-bolder">Learn Web Development</h1>
+                    <p class="fw-bold">Build modern websites using HTML, CSS, and JavaScript</p>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="./image/3.jpeg" class="d-block w-100 object-fit-contain" alt="...">
                 <div class="carousel-caption d-none d-md-block text-info">
-                    <h1 class="fw-bolder">Welcome to Code of School</h1>
-                    <p class="fw-bold">We help you in all type of coding</p>
+                    <h1 class="fw-bolder">Start Your Coding Journey</h1>
+                    <p class="fw-bold">Practice, learn, and become a skilled developer</p>
                 </div>
             </div>
         </div>
@@ -86,145 +87,178 @@
     </div>
 
     <!-- our services -->
-
     <section id="our-services">
         <h1 class="text-light text-center my-5">Our Services</h1>
 
-        <!-- cards creation -->
-
         <div class="container">
             <div class="row mb-2">
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">Web Development</strong>
+                            <h3 class="text-white">Build Modern Websites</h3>
+                            <p class="text-light">We create fast, responsive and user-friendly websites using latest
+                                technologies.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/web-dev.jpg" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">UI/UX Design</strong>
+                            <h3 class="text-white">Design Attractive Interfaces</h3>
+                            <p class="text-light">We design clean and simple UI that improves user experience.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/ui.jpg" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">Frontend Development</strong>
+                            <h3 class="text-white">Interactive User Interface</h3>
+                            <p class="text-light">We build dynamic and smooth frontend using HTML, CSS, JavaScript.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/frontend-dev.jpg" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">Backend Development</strong>
+                            <h3 class="text-white">Server Side Logic</h3>
+                            <p class="text-light">We handle database, APIs and server logic for your application.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/backend.jpg" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">SEO Optimization</strong>
+                            <h3 class="text-white">Improve Website Ranking</h3>
+                            <p class="text-light">We help your website rank higher on Google and reach more users.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/seo.jpg" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 d-flex flex-column position-static"> <strong
-                                class="d-inline-block mb-2 text-warning">Welcome to coding</strong>
-                            <h3 class="mb-0 text-white">Lets begin the coding journey</h3>
 
-                            <p class="card-text mb-auto text-light">This is a wider card with supporting text below as a
-                                natural
-                                lead-in to additional content.</p> <a href="#"
-                                class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
-                                <svg class="bi" aria-hidden="true">
-                                    <use xlink:href="#chevron-right"></use>
-                                </svg> </a>
+
+                <div class="col-md-6">
+                    <div class="services-card row g-0 border rounded overflow-hidden mb-4 shadow-sm position-relative">
+                        <div class="col p-4 d-flex flex-column">
+                            <strong class="text-warning mb-2">Maintenance</strong>
+                            <h3 class="text-white">Website Support</h3>
+                            <p class="text-light">We provide regular updates, bug fixes and support services.</p>
+                            <a href="#" class="text-decoration-none text-info">Learn More →</a>
                         </div>
                         <div class="col-auto d-none d-lg-block">
-                            <img src="./image/2842680.jpg" alt="" class="bd-placeholder-img " height="100%" width="200">
+                            <img src="./image/services/main.webp" width="200" height="100%" alt="">
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+    </section>
+
+
+    <section id="our-prices">
+        <div class="container border border-danger-subtle">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-white">Pricing</h1>
+                <p class="fs-5 text-info">Quickly build an effective pricing table for your potential customers
+                    with this Bootstrap example. It’s built with default Bootstrap components and utilities with little
+                    customization.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
+                                free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+                href="https://x.com/mdo">@mdo</a>.</p>
+        <p class="mb-0"> <a href="#">Back to top</a> </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

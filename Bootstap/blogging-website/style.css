@@ -6,3 +6,13 @@
 .carousel-caption p {
     text-shadow: 2px 2px 5px black;
 }
+
+.services-card {
+    height: 250px;
+}
+
+@media (max-width:748px) {
+    .carousel-item {
+        height: 55vh;
+    }
+}
