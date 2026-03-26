@@ -1,0 +1,53 @@
+body {
+    scroll-behavior: smooth;
+    background: rgb(217, 226, 230);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #efd5ff 0%, #969cf2 100%) !important;
+}
+
+.navbar .nav-link:hover {
+    color: white;
+    transition: 1s ease;
+}
+
+.container img {
+    width: 180px;
+    height: 75px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946') no-repeat center/cover;
+    height: 100vh;
+}
+
+/* Hero text */
+.hero h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-weight: bold;
+}
+
+/* About */
+.about img {
+    border-radius: 12px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Small hover effect */
+.about img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ff4d6d !important;
+    transition: .3s ease-in;
+}
