@@ -1,0 +1,8 @@
+.carousel-item {
+    height: 88vh;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    text-shadow: 2px 2px 5px black;
+}
