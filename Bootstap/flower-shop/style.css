@@ -70,3 +70,18 @@ footer a:hover {
 input {
     background-color: transparent !important;
 }
+
+.review-card {
+    height: 400px !important;
+}
+
+.review-card:hover {
+    scale: 1.05;
+    transition: .3s ease-in;
+}
+
+.card-body img {
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+}
