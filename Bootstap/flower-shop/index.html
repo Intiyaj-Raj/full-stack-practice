@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="hero">
+    <nav class="navbar navbar-expand-lg fixed-top ">
         <div class="container">
 
             <!-- Logo -->
@@ -28,7 +28,7 @@
 
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto gap-2ewwww">
+                <ul class="navbar-nav ms-auto gap-2ewwww fw-semibold">
                     <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Featured</a></li>
@@ -43,20 +43,44 @@
 
 
     <!-- hero section -->
-    <section class="hero d-flex align-items-center text-center text-white" id="hero">
-        <div class="container">
-            <h1 class="fw-bold display-4">Welcome to Fresh Blooms 🌸</h1>
-            <p class="lead">Beautiful flowers for every special moment.</p>
-            <a href="#about" class="btn btn-light mt-3">Explore More</a>
+    <section class="hero d-flex align-items-center text-center text-danger" id="hero">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <a href="#"> <img src="./image/h1.avif" class="d-block w-100 " alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""> <img src="./image/h2.avif" class="d-block w-100 " alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="./image/h3.avif" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="./image/h4.avif" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev p-5" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon border border-2 border-danger rounded p-3 bg-dark"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon border border-2 border-danger rounded p-3 bg-dark"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <section class="py-5 about bg-light" id="about">
+    <!-- about section -->
+
+    <section class="pt-5 about mt-4" id="about">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class=" w-100 shadow"
-                        alt="flowers">
+                    <img src="./image/about.jpg" class=" w-100 shadow" alt="flowers">
                 </div>
                 <div class="col-md-6">
                     <h2 class="fw-bold mb-3">About Us 🌸</h2>
@@ -83,6 +107,118 @@
         </div>
     </section>
 
+    <!-- category section -->
+    <section>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5">Our Category</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Red Roses Bunch</h4>
+                                <p class="text-secondary fw-semibold">Rs. 999</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c1.jpg"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c2.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Purple orchids</h4>
+                                <p class="text-secondary fw-semibold">Rs. 799</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c2.jpg"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c3.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Forever Flowers</h4>
+                                <p class="text-secondary fw-semibold">Rs. 2100</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c3.jpg"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c4.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Yellow Roses Bouquet</h4>
+                                <p class="text-secondary fw-semibold">Rs. 549</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c4.jpg"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c5.webp" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Pretty Please</h4>
+                                <p class="text-secondary fw-semibold">Rs. 7999</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c5.webp"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-card-img col">
+                        <div class="card shadow-sm">
+                            <img src="./image/c6.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-text fw-bold">Role Model</h4>
+                                <p class="text-secondary fw-semibold">Rs.6999</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group"> <button type="button"
+                                            class="btn btn-sm btn-outline-secondary"><a href="./image/c6.jpg"
+                                                class="text-decoration-none">View</a></button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container">
             <div class="row g-4">
