@@ -1,6 +1,6 @@
 body {
     scroll-behavior: smooth;
-    background: #EED8DB;
+    /* background: #EED8DB; */
 }
 
 .navbar {
@@ -51,12 +51,13 @@ footer a:hover {
     transition: .3s ease-in;
 }
 
-.cat-card-img {
-    height: 300px;
-    margin-bottom: 100px;
+.cat-card-img,
+#best .card {
+    height: 400px;
 }
 
-.cat-card-img .card img {
+.cat-card-img .card img,
+#best .card img {
     height: 255px;
     width: 100%;
     object-fit: cover;
