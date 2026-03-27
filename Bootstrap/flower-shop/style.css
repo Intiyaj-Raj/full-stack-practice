@@ -11,7 +11,8 @@ body {
 
 .navbar .nav-link:hover {
     color: blue;
-    transition: 1s ease;
+    border-bottom: 3px solid black;
+    transition: .5s linear;
 }
 
 .container img {
