@@ -8,11 +8,21 @@
 }
 
 .services-card {
-    height: 250px;
+    height: 200px;
 }
 
-@media (max-width:748px) {
+@media (max-width:770px) {
     .carousel-item {
         height: 55vh;
+    }
+
+    .services-card {
+        height: 200px;
+    }
+}
+
+@media (max-width:576px) {
+    .services-card-img {
+        display: block !important;
     }
 }
