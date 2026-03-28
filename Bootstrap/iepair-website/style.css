@@ -1,6 +1,7 @@
 .header {
     position: relative;
     height: 70px;
+    position: fixed;
 }
 
 .navbar {
@@ -41,4 +42,16 @@
     font-style: normal;
     color: rgb(4, 4, 41);
 
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    padding: 40px 20px !important;
+    position: absolute;
+    bottom: 100px;
 }
