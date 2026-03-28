@@ -125,6 +125,11 @@
     font-weight: 600;
 }
 
+
+.card img {
+    height: 160px;
+}
+
 #contact {
     width: 100%;
     height: 400px;
