@@ -86,3 +86,18 @@ input {
     height: 180px;
     width: 180px;
 }
+
+@media (max-width:600px) {
+    #hero {
+        margin-top: 80px !important;
+        height: 40vh;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+}
