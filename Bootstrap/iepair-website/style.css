@@ -209,3 +209,9 @@ input::placeholder,
 textarea::placeholder {
     color: rgb(22, 148, 238);
 }
+
+.team-img img {
+    width: 100px;
+    height: 100px;
+    object-position: center;
+}
