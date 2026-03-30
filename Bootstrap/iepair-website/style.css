@@ -221,3 +221,14 @@ textarea::placeholder {
     height: 50px;
     border-radius: 50%;
 }
+
+.news-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-input input {
+    outline: none;
+    width: 50%;
+}
