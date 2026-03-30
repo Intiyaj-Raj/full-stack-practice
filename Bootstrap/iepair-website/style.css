@@ -232,3 +232,22 @@ textarea::placeholder {
     outline: none;
     width: 50%;
 }
+
+footer {
+    background: rgb(11, 11, 70);
+}
+
+.f-icon a i {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.f-icon a i:hover {
+    color: blue !important;
+    transition: all .3s ease-in-out;
+}
+
+.f-links .nav-item a:hover {
+    color: rgb(231, 182, 89) !important;
+    transition: color .3s ease-in-out;
+}
