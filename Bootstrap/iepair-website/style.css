@@ -289,4 +289,12 @@ footer {
         display: block;
         width: 100%;
     }
+
+    .s-card .card {
+        height: auto;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
 }
