@@ -33,7 +33,6 @@
 .offcanvas {
     background-color: rgb(168, 210, 253);
     width: 50% !important;
-    height: 55vh;
 }
 
 .offcanvas-title {
@@ -239,7 +238,16 @@ textarea::placeholder {
 
 .news-input input {
     outline: none;
+    border: none;
     width: 50%;
+    padding: 8px;
+}
+
+.news-btn {
+    padding: 8px 20px;
+    background: goldenrod;
+    outline: none;
+    border: none;
 }
 
 footer {
@@ -296,6 +304,7 @@ footer {
 
     .about-div3 {
         border-radius: 0 0 6px 6px;
+        margin-bottom: 15px;
     }
 
     .about-div4 {
@@ -309,4 +318,13 @@ footer {
     .contact-box {
         width: 90%;
     }
+
+    .news-input input {
+        width: 70%;
+    }
+
+    .news-btn {
+        padding: 8px 10px;
+    }
+
 }
