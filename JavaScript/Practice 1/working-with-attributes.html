@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bgColor">
+
+
+    <h1>Working with attributes </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ratione accusamus dolorum molestiae rem hic
+        nam officiis. Blanditiis, in qui!</p>
+
+
+    <button id="tbtn" onclick="handleToggle()">Dark</button>
+
+    <button id="clickbtn" onclick="handleClick()">Click Me</button>
+
+    <br><br>
+
+    <!-- password validator -->
+    <form action="">
+        <input type="password" id="pwd">
+        <input type="checkbox" name="" id="" onclick="handlePass()">
+    </form>
+
+
+    <script>
+
+        function handleToggle() {
+            let bgC = document.getElementById("bgColor")
+            let tbtn = document.getElementById("tbtn")
+
+            if (bgC.style.backgroundColor === "white") {
+                bgC.style.backgroundColor = "black"
+                bgC.style.color = "white"
+                tbtn.innerHTML = "Light"
+            }
+            else {
+                bgC.style.backgroundColor = "white"
+                bgC.style.color = "black"
+                tbtn.innerHTML = "Dark"
+            }
+        }
+
+        // styling button
+        function handleClick() {
+            let clickbtn = document.getElementById("clickbtn")
+            clickbtn.innerText = "Submit"
+            clickbtn.style.backgroundColor = "black"
+            clickbtn.style.color = "white"
+        }
+
+
+        function handlePass() {
+            let pass = document.getElementById("pwd")
+            pass.type = "text"
+        }
+    </script>
+</body>
+
+</html>
