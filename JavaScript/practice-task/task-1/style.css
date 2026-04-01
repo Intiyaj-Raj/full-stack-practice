@@ -67,3 +67,40 @@ nav ul {
     background: blue;
     color: white;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    border-radius: 10px;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+}
+
+#card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-card {
+    width: 23%;
+    height: 100px;
+    margin-top: 10px;
+
+}
