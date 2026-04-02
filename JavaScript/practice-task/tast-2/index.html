@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Maker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Address Maker</h1>
+        <h6>An Online Address Creator Tool</h6>
+    </header>
+
+    <main>
+
+        <div class="formsec">
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" placeholder="Enter Name" id="name">
+
+                <label for="">Mobile NO.:</label>
+                <input type="tel" placeholder="Enter Mobile Number">
+
+                <label for="">Email:</label>
+                <input type="email" placeholder="Enter Email Id">
+
+                <label for="">Address:</label>
+                <textarea placeholder="Enter Your Address"></textarea>
+
+                <label for="">Message:</label>
+                <textarea placeholder="Enter Your Message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <p id="mob">91173924761</p>
+            </div>
+
+            <div>
+                <p id="c-name">Intiyaj</p>
+                <p id="emailId">intiyaj@gmila.com</p>
+                <p id="add">Indore</p>
+                <p id="msg">Hello!</p>
+            </div>
+
+            <div class="card-btn">
+                <button>Print</button>
+                <button>Bold</button>
+                <button>Italic</button>
+                <button>Undo</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function handleForm() {
+            let name = document.getElementById("name").value
+        }
+    </script>
+</body>
+
+</html>
