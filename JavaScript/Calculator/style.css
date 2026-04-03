@@ -28,7 +28,7 @@ input {
     border: none;
     outline: none;
     padding: 24px 10px;
-    margin: 10px;
+    margin: 10px 5px;
     background: #8CC6A4;
     box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.5);
     font-size: 30px;
@@ -42,9 +42,9 @@ input::placeholder {
 
 button {
     border: none;
-    width: 60px;
+    width: 64px;
     height: 35px;
-    margin: 10px;
+    margin: 5px;
     background: transparent;
     color: white;
     font-weight: bold;
@@ -55,16 +55,25 @@ button {
 }
 
 button:hover {
-    transform: translateY(-2px);
+    transform: scale(1.04);
 }
 
 .equalBtn {
     background: rgb(85, 239, 85);
 }
 
+.equalBtn:active {
+    background: rgb(1, 54, 1);
+}
+
 .operator {
     background: #000;
     color: rgb(149, 251, 149);
+}
+
+.operator:active {
+    background: #3a4452;
+    color: white;
 }
 
 .clear {
@@ -75,4 +84,13 @@ button:hover {
 .del {
     color: rgb(243, 28, 28);
     background: black;
+}
+
+button:active {
+    color: blue;
+}
+
+.del:active {
+    color: white;
+    background: red;
 }
