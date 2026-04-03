@@ -1,70 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Maker</title>
-    <link rel="stylesheet" href="./style.css">
+	<meta lang="en-US">
+	<meta charset="utf-8">
+	<title>
+		task 2
+	</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-image: url(images/page_bg2.jpg);
+			background-size: 100% 1050px;
+			background-repeat: no-repeat;
+		}
+
+		#page {
+			width: 100%;
+			height: 1050px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		h1[align=center] {
+
+			font-size: 50px;
+			font-family: calibri;
+			color: white;
+		}
+
+		p[align=center] {
+			font-size: 16px;
+			font-family: sans-serif;
+			color: white;
+			padding-bottom: 10px;
+		}
+
+		#left {
+			margin: 100px;
+			width: 450px;
+			height: 750px;
+
+			float: left;
+		}
+
+		h2 {
+			font-size: 33px;
+			color: white;
+			text-align: center;
+		}
+
+		#formvalue {
+			Color: white;
+			font-family: century gothic;
+			font-size: 20px;
+			margin-top: 60px;
+		}
+
+		#one,
+		#two,
+		#three,
+		#four,
+		#five {
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 450px;
+			height: 30px;
+			border: 2px solid white;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+			color: white;
+			font-family: century gothic;
+
+		}
+
+		#dat {
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 450px;
+			border: 2px solid white;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+			color: white;
+			font-family: century gothic;
+
+		}
+
+		#make {
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: 15px;
+			width: 100px;
+			margin-left: 350px;
+			margin-top: 50px;
+			border: 2px solid white;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+			color: white;
+			font-family: century gothic;
+			float: left;
+		}
+
+		#right {
+			float: left;
+			width: 452px;
+			height: 303px;
+			border: 2px solid white;
+			margin: 100px;
+		}
+
+		#load {
+			padding-top: 10px;
+			padding-left: 70px;
+			padding-right: 50px;
+			float: left;
+			width: 450px;
+			height: 250px;
+			border: 1px solid white;
+			background-image: url(images/card.jpg);
+			background-size: 100% 100%;
+		}
+
+		#btn {
+			width: 100px;
+			height: 30px;
+			background-color: white;
+			float: left;
+			margin-left: 10px;
+			margin-top: 10px;
+			padding-top: 6px;
+			text-align: center;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+
+		#firstno,
+		#lastno {
+
+			margin-left: 230px;
+			color: yellow;
+			font-family: Comic Sans MS;
+			font-size: 13px;
+		}
+
+		#namee {
+			margin-top: 20px;
+			font-size: 21px;
+			font-family: Comic Sans MS;
+			color: yellow;
+			margin-bottom: 10px;
+		}
+
+		#emailid,
+		#father,
+		#address {
+			font-family: century gothic;
+			color: white;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	</style>
+	<script>
+		function get() {
+			var a = document.getElementById("one").value;
+			var b = document.getElementById("two").value;
+			var c = document.getElementById("three").value;
+			var d = document.getElementById("four").value;
+			var e = document.getElementById("five").value;
+			var f = document.getElementById("dat").value;
+
+			var g = document.getElementById("firstno");
+			g.innerHTML = b;
+
+			var h = document.getElementById("namee");
+			h.innerHTML = a;
+
+			var i = document.getElementById("lastno");
+			i.innerHTML = c;
+
+			var j = document.getElementById("father");
+			j.innerHTML = d;
+
+			var k = document.getElementById("emailid");
+			k.innerHTML = e;
+
+			var l = document.getElementById("address");
+			l.innerHTML = f;
+		}
+
+		function bold() {
+			var a = document.getElementById("father");
+			a.style.fontWeight = "bold";
+
+			var b = document.getElementById("emailid");
+			b.style.fontWeight = "bold";
+
+			var f = document.getElementById("address");
+			f.style.fontWeight = "bold";
+		}
+
+		function italic() {
+			var a = document.getElementById("father");
+			a.style.fontStyle = "italic";
+
+			var b = document.getElementById("emailid");
+			b.style.fontStyle = "italic";
+
+			var f = document.getElementById("address");
+			f.style.fontStyle = "italic";
+		}
+
+		function prin() {
+			document.print();
+		}
+
+		function undo() {
+			var a = document.getElementById("father");
+			a.style.fontStyle = "normal";
+
+			var b = document.getElementById("emailid");
+			b.style.fontStyle = "normal";
+
+			var f = document.getElementById("address");
+			f.style.fontStyle = "normal";
+
+			var a = document.getElementById("father");
+			a.style.fontWeight = "normal";
+
+			var b = document.getElementById("emailid");
+			b.style.fontWeight = "normal";
+
+			var f = document.getElementById("address");
+			f.style.fontWeight = "normal";
+		}
+	</script>
 </head>
 
 <body>
+	<div id="page">
+		<h1 align="center">Address Maker</h1>
+		<p align="center">An Online Address Creater Tool</p>
+		<hr />
+		<div id="left">
+			<h2>Type Your Information Here</h2>
+			<form id="formvalue">
+				Name:<br>
+				<input type="name" name="name" id="one"><br><br>
+				Mobile No. :<br>
+				<input type="number" name="mobile no." id="two"><br><br>
+				Alternate Mobile No. :<br>
+				<input type="number" name="Alternate mobile no." id="three"><br><br>
+				S/O,W/O,D/O :<br>
+				<input type="name" name="S/O,W/O,D/O" id="four"><br><br>
+				Email :<br>
+				<input type="email" name="email" id="five"><br><br>
+				Address:<br>
+				<textarea rows="8" id="dat">
 
-    <header>
-        <h1>Address Maker</h1>
-        <h6>An Online Address Creator Tool</h6>
-    </header>
-
-    <main>
-
-        <div class="formsec">
-            <form action="">
-                <label for="">Name:</label>
-                <input type="text" placeholder="Enter Name" id="name">
-
-                <label for="">Mobile NO.:</label>
-                <input type="tel" placeholder="Enter Mobile Number">
-
-                <label for="">Email:</label>
-                <input type="email" placeholder="Enter Email Id">
-
-                <label for="">Address:</label>
-                <textarea placeholder="Enter Your Address"></textarea>
-
-                <label for="">Message:</label>
-                <textarea placeholder="Enter Your Message"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <p id="mob">91173924761</p>
-            </div>
-
-            <div>
-                <p id="c-name">Intiyaj</p>
-                <p id="emailId">intiyaj@gmila.com</p>
-                <p id="add">Indore</p>
-                <p id="msg">Hello!</p>
-            </div>
-
-            <div class="card-btn">
-                <button>Print</button>
-                <button>Bold</button>
-                <button>Italic</button>
-                <button>Undo</button>
-            </div>
-        </div>
-    </main>
+</textarea>
 
 
-    <script>
-        function handleForm() {
-            let name = document.getElementById("name").value
-        }
-    </script>
+			</form>
+			<input type="submit" id="make" value="MAKE" onclick="get()">
+		</div>
+		<div id="right">
+			<div id="load">
+				<p id="firstno"></p>
+				<p id="lastno"></p>
+				<p id="namee"></p>
+				<p id="emailid"></p>
+				<p id="father"></p>
+				<p id="address"></p>
+			</div>
+			<div id="btn" onclick="print()">Print</div>
+			<div id="btn" onclick="bold()">Bold</div>
+			<div id="btn" onclick="italic()">Italic</div>
+			<div id="btn" onclick="undo()">Undo</div>
+		</div>
+	</div>
 </body>
 
 </html>
