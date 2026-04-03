@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="tel" placeholder="Enter mobile number" id="userInput">
+
+    <button onclick="handleInput()">send</button>
+    <h2 id="call"></h2>
+    <script>
+
+        function handleInput() {
+            let inputValue = document.getElementById("userInput").value
+
+            let msg = document.getElementById("call")
+
+            msg.innerHTML = `Call Me <a href="tel:${inputValue}"> ${inputValue} </a>`
+        }
+    </script>
+
+
+</body>
+
+</html>
