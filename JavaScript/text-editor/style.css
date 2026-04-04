@@ -19,7 +19,7 @@
   #code-box {
       margin: 20px auto;
       width: 90%;
-      height: 500px;
+      height: 70vh;
   }
 
   legend {
@@ -48,7 +48,7 @@
       display: none;
       margin: 20px auto;
       width: 90%;
-      height: 500px;
+      height: 70vh;
   }
 
   #result {
