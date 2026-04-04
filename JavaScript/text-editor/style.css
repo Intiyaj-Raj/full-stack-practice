@@ -1,3 +1,10 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+  }
+
   header {
       text-align: center;
       background: blue;
@@ -6,6 +13,7 @@
       padding: 15px;
       width: 100%;
       height: auto;
+      font-weight: bold;
   }
 
   #code-box {
@@ -33,6 +41,14 @@
       padding: 10px;
       font-weight: bold;
       margin: 10px;
+      cursor: pointer;
+  }
+
+  #result-box {
+      display: none;
+      margin: 20px auto;
+      width: 90%;
+      height: 500px;
   }
 
   #result {
@@ -43,16 +59,12 @@
 
   }
 
-  #show {
-      display: none;
-      margin: 20px auto;
-      width: 90%;
-      height: 500px;
-  }
 
-  #icon {
+
+  #return-btn {
       display: none;
       padding: 10px;
       font-weight: bold;
       margin: 10px;
+      cursor: pointer;
   }
