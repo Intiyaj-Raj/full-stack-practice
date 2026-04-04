@@ -31,3 +31,27 @@ function handleBack() {
     let runBtn = document.getElementById("run-btn")
     runBtn.style.display = "block"
 }
+
+function handleToggle() {
+    let bgc = document.querySelector("body")
+    let toggleBtn = document.getElementById("toggle")
+    let textAreaBg = document.querySelector("textarea")
+    if (bgc.style.backgroundColor == "white") {
+        bgc.style.backgroundColor = "black"
+        bgc.style.color = "white"
+        textAreaBg.style.backgroundColor = "black"
+        textAreaBg.style.color = "white"
+        toggleBtn.innerText = "Light"
+        toggleBtn.style.backgroundColor = "white"
+        toggleBtn.style.color = "black"
+    }
+    else {
+        bgc.style.backgroundColor = "white"
+        bgc.style.color = "black"
+        textAreaBg.style.backgroundColor = "white"
+        textAreaBg.style.color = "black"
+        toggleBtn.innerText = "Dark"
+        toggleBtn.style.backgroundColor = "black"
+        toggleBtn.style.color = "white"
+    }
+}

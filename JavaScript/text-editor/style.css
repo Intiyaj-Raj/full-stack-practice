@@ -16,6 +16,20 @@
       font-weight: bold;
   }
 
+  #toggle {
+      float: right;
+      padding: 4px 15px;
+      background-color: black;
+      color: white;
+      outline: none;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  #toggle:active {
+      background: white;
+  }
+
   #code-box {
       margin: 20px auto;
       width: 90%;

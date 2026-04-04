@@ -26,3 +26,16 @@ function handleImg3() {
 function handleImg4() {
     containerImg.src = "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70"
 }
+
+function handleToggle() {
+    let bgc = document.querySelector("body")
+
+    if (bgc.style.backgroundColor == "white") {
+        bgc.style.backgroundColor = "black"
+        bgc.style.color = "white"
+    }
+    else {
+        bgc.style.backgroundColor = "white"
+        bgc.style.color = "black"
+    }
+}
