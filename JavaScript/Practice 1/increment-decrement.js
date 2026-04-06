@@ -11,5 +11,8 @@ console.log(e)
 
 let t = a++ + ++a + ++a - b - b - c-- - d
 console.log(t)
+
+console.log()
+
 let r = a-- + --b - --c + 5 + 8 + t - e - d
 console.log(r)
