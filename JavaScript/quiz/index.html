@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quiz-box {
+            background: white;
+            padding: 20px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .option {
+            display: block;
+            width: 100%;
+            margin: 8px 0;
+            padding: 10px;
+            border: none;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .option:hover {
+            background: #2980b9;
+        }
+
+        .next-btn {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: #2ecc71;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz-box">
+        <h2 id="question">Question</h2>
+        <div id="answers"></div>
+        <button class="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <script>
+        const quiz = [
+            {
+                question: "What is HTML?",
+                answers: ["Programming Language", "Markup Language", "Database", "OS"],
+                correct: 1
+            },
+            {
+                question: "What is CSS used for?",
+                answers: ["Structure", "Styling", "Logic", "Database"],
+                correct: 1
+            },
+            {
+                question: "Which is JavaScript?",
+                answers: ["Style", "Markup", "Programming Language", "None"],
+                correct: 2
+            }
+        ];
+
+        let current = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+
+            let q = quiz[current];
+            document.getElementById("question").innerText = q.question;
+
+            let answersHTML = "";
+            q.answers.forEach((ans, index) => {
+                answersHTML += `<button class="option" onclick="checkAnswer(${index}, this)">${ans}</button>`;
+            });
+
+            document.getElementById("answers").innerHTML = answersHTML;
+        }
+
+        function checkAnswer(index, btn) {
+            if (answered) return;
+            answered = true;
+
+            let correctIndex = quiz[current].correct;
+            let buttons = document.querySelectorAll(".option");
+
+            buttons.forEach((button, i) => {
+                if (i === correctIndex) {
+                    button.style.background = "green";
+                }
+                if (i === index && i !== correctIndex) {
+                    button.style.background = "red";
+                }
+                button.disabled = true;
+            });
+
+            if (index === correctIndex) {
+                score++;
+            }
+        }
+
+        function nextQuestion() {
+            current++;
+            if (current < quiz.length) {
+                loadQuestion();
+            } else {
+                document.querySelector(".quiz-box").innerHTML =
+                    `<h2>Your Score: ${score}/${quiz.length}</h2>`;
+            }
+        }
+
+        loadQuestion();
+    </script>
+
+</body>
+
+</html>
