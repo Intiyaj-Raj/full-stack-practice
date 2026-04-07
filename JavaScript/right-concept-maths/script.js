@@ -4,3 +4,7 @@ window.addEventListener('load', () => {
         document.getElementById('loadingScreen').classList.add('hidden');
     }, 100);
 });
+
+function handleIntroSection() {
+    window.location.href = "intro.html";
+}
