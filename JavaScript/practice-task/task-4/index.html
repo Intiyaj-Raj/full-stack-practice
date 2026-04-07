@@ -22,12 +22,12 @@
 
             <span>
                 <p>Contrast</p>
-                <input type="range" name="" id="contrast" min="0" max="400">
+                <input type="range" name="" id="contrast" min="0" max="400" oninput="handleContrast()">
             </span>
 
             <span>
                 <p>Saturate</p>
-                <input type="range" name="" id="saturate" min="0" max="400">
+                <input type="range" name="" id="saturate" min="0" max="400" oninput="handleSaturate()">
             </span>
         </div>
 
@@ -37,12 +37,22 @@
 
     <script>
         let result = document.getElementById("result");
+        let pic = document.getElementById("pic");
 
         function handleBrightness() {
             let a = document.getElementById("bright").value;
-            result.innerHTML = a;
+            pic.style.filter = `brightness(${a}%)`
+        }
 
+        function handleContrast() {
+            let a = document.getElementById("contrast").value
+            pic.style.filter = `contrast(${a}%)`
 
+        }
+
+        function handleSaturate() {
+            let a = document.getElementById("saturate").value;
+            pic.style.filter = `saturate(${a}%)`
         }
     </script>
 </body>
