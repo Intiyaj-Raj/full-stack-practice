@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="texts">Hello! How are You ?</p>
+    <br><br><br><br><br>
+    <input type="range" name="" min="0" max="100" id="userRange" oninput="handleRange()">
+
+    <script>
+
+        function handleRange() {
+            let userRange = document.getElementById("userRange").value
+            let texts = document.getElementById("texts")
+            texts.style.fontSize = `${userRange}px`;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
