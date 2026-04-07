@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num1" placeholder="Enter numeber1">
+    <input type="number" name="" id="num2" placeholder="Enter numeber2">
+
+    <button onclick="handleCheck()">Check</button>
+    <p id="result"></p>
+
+    <script>
+
+        function handleCheck() {
+            let n1 = Number(document.getElementById("num1").value)
+            let n2 = Number(document.getElementById("num2").value)
+
+            let result = document.getElementById("result")
+
+            if (n1 > n2) {
+                result.innerHTML = `${n1} is greater than ${n2}`
+            }
+            else if (n2 > n1) {
+                result.innerHTML = `${n2} is greater than ${n1}`
+            }
+            else {
+                result.innerHTML = "Both numbers are equal"
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
