@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: paleturquoise;
+}
+
+
+#box {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tool {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tool span {
+    border: 3px solid whitesmoke;
+    padding: 10px;
+}
+
+.tool p {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="box">
+
+        <img src="https://images.pexels.com/photos/2059466/pexels-photo-2059466.jpeg?cs=srgb&dl=-2059466.jpg&fm=jpg"
+            alt="" id="pic">
+
+        <div class="tool">
+            <span>
+                <p>Brightness</p>
+                <input type="range" name="" id="bright" min="0" max="200" oninput="handleBrightness()">
+            </span>
+
+            <span>
+                <p>Contrast</p>
+                <input type="range" name="" id="contrast" min="0" max="400">
+            </span>
+
+            <span>
+                <p>Saturate</p>
+                <input type="range" name="" id="saturate" min="0" max="400">
+            </span>
+        </div>
+
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        let result = document.getElementById("result");
+
+        function handleBrightness() {
+            let a = document.getElementById("bright").value;
+            result.innerHTML = a;
+
+
+        }
+    </script>
+</body>
+
+</html>
