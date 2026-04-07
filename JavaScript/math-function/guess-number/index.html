@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            margin-top: 20px;
+
+            padding: 6px 10px;
+            outline: none;
+        }
+
+        button {
+            padding: 6px 10px;
+            outline: none;
+            background: #000;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: blue;
+            color: black;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+
+        #resetBtn {
+            background: orange;
+            margin-top: 20px;
+            color: black;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Guess the number between 1 to 100 </h2>
+
+    <div>
+        <input type="number" name="" id="userInput" placeholder="Enter a Number.....">
+        <button onclick="handleGuess()">Guess</button>
+    </div>
+
+
+    <h3 id="result"></h3>
+
+    <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
