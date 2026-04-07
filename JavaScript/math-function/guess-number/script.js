@@ -5,9 +5,7 @@ let result = document.getElementById("result");
 
 function handleGuess() {
     let userInput = Number(document.getElementById("userInput").value);
-
     count++;
-
 
     if (userInput > randNum) {
         result.innerHTML = `${userInput} is too high.`;

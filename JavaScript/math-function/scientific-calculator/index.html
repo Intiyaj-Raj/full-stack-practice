@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calculator">
+
+        <h3>Advamce Calculator</h3>
+
+        <input type="text" id="display" readonly>
+
+        <div>
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('/')" style="background-color: black; color:white">/</button>
+        </div>
+
+        <div>
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="add('*')" style="background-color: black; color:white">*</button>
+        </div>
+
+        <div>
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('-')" style="background-color: black; color:white">-</button>
+        </div>
+
+        <div>
+            <button onclick="add('0')">0</button>
+            <button onclick="add('.')">.</button>
+            <button onclick="calculate()" style="background-color: green;">=</button>
+            <button onclick="add('+')" style="background-color: black; color:white">+</button>
+        </div>
+
+        <div class="trigo">
+            <button onclick="square()">x²</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+        </div>
+
+        <div class="trigo">
+            <button onclick="tan()">tan</button>
+            <button onclick="log()">log</button>
+            <button onclick="pi()">π</button>
+            <button onclick="clearDisplay()" style="background-color: red;">C</button>
+        </div>
+
+        <div>
+            <button onclick="toggleMode()" class="radianBtn">DEG/RAD</button>
+        </div>
+
+    </div>
+
+    <script src="./script.js">
+
+
+    </script>
+</body>
+
+</html>
