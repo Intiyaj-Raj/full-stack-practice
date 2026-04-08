@@ -62,15 +62,24 @@
         <button onclick="handleImage()">Change Image</button>
     </div>
 
+    <!-- Test -->
+    <!-- <div id="box" style="height: 200px; width: 200px; background-size: cover;"> -->
+
+    </div>
+
     <script>
 
         function handleImage() {
             let image = document.getElementById("image")
 
-            let randNum = Math.floor(Math.random() * 1000);
+            let randNum = Math.floor(Math.random() * 2000);
             console.log(randNum)
-
             image.src = "https://picsum.photos/400/300?random=" + randNum
+
+
+            // test
+            // let a = document.getElementById("box")
+            // a.style.backgroundImage = `url("./image/1.jpg")`
 
         }
     </script>

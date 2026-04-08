@@ -31,6 +31,7 @@ console.log(Math.trunc(a))
 console.log(Math.trunc(b))
 
 
+// print contstat value
 console.log(Math.E)
 console.log(Math.LN10)
 console.log(Math.SQRT1_2)
