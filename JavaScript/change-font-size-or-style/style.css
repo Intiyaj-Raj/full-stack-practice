@@ -1,0 +1,62 @@
+   body {
+       background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+   }
+
+   .box {
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       gap: 10px;
+       margin-top: 50px;
+   }
+
+   .leftside {
+       width: 40%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: ce;
+       gap: 10px;
+       background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 1) 100%);
+       box-shadow: 2px 4px 2px black;
+       padding: 20px;
+   }
+
+   input {
+       width: 90%;
+       padding: 7px;
+       outline: none;
+       background: transparent;
+   }
+
+   button {
+       width: 50%;
+       padding: 7px;
+       outline: none;
+       background: transparent;
+       font-weight: bold;
+       cursor: pointer;
+   }
+
+   button:active {
+       background: blue;
+       color: white;
+   }
+
+   #rSide {
+       display: none;
+
+       width: 40%;
+   }
+
+   .rightSide {
+       background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+       box-shadow: 2px 4px 2px black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       gap: 10px;
+       padding: 20px 0;
+   }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="leftside">
+            <h3 style="text-align: center;">Enter Your Details 👤</h3>
+            <input type="text" placeholder="Enter Your Name..." id="uName">
+            <input type="tel" name="" id="uMob" placeholder="Enter Your Mobile No...">
+            <input type="email" name="" id="uEmail" placeholder="Enter Your Email...">
+            <button onclick="showText()">click</button>
+        </div>
+        <div id="rSide">
+            <div class="rightSide">
+                <h3>Your Details 👤:</h3>
+                <a href="#" id="userName" style="text-decoration: none; color: black;"></a>
+                <a href="#" id="userMob"></a>
+                <a href="#" id="userEmail"></a>
+
+                <button onclick="italic() ">Italic</button>
+                <button onclick="bold()">Bold</button>
+                <button onclick="undo()">Undo</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
