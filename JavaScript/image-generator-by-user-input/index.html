@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagegenerator</title>
+
+    <style>
+        .box {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #img-card {
+            width: 50%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 10px;
+        }
+
+
+        input {
+            padding: 8px 10px;
+            outline: none;
+            width: 200px;
+        }
+
+        button {
+            padding: 8px 10px;
+            background: black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+
+        button:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div style="display: flex;">
+            <input type="number" id="userInput" placeholder="Enter Number....">
+            <button onclick="handleClick()">Generate Image</button>
+        </div>
+        <h4 id="imgLinkText">Image Link:
+            &nbsp;<a href="" id="imgLink" target="_blank">Enter Number to Generate Image Link</a>
+        </h4>
+        <div id="img-card"></div>
+
+    </div>
+
+    <script>
+        function handleClick() {
+
+            let userInput = document.getElementById("userInput").value;
+
+
+            let imgBox = document.getElementById("img-card");
+
+            // console.log(userInput);
+            // console.log(imgBox);
+
+            let a = `https://picsum.photos/400/300?random=${userInput}`;
+
+            imgBox.style.backgroundImage = `url("${a}")`
+            let imgLink = document.getElementById("imgLink")
+            imgLink.href = a;
+            imgLink.innerHTML = a
+        }
+    </script>
+
+</body>
+
+</html>
