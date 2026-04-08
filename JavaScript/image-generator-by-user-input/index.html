@@ -17,8 +17,8 @@
         }
 
         #img-card {
-            width: 50%;
-            height: 400px;
+            width: 60%;
+            height: 450px;
             background-size: cover;
             background-position: center;
             margin-top: 10px;
@@ -43,6 +43,15 @@
 
         button:active {
             color: blue;
+            background: red;
+        }
+
+        @media (max-width:600px) {
+            #img-card {
+                width: 90%;
+                height: 75vh;
+            }
+
         }
     </style>
 </head>
@@ -61,25 +70,7 @@
 
     </div>
 
-    <script>
-        function handleClick() {
-
-            let userInput = document.getElementById("userInput").value;
-
-
-            let imgBox = document.getElementById("img-card");
-
-            // console.log(userInput);
-            // console.log(imgBox);
-
-            let a = `https://picsum.photos/400/300?random=${userInput}`;
-
-            imgBox.style.backgroundImage = `url("${a}")`
-            let imgLink = document.getElementById("imgLink")
-            imgLink.href = a;
-            imgLink.innerHTML = a
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
