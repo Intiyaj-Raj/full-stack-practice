@@ -47,7 +47,7 @@ function undo() {
     let userName = document.getElementById("userName")
     let userMob = document.getElementById("userMob")
     let userEmail = document.getElementById("userEmail")
-
+    let textSize = document.getElementById("textSize").value;
 
     userName.style.fontWeight = ""
     userMob.style.fontWeight = ""
@@ -56,4 +56,20 @@ function undo() {
     userName.style.fontStyle = ""
     userMob.style.fontStyle = ""
     userEmail.style.fontStyle = ""
+
+    userName.style.fontSize = "";
+    userMob.style.fontSize = "";
+    userEmail.style.fontSize = "";
+}
+
+function handleChangeFontSize() {
+    let textSize = document.getElementById("textSize").value;
+
+    let userName = document.getElementById("userName");
+    let userMob = document.getElementById("userMob");
+    let userEmail = document.getElementById("userEmail");
+
+    userName.style.fontSize = textSize + "px";
+    userMob.style.fontSize = textSize + "px";
+    userEmail.style.fontSize = textSize + "px";
 }
