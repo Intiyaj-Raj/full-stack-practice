@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="handleAlert()"> Alert</button>
+    <button onclick="handleAlertFunc()"> AlertFunc</button>
+    <button onclick="handlePrompt()"> prompt</button>
+    <button onclick="handlePromptFunc()"> promptFunc</button>
+
+    <script>
+
+        function handleAlert() {
+
+            if (alert) {
+                console.log("alert")
+            }
+        }
+        function handleAlertFunc() {
+
+            if (alert("alert function")) {
+                console.log("Hello")
+            }
+        }
+        function handlePrompt() {
+
+            if (prompt) {
+                console.log("Hello")
+            }
+        }
+        function handlePromptFunc() {
+
+            if (prompt("prompt function")) {
+                console.log("Hello")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
