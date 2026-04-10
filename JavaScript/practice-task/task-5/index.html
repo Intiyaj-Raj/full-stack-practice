@@ -12,6 +12,8 @@
     <button onclick="handleAlertFunc()"> AlertFunc</button>
     <button onclick="handlePrompt()"> prompt</button>
     <button onclick="handlePromptFunc()"> promptFunc</button>
+    <button onclick="handleconfirm()"> confirm</button>
+    <button onclick="handleconfirmFunc()"> confirm function</button>
 
     <script>
 
@@ -27,15 +29,15 @@
                 console.log("Hello")
             }
         }
-        function handlePrompt() {
+        function handleconfirm() {
 
-            if (prompt) {
+            if (confirm) {
                 console.log("Hello")
             }
         }
-        function handlePromptFunc() {
+        function handleconfirmFunc() {
 
-            if (prompt("prompt function")) {
+            if (confirm("prompt function")) {
                 console.log("Hello")
             }
         }
