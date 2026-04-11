@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        p:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="">Name</label>
+    <input type="text" name="" id="userName">
+    <br><br>
+
+    <label for="">pass</label>
+    <input type="text" name="" id="pass">
+    <br><br>
+
+    <p onclick="handleOtp()">generate otp</p>
+    <br>
+    <span id="showOtp"></span>
+    <br><br>
+    <span>
+        <label for="">otp</label>
+        <input type="text" name="" id="otp">
+    </span>
+    <br><br>
+
+    <button onclick="handleLogin()">Login</button>
+
+
+</body>
+
+</html>
