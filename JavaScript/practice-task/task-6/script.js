@@ -4,6 +4,7 @@ function handleOtp() {
     showOtp.innerHTML = randNum
 }
 
+
 function handleLogin() {
     let otp = document.getElementById("otp").value
     let userEmail = document.getElementById("userEmail").value
