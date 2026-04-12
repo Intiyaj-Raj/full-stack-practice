@@ -15,14 +15,14 @@
     <div class="container">
         <div class="box">
             <p id="passAlert">Enter minimum 10 digit password</p>
-            <input type="password" name="" id="pass" oninput="handlePass()" placeholder="Enter password" maxlength="12">
+            <input type="password" name="" id="pass" onclick="handleInput()" placeholder="Enter password" maxlength="12"
+                oninput="handlePass()">
             <i class="fa-solid fa-check" id="checkIcon"></i>
+            <i class="fas fa-spinner fa-spin" id="spinner"></i>
         </div>
     </div>
 
-    <script src="./script.js">
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

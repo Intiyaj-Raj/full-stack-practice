@@ -90,6 +90,13 @@
       display: none;
   }
 
+  #spinner {
+      position: absolute;
+      right: 30px;
+      color: blue;
+      display: none;
+  }
+
   @media (max-width: 650px) {
       .box {
           width: 90%;
