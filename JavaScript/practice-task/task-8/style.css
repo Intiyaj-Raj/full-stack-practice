@@ -28,20 +28,70 @@
       float: right;
   }
 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f6f9;
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 400px;
+      position: relative;
+      padding: 25px 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Alert message */
+  #passAlert {
+      display: none;
+      color: red;
+      font-size: 14px;
+  }
+
+  /* Input field */
+  .input-group {
+      position: relative;
+      width: 100%;
+  }
+
   input {
       width: 100%;
-      padding: 8px 10px;
+      padding: 10px 40px 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.3s;
+  }
+
+  input:focus {
+      border-color: #4CAF50;
   }
 
   #checkIcon {
       color: green;
       position: absolute;
       right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
       display: none;
   }
 
-  @media (max-width:650px) {
+  @media (max-width: 650px) {
       .box {
-          width: 100%;
+          width: 90%;
       }
   }

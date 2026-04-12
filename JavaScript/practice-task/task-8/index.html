@@ -14,23 +14,14 @@
 <body>
     <div class="container">
         <div class="box">
-            <p id="passAlert">Enter 10 digit password</p>
-            <input type="password" name="" id="pass" oninput="handlePass()" placeholder="Enter password">
+            <p id="passAlert">Enter minimum 10 digit password</p>
+            <input type="password" name="" id="pass" oninput="handlePass()" placeholder="Enter password" maxlength="12">
             <i class="fa-solid fa-check" id="checkIcon"></i>
         </div>
     </div>
 
-    <script>
-        function handlePass() {
-            let pass = document.getElementById("pass").value
-            let passAlert = document.getElementById("passAlert")
-            if (pass.length < 10) {
-                passAlert.style.display = "block"
-            }
-            else if (pass.length >= 10) {
-                passAlert.style.display = "none"
-            }
-        }
+    <script src="./script.js">
+
     </script>
 </body>
 
