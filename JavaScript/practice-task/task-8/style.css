@@ -1,0 +1,47 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 50%;
+      position: relative;
+      padding: 10px 20px;
+  }
+
+  #passAlert {
+      display: none;
+      margin-bottom: 10px;
+      color: red;
+      float: right;
+  }
+
+  input {
+      width: 100%;
+      padding: 8px 10px;
+  }
+
+  #checkIcon {
+      color: green;
+      position: absolute;
+      right: 30px;
+      display: none;
+  }
+
+  @media (max-width:650px) {
+      .box {
+          width: 100%;
+      }
+  }
