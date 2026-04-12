@@ -9,7 +9,7 @@ function formValidation() {
     }
     else if (userPass === "") {
         alert("Enter password");
-        alert("Use inti9117 username to log in.")
+        alert("Use inti9117 password to log in.")
     }
     else if (userName === "intiyaj" && userPass === "inti9117") {
         alert("Login Successful 😍");
