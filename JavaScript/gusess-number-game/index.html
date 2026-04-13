@@ -19,6 +19,7 @@
             width: 100%;
             height: 100vh;
             background-position: center;
+            font-family: sans-serif;
         }
 
         .container {
@@ -58,19 +59,54 @@
             line-height: 1.5;
         }
 
-        .box button {
+        #nBtn {
             margin: 10px 0;
             padding: 6px;
             width: 150px;
             cursor: pointer;
         }
 
-        .box input {
-            padding: 6px;
-            margin: 10px;
-            width: 50%;
-            outline: none;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        span input,
+        span button {
+            padding: 6px;
+            outline: none;
+            border: none;
+            margin: 10px 0;
+        }
+
+        span input {
+            border-radius: 5px 0 0 5px;
+        }
+
+        span button {
+            background: blue;
+            color: white;
+            font-weight: 550;
+            padding: 6px 20px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+
+        }
+
+
+        span button:active {
+            color: blue;
+            background: rgb(101, 101, 101);
+        }
+
+        #result {
+            color: red;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-weight: 500;
+            margin: 10px 0;
         }
 
         @media (max-width:650px) {
@@ -80,7 +116,6 @@
 
             .box input {
                 width: 90%;
-
             }
         }
     </style>
@@ -96,26 +131,70 @@
 
                 <p>Dare to Guess ?</p>
 
-                <button>New Game</button>
+                <button id="nBtn">New Game</button>
             </div>
             <div class="box">
                 Enter your guess below & press enter
-                <input type="number" name="" id="userInput">
-                <p>Number of previous attempts: 0</p>
+                <span>
+                    <input type="number" name="" id="userInput">
+                    <button onclick="handleGuess()">Guess</button>
+                </span>
+                <p id="result">Wrong answer</p>
+                <p id="attempt"></p>
             </div>
             <div class="box">
-                <p>Your previous guesses: </p>
+                <p id="prevGuess">Your previous guesses:....</p>
             </div>
         </div>
     </div>
 
 
     <script>
+        let randNum = Math.floor(Math.random() * 100) + 1;
+        console.log(randNum)
+
+        let attempts = 0;
+        let maxAttempt = 5;
 
         function handleGuess() {
-            let randNum = Math.floor(Math.random() * 100) + 1;
-            console.log(randNum)
+            let result = document.getElementById("result")
+            let inputValue = Number(document.getElementById("userInput").value)
+            let showAttempt = document.getElementById("attempt")
+
+            let prevGuess = document.getElementById("prevGuess")
+
+            if (attempts == maxAttempt) {
+                result.innerHTML = `Bhai Chance Khatam ho gaya 😀 Answer = ${randNum}`
+            }
+
+            attempts++;
+            if (attempts <= 5) {
+                showAttempt.innerHTML = `Number of attempts: ${attempts}`
+            }
+
+
+            if (inputValue == randNum) {
+                result.innerHTML = "Game Win 👏"
+                attempt.innerHTML = count;
+            }
+            else if (inputValue > randNum) {
+                result.innerHTML = "Number is too high 🤔"
+                attempt.innerHTML = count;
+            }
+            else if (inputValue < randNum) {
+                result.innerHTML = "Number is too low 🤔"
+                attempt.innerHTML = count;
+
+            }
+            else if (count == 5) {
+                result.innerHTML = "Game Loss"
+                result.innerHTML = `Answer = ${randNum}`
+                attempt.innerHTML = count;
+            }
+
+            // prevGuess.innerHTML = `Your previous guesses: ${inputValue}`;
         }
+
 
     </script>
 
