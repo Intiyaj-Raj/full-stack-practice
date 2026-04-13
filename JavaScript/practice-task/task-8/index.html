@@ -5,10 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            position: relative;
+            padding: 10px 20px;
+        }
+
+        #passAlert {
+            display: none;
+            margin-bottom: 10px;
+            color: red;
+            float: right;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f6f9;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 400px;
+            position: relative;
+            padding: 25px 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Alert message */
+        #passAlert {
+            display: none;
+            color: red;
+            font-size: 14px;
+        }
+
+        /* Input field */
+        .input-group {
+            position: relative;
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 40px 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #4CAF50;
+        }
+
+        #checkIcon {
+            color: green;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        #spinner {
+            position: absolute;
+            right: 30px;
+            color: blue;
+            display: none;
+        }
+
+        @media (max-width: 650px) {
+            .box {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +128,29 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script>
+        function handlePass() {
+            let pass = document.getElementById("pass").value
+            let passAlert = document.getElementById("passAlert")
+            let checkIcon = document.getElementById("checkIcon")
+            let spinner = document.getElementById("spinner")
+            if (pass.length < 10) {
+                passAlert.style.display = "none"
+                checkIcon.style.display = "none"
+                spinner.style.display = "block"
+            }
+            else if (pass.length >= 10) {
+                passAlert.style.display = "none"
+                checkIcon.style.display = "block"
+                spinner.style.display = "none"
+            }
+        }
+
+        function handleInput() {
+            let passAlert = document.getElementById("passAlert")
+            passAlert.style.display = "block"
+        }
+    </script>
 </body>
 
 </html>
