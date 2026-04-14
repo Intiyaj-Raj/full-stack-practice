@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-weight: 550;
         }
 
         body {
@@ -131,7 +132,7 @@
 
                 <p>Dare to Guess ?</p>
 
-                <button id="nBtn">New Game</button>
+                <button id="nBtn" onclick="newGame()">New Game</button>
             </div>
             <div class="box">
                 Enter your guess below & press enter
@@ -140,7 +141,7 @@
                     <button onclick="handleGuess()">Guess</button>
                 </span>
                 <p id="result">Wrong answer</p>
-                <p id="attempt"></p>
+                <p id="attempt">Total Chances: 5</p>
             </div>
             <div class="box">
                 <p id="prevGuess">Your previous guesses:....</p>
@@ -151,51 +152,49 @@
 
     <script>
         let randNum = Math.floor(Math.random() * 100) + 1;
-        console.log(randNum)
-
         let attempts = 0;
         let maxAttempt = 5;
 
         function handleGuess() {
-            let result = document.getElementById("result")
-            let inputValue = Number(document.getElementById("userInput").value)
-            let showAttempt = document.getElementById("attempt")
+            let result = document.getElementById("result");
+            let inputValue = Number(document.getElementById("userInput").value);
+            let showAttempt = document.getElementById("attempt");
 
-            let prevGuess = document.getElementById("prevGuess")
-
-            if (attempts == maxAttempt) {
-                result.innerHTML = `Bhai Chance Khatam ho gaya 😀 Answer = ${randNum}`
+            if (attempts >= maxAttempt) {
+                result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
+                return;
             }
 
             attempts++;
-            if (attempts <= 5) {
-                showAttempt.innerHTML = `Number of attempts: ${attempts}`
-            }
 
+            let remaining = maxAttempt - attempts;
 
-            if (inputValue == randNum) {
-                result.innerHTML = "Game Win 👏"
-                attempt.innerHTML = count;
+            showAttempt.innerHTML = `Chances left: ${remaining}`;
+
+            if (inputValue === randNum) {
+                result.innerHTML = "Game Win 🎉";
             }
             else if (inputValue > randNum) {
-                result.innerHTML = "Number is too high 🤔"
-                attempt.innerHTML = count;
+                result.innerHTML = "Too high 🤔";
             }
-            else if (inputValue < randNum) {
-                result.innerHTML = "Number is too low 🤔"
-                attempt.innerHTML = count;
-
-            }
-            else if (count == 5) {
-                result.innerHTML = "Game Loss"
-                result.innerHTML = `Answer = ${randNum}`
-                attempt.innerHTML = count;
+            else {
+                result.innerHTML = "Too low 🤔";
             }
 
-            // prevGuess.innerHTML = `Your previous guesses: ${inputValue}`;
+            if (remaining === 0 && inputValue !== randNum) {
+                result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
+            }
         }
 
-
+        function newGame() {
+            randNum = Math.floor(Math.random() * 100) + 1;
+            console.log(randNum);
+            attempts = 0;
+            document.getElementById("result").innerHTML = "New Game Started 🚀";
+            document.getElementById("attempt").innerHTML = "Total Chances: 5";
+            document.getElementById("prevGuess").innerHTML = "Your previous guesses:";
+            document.getElementById("userInput").value = "";
+        }
     </script>
 
 </body>
