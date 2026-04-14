@@ -4,127 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-weight: 550;
-        }
-
-        body {
-            background-image: url("./bg.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 120vh;
-            background-position: center;
-            font-family: sans-serif;
-        }
-
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            height: 120vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card {
-            width: 60%;
-            height: 115vh;
-            background: rgba(2, 2, 43, 0.8);
-            border-radius: 10px;
-            box-shadow: -3px 1px 13px 5px rgba(0, 0, 0, 1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .box {
-            background: yellow;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 85%;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: -1px 1px 13px 1px rgb(203, 200, 8);
-        }
-
-        .box p {
-            line-height: 1.5;
-        }
-
-        #nBtn {
-            margin: 10px 0;
-            padding: 6px;
-            width: 150px;
-            cursor: pointer;
-        }
-
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        span input,
-        span button {
-            padding: 6px;
-            outline: none;
-            border: none;
-            margin: 10px 0;
-        }
-
-        span input {
-            border-radius: 5px 0 0 5px;
-        }
-
-        span button {
-            background: blue;
-            color: white;
-            font-weight: 550;
-            padding: 6px 20px;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-        }
-
-        span button:active {
-            color: blue;
-            background: rgb(101, 101, 101);
-        }
-
-        #result {
-            color: red;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 4px 10px;
-            border-radius: 3px;
-            margin: 10px 0;
-        }
-
-        #attempt {
-            background: rgba(2, 2, 224, 0.7);
-            padding: 4px 10px;
-            border-radius: 3px;
-            margin: 10px 0;
-            color: white;
-        }
-
-        @media (max-width:650px) {
-            .card {
-                width: 90%;
-            }
-
-            .box input {
-                width: 90%;
-            }
-        }
-    </style>
+    <title>guess-number-game</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -144,6 +25,7 @@
                 <span>
                     <input type="number" name="" id="userInput">
                     <button onclick="handleGuess()" id="guessBtn">Guess</button>
+                    <button id="newBtn2" onclick="newGame()">New Game</button>
                 </span>
                 <p id="result">Wrong answer</p>
                 <p id="attempt">Total Chances: 5</p>
@@ -155,60 +37,7 @@
     </div>
 
 
-    <script>
-        let randNum = Math.floor(Math.random() * 100) + 1;
-        let guessBtn = document.getElementById("guessBtn")
-
-        let showAttempt = document.getElementById("attempt");
-        let attempts = 0;
-        let maxAttempt = 5;
-        console.log(randNum)
-        document.getElementById(randNum)
-        function handleGuess() {
-            let inputValue = Number(document.getElementById("userInput").value);
-            let result = document.getElementById("result");
-
-            if (attempts >= maxAttempt) {
-                result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
-                return;
-            }
-
-            attempts++;
-
-            let remaining = maxAttempt - attempts;
-            showAttempt.innerHTML = `Chances left: ${remaining}`;
-
-            if (inputValue === randNum) {
-                result.innerHTML = "Game Win 🎉";
-                result.style.background = "green"
-                result.style.color = "white"
-                guessBtn.style.display = "none"
-            }
-            else if (inputValue > randNum) {
-                result.innerHTML = "Too high 🤔";
-            }
-            else {
-                result.innerHTML = "Too low 🤔";
-
-            }
-
-            if (remaining === 0 && inputValue !== randNum) {
-                result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
-
-            }
-        }
-
-        function newGame() {
-            let result = document.getElementById("result");
-            randNum = Math.floor(Math.random() * 100) + 1;
-            console.log(randNum);
-            attempts = 0;
-            result.innerHTML = "New Game Started 🚀";
-            showAttempt.innerHTML = "Total Chances: 5";
-            document.getElementById("userInput").value = "";
-            guessBtn.style.display = "block"
-        }
-    </script>
+    <script src="./script.js"></script>
 
 </body>
 
