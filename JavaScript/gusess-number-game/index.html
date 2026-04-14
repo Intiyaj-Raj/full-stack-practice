@@ -18,14 +18,14 @@
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
-            height: 100vh;
+            height: 120vh;
             background-position: center;
             font-family: sans-serif;
         }
 
         .container {
             background: rgba(0, 0, 0, 0.6);
-            height: 100vh;
+            height: 120vh;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -34,7 +34,7 @@
 
         .card {
             width: 60%;
-            height: 95vh;
+            height: 115vh;
             background: rgba(2, 2, 43, 0.8);
             border-radius: 10px;
             box-shadow: -3px 1px 13px 5px rgba(0, 0, 0, 1);
@@ -92,9 +92,7 @@
             padding: 6px 20px;
             border-radius: 0 5px 5px 0;
             cursor: pointer;
-
         }
-
 
         span button:active {
             color: blue;
@@ -106,8 +104,15 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 4px 10px;
             border-radius: 3px;
-            font-weight: 500;
             margin: 10px 0;
+        }
+
+        #attempt {
+            background: rgba(2, 2, 224, 0.7);
+            padding: 4px 10px;
+            border-radius: 3px;
+            margin: 10px 0;
+            color: white;
         }
 
         @media (max-width:650px) {
@@ -138,7 +143,7 @@
                 Enter your guess below & press enter
                 <span>
                     <input type="number" name="" id="userInput">
-                    <button onclick="handleGuess()">Guess</button>
+                    <button onclick="handleGuess()" id="guessBtn">Guess</button>
                 </span>
                 <p id="result">Wrong answer</p>
                 <p id="attempt">Total Chances: 5</p>
@@ -152,13 +157,16 @@
 
     <script>
         let randNum = Math.floor(Math.random() * 100) + 1;
+        let guessBtn = document.getElementById("guessBtn")
+
+        let showAttempt = document.getElementById("attempt");
         let attempts = 0;
         let maxAttempt = 5;
-
+        console.log(randNum)
+        document.getElementById(randNum)
         function handleGuess() {
-            let result = document.getElementById("result");
             let inputValue = Number(document.getElementById("userInput").value);
-            let showAttempt = document.getElementById("attempt");
+            let result = document.getElementById("result");
 
             if (attempts >= maxAttempt) {
                 result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
@@ -168,32 +176,37 @@
             attempts++;
 
             let remaining = maxAttempt - attempts;
-
             showAttempt.innerHTML = `Chances left: ${remaining}`;
 
             if (inputValue === randNum) {
                 result.innerHTML = "Game Win 🎉";
+                result.style.background = "green"
+                result.style.color = "white"
+                guessBtn.style.display = "none"
             }
             else if (inputValue > randNum) {
                 result.innerHTML = "Too high 🤔";
             }
             else {
                 result.innerHTML = "Too low 🤔";
+
             }
 
             if (remaining === 0 && inputValue !== randNum) {
                 result.innerHTML = `Game Over 😢 Answer = ${randNum}`;
+
             }
         }
 
         function newGame() {
+            let result = document.getElementById("result");
             randNum = Math.floor(Math.random() * 100) + 1;
             console.log(randNum);
             attempts = 0;
-            document.getElementById("result").innerHTML = "New Game Started 🚀";
-            document.getElementById("attempt").innerHTML = "Total Chances: 5";
-            document.getElementById("prevGuess").innerHTML = "Your previous guesses:";
+            result.innerHTML = "New Game Started 🚀";
+            showAttempt.innerHTML = "Total Chances: 5";
             document.getElementById("userInput").value = "";
+            guessBtn.style.display = "block"
         }
     </script>
 
