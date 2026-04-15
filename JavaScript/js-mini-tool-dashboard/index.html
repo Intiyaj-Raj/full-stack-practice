@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tools Switch UI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>⚡ JS Mini Tools</h1>
+
+    <div class="btn-box">
+        <button onclick="showBox('even')">Even / Odd</button>
+        <button onclick="showBox('pn')">Positive / Negative</button>
+        <button onclick="showBox('table')">Table</button>
+        <button onclick="showBox('prime')">Prime</button>
+        <button onclick="showBox('vote')">Vote Check</button>
+    </div>
+
+    <!-- EVEN ODD -->
+    <div id="even" class="box">
+        <h3>Even / Odd</h3>
+        <input id="n1" type="number">
+        <button onclick="evenOdd()">Check</button>
+        <div class="result" id="r1"></div>
+    </div>
+
+    <!-- POSITIVE NEGATIVE -->
+    <div id="pn" class="box">
+        <h3>Positive / Negative</h3>
+        <input id="n2" type="number">
+        <button onclick="pn()">Check</button>
+        <div class="result" id="r2"></div>
+    </div>
+
+    <!-- TABLE -->
+    <div id="table" class="box">
+        <h3>Multiplication Table</h3>
+        <input id="n3" type="number">
+        <button onclick="table()">Show</button>
+        <div class="result" id="r3"></div>
+    </div>
+
+    <!-- PRIME -->
+    <div id="prime" class="box">
+        <h3>Prime Check</h3>
+        <input id="n4" type="number">
+        <button onclick="prime()">Check</button>
+        <div class="result" id="r4"></div>
+    </div>
+
+    <!-- VOTE -->
+    <div id="vote" class="box">
+        <h3>Voting Check</h3>
+        <input id="n5" type="number">
+        <button onclick="vote()">Check</button>
+        <div class="result" id="r5"></div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
