@@ -1,4 +1,4 @@
-// SHOW ONLY ONE BOX
+
 function showBox(id) {
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(b => b.style.display = "none");
