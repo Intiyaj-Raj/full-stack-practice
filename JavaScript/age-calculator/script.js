@@ -7,6 +7,10 @@ userInput.max = new Date().toISOString().split("T")[0];
 function calculateAge() {
 
     let birthDate = new Date(userInput.value);
+    if (userInput.value === "") {
+        alert("Please select your birth date");
+        return;
+    }
 
     let d1 = birthDate.getDate();
     let m1 = birthDate.getMonth() + 1;
