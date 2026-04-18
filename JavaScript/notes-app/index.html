@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📝 Notes App</h1>
+        <div class="btn-box">
+            <button class="btn">
+                <i class="fa-regular fa-pen-to-square"></i> Create Note
+            </button>
+
+            <button class="btn" onclick="clearNotes()">
+                <i class="fa-regular fa-pen-to-square"></i> Delete All Notes
+            </button>
+        </div>
+
+        <div class="notes-container"></div>
+    </div>
+
+    <script>
+        let notesContainer = document.querySelector(".notes-container");
+        let createBtn = document.querySelector(".btn");
+
+
+        // delete all notes
+        function clearNotes() {
+            localStorage.removeItem("notes");
+            notesContainer.innerHTML = "";
+        }
+
+        // show saved notes
+        function showNotes() {
+            notesContainer.innerHTML = localStorage.getItem("notes") || "";
+        }
+        showNotes();
+
+        // save notes
+        function updateStorage() {
+            localStorage.setItem("notes", notesContainer.innerHTML);
+        }
+
+        // create note
+        createBtn.addEventListener("click", () => {
+            let inputBox = document.createElement("div");
+            let text = document.createElement("p");
+            let delBtn = document.createElement("i");
+
+            inputBox.className = "input-box";
+
+            text.setAttribute("contenteditable", "true");
+
+            delBtn.className = "fa-regular fa-trash-can";
+
+            inputBox.appendChild(text);
+            inputBox.appendChild(delBtn);
+
+            notesContainer.appendChild(inputBox);
+
+            updateStorage();
+        });
+
+        // delete note
+        notesContainer.addEventListener("click", function (e) {
+            if (e.target.tagName === "I") {
+                e.target.parentElement.remove();
+                updateStorage();
+            }
+        });
+
+        // save on typing
+        document.addEventListener("keyup", () => {
+            updateStorage();
+        });
+    </script>
+
+</body>
+
+</html>
