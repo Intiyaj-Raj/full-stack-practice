@@ -36,8 +36,7 @@ function validateEmail(email) {
 }
 
 function validatePassword(password) {
-    const re = /^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-    return re.test(password);
+    return password.length >= 1;
 }
 
 function validatePhone(phone) {
@@ -75,9 +74,9 @@ document.getElementById('password').addEventListener('blur', function () {
     if (value === '') {
         showError(this, 'Password is required');
     } else if (!validatePassword(value)) {
-        showError(this, 'Password must be 8+ chars with uppercase & number');
+        showError(this, 'Password too short');
     } else {
-        showSuccess(this, 'Strong password!');
+        showSuccess(this, 'Password valid!');
     }
 });
 
