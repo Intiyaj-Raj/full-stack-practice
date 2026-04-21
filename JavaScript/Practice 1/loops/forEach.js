@@ -20,8 +20,3 @@ arr.forEach((value, index, array) => {
     console.log()
 })
 
-
-arr.forEach(a => {
-    console.log(a)
-
-})
