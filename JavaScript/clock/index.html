@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Real Clock</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    body {
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial;
+    }
+
+    .clock {
+        width: 260px;
+        height: 260px;
+        border: 8px solid white;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    /* Numbers */
+    .number {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform: rotate(0deg);
+    }
+
+    .number span {
+        display: inline-block;
+        transform: translateY(10px);
+        font-size: 18px;
+    }
+
+    /* Hands */
+    .hand {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform-origin: bottom;
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    .hour {
+        width: 6px;
+        height: 60px;
+        background: white;
+    }
+
+    .minute {
+        width: 4px;
+        height: 80px;
+        background: cyan;
+    }
+
+    .second {
+        width: 2px;
+        height: 100px;
+        background: red;
+    }
+
+    .center {
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .digital {
+        margin-top: 30px;
+        font-size: 30px;
+        background: black;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px cyan;
+    }
+</style>
+
+<body>
+
+    <div class="clock" id="clock">
+
+        <!-- Numbers 1–12 -->
+        <script>
+            for (let i = 1; i <= 12; i++) {
+                let num = document.createElement("div");
+                num.className = "number";
+                num.style.transform = "rotate(" + (i * 30) + "deg)";
+
+                let span = document.createElement("span");
+                span.innerText = i;
+                span.style.transform = "rotate(" + (-i * 30) + "deg)";
+
+                num.appendChild(span);
+                document.currentScript.parentElement.appendChild(num);
+            }
+        </script>
+
+        <!-- Hands -->
+        <div class="hand hour" id="hour"></div>
+        <div class="hand minute" id="minute"></div>
+        <div class="hand second" id="second"></div>
+        <div class="center"></div>
+
+    </div>
+
+    <div class="digital" id="digital">00:00:00</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
