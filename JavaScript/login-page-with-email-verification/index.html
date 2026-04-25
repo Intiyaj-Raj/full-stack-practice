@@ -1,39 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="./style.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login-otp-verify</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        .container {
-            background-image: url("./bgImg.png");
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .box {
-            height: 100vh;
-            background: rgb(0, 0, 0, .2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .form-container {
-            background: rgb(212, 212, 238, 0.5);
-            height: 90vh;
-            width: 450px;
-            border-radius: 20px 0px 20px 0px;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,13 +21,19 @@
 
                     <input type="text" name="" id="opt" required placeholder="Enter Your Otp">
 
-                    <button id="sendBtn">Send Otp</button>
-                    <button id="loginBtn">Login</button>
+                    <div class="btn">
+                        <button id="sendBtn">Send Otp</button>
+                        <button id="loginBtn">Login</button>
+                    </div>
+
                 </form>
             </div>
 
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
