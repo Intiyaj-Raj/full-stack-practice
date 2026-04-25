@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./style.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login-otp-verify</title>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="box">
-
             <div class="form-container">
-                <form action="">
-                    <input type="email" name="" id="" required placeholder="Enter Your Email Id">
 
-                    <input type="password" name="" id="pass" required placeholder="Enter Your Password">
+                <!-- FIX 1: id added -->
+                <form id="form">
 
-                    <input type="text" name="" id="opt" required placeholder="Enter Your Otp">
+                    <!-- FIX 2: id added -->
+                    <input type="email" id="user-email" placeholder="Enter Your Email Id">
+
+                    <input type="password" id="pass" placeholder="Enter Your Password">
+
+                    <!-- FIX 3: id corrected -->
+                    <input type="text" id="otp" placeholder="Enter Your OTP">
 
                     <div class="btn">
-                        <button id="sendBtn">Send Otp</button>
-                        <button id="loginBtn">Login</button>
+                        <!-- FIX 4: type="button" -->
+                        <button type="button" id="sendBtn">Send Otp</button>
+                        <button type="button" id="loginBtn">Login</button>
                     </div>
 
                 </form>
             </div>
-
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="./script.js"></script>
+
+    <script src="./script.js">
+
+    </script>
 </body>
 
 </html>
