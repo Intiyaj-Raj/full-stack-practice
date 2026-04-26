@@ -13,7 +13,7 @@
 
 <body>
     <h1>Select a Moive</h1>
-    <div id="moiveContainer" class="movie-container">
+    <div id="movieContainer" class="movie-container">
     </div>
 
     <div style="text-align: center; margin-top: 20px;">
@@ -24,7 +24,7 @@
     <div class="modal" id="ShowtimeModal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="selectedMoiveName"></h2>
+            <h2 id="selectedMovieName"></h2>
             <div class="date-selector" id="dateSelector"></div>
             <div class="theatre-list" id="theatreList"></div>
         </div>
@@ -54,11 +54,11 @@
             }
         ];
 
-        let container = document.getElementById("moiveContainer")
+        let container = document.getElementById("movieContainer")
 
         let modal = document.getElementById("ShowtimeModal")
 
-        let selectedMoiveName = document.getElementById("selectedMovieName")
+        let selectedMovieName = document.getElementById("selectedMovieName")
 
         let dateSelector = document.getElementById("dateSelector")
 
@@ -107,7 +107,7 @@
 
         function openModal(movie) {
             selectedMovie = movie;
-            selectedMoiveName.textContent = movie.title;
+            selectedMovieName.textContent = movie.title;
             modal.style.display = "block";
             renderDates();
             renderTheatres();
@@ -136,6 +136,7 @@
                     div.classList.add("selected");
                     selectedDate = d.toDateString();
                 });
+                dateSelector.appendChild(div);
             }
         }
         function renderTheatres() {

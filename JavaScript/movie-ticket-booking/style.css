@@ -50,6 +50,10 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background: green;
+}
+
 button:active {
     background: blue;
 
