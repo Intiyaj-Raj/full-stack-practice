@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding: 20px;
+}
+
+.login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+}
+
+.login-container input {
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.loginBtn button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 6px;
+}
