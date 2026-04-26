@@ -5,10 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <h1>book my show ui </h1>
+    <h1>Select a Moive</h1>
+    <div id="moiveContainer" class="movie-container">
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="./booking-history.html" class="history-link">View Booking history</a>
+    </div>
+
+
+    <div class="modal" id="ShowtimeModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="selectedMoiveName"></h2>
+            <div class="date-selector" id="dateSelector"></div>
+            <div class="theatre-list" id="theatreList"></div>
+        </div>
+    </div>
+    <script>
+
+        // if (!localStorage.getItem("loggedInUser")) {
+        //     window.location.href = "./auth.html";
+        // }
+
+        const movies = [
+            {
+                title: "Apex",
+                poster: "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg"
+            },
+            {
+                title: "Michael",
+                poster: "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg"
+            },
+            {
+                title: "Apex",
+                poster: "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg"
+            },
+            {
+                title: "Michael",
+                poster: "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg"
+            }
+        ];
+
+        let container = document.getElementById("moiveContainer")
+
+        let modal = document.getElementById("ShowtimeModal")
+
+        let selectedMoiveName = document.getElementById("selectedMovieName")
+
+        let dateSelector = document.getElementById("dateSelector")
+
+        let theatreList = document.getElementById("theatreList")
+
+        let selectedMovie = null;
+        let selectedDate = null;
+
+        const theatres = [
+            {
+                name: "INOX Cinemas",
+                times: ["10:00 AM", "1:00 PM", "4:00 PM", "7:00 PM"]
+            },
+
+            {
+                name: "PVR Screens",
+                times: ["09:00 AM", "12:00 PM", "3:00 PM", "6:00 PM"]
+            },
+            {
+                name: "INOX Cinemas",
+                times: ["10:00 AM", "1:00 PM", "4:00 PM", "7:00 PM"]
+            },
+
+            {
+                name: "PVR Screens",
+                times: ["09:00 AM", "12:00 PM", "3:00 PM", "6:00 PM"]
+            },
+            {
+                name: "INOX Cinemas",
+                times: ["10:00 AM", "1:00 PM", "4:00 PM", "7:00 PM"]
+            },
+
+            {
+                name: "PVR Screens",
+                times: ["09:00 AM", "12:00 PM", "3:00 PM", "6:00 PM"]
+            },
+        ];
+
+        movies.forEach((movie) => {
+            let card = document.createElement("div")
+            card.className = `movie-card`;
+            card.innerHTML = `<img src="${movie.poster}" alt="${movie.title}"> <h3>${movie.title}</h3> `;
+            card.addEventListener("click", () => openModal(movie));
+            container.appendChild(card);
+        });
+
+        function openModal(movie) {
+            selectedMovie = movie;
+            selectedMoiveName.textContent = movie.title;
+            modal.style.display = "block";
+            renderDates();
+            renderTheatres();
+        }
+
+        function closeModal() {
+            modal.style.display = "none"
+        }
+
+        function renderDates() {
+            let today = new Date();
+            dateSelector.innerHTML = ""
+            for (let i = 0; i < 5; i++) {
+                const d = new Date(today)
+                d.setDate(d.getDate() + i);
+                let div = document.createElement("div");
+                div.className = "date-item";
+                div.textContent = d.toDateString().slice(4, 10)
+                if (i === 0) {
+                    div.classList.add("selected")
+                    selectedDate = d.toDateString()
+                }
+
+                div.addEventListener("click", () => {
+                    document.querySelectorAll(".date-item").forEach(el => el.classList.remove("selected"));
+                    div.classList.add("selected");
+                    selectedDate = d.toDateString();
+                });
+            }
+        }
+        function renderTheatres() {
+            theatreList.innerHTML = "";
+
+            theatres.forEach((theatre) => {
+                const div = document.createElement("div");
+                div.className = "theatre-block";
+                div.innerHTML = `<h4>${theatre.name}</h4>`;
+
+                theatre.times.forEach((time) => {
+                    const btn = document.createElement("button");
+                    btn.className = "time-btn";
+                    btn.textContent = time;
+
+                    btn.addEventListener("click", () => {
+                        localStorage.setItem("selectedMovie", JSON.stringify({
+                            ...selectedMovie,
+                            date: selectedDate,
+                            theatre: theatre.name,
+                            time: time
+                        }));
+
+                        window.location.href = "seats.html";
+                    });
+
+                    div.appendChild(btn);
+                });
+
+                theatreList.appendChild(div);
+            });
+        }
+
+    </script>
 </body>
 
 </html>

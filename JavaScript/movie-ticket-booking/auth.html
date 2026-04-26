@@ -42,7 +42,6 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script>
-        // init emailjs
         (function () {
             emailjs.init("9JIMT7L0LnqOStK5U");
         })();
@@ -66,11 +65,11 @@
                     otp: generatedOtp
                 });
 
-                alert("OTP sent successfully ✅");
+                alert("OTP sent successfully");
 
             } catch (error) {
                 console.log(error);
-                alert("Failed to send OTP ❌");
+                alert("Failed to send OTP");
             }
         }
 
@@ -92,13 +91,13 @@
             }
 
             if (userOtp != generatedOtp) {
-                alert("Wrong OTP ❌");
+                alert("Wrong OTP ");
                 return;
             }
 
             localStorage.setItem("user", JSON.stringify({ username, password }));
 
-            alert("Signup successful ✅");
+            alert("Signup successful");
 
             document.getElementById("signupBox").style.display = "none";
             document.getElementById("loginBox").style.display = "block";
