@@ -38,7 +38,7 @@ body {
     margin-top: 20px;
 }
 
-.loginBtn button {
+button {
     flex: 1;
     margin: 0 5px;
     padding: 10px;
@@ -47,4 +47,10 @@ body {
     cursor: pointer;
     color: #fff;
     border-radius: 6px;
+    font-weight: 600;
+}
+
+button:active {
+    background: blue;
+
 }
