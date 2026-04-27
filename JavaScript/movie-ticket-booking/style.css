@@ -154,3 +154,65 @@ button:active {
     color: black;
     font-weight: bold;
 }
+
+/* booking history style */
+
+
+.screen {
+    background: #ccc;
+    height: 30px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 4px;
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    justify-self: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.seat-legend-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.legend {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border-radius: 4px;
+}
+
+.legend.unbooked {
+    background: #ccc;
+}
+
+.legend.selected {
+    background: green;
+}
+
+.legend.booked {
+    background: red;
+}
+
+
+@media (max-width: 746px) {
+    .screen {
+        width: 90%;
+    }
+
+    .seat-legend-row {
+        flex-direction: column;
+        gap: 5px;
+
+    }
+}
