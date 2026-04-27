@@ -88,3 +88,69 @@ button:active {
     font-size: 16px;
     margin-top: 10px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: black;
+    color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.date-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.date-item {
+    background: #444;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.date-item.selected {
+    background: #03dac5;
+    color: #000;
+    font-weight: bold;
+}
+
+.theatre-block {
+    background: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.time-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #03dac5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
