@@ -207,7 +207,8 @@ User: ${booking.user}
 
                     html2canvas(ticket, {
                         scale: 2,
-                        useCORS: true
+                        useCORS: true,
+                        allowTaint: true
                     }).then(canvas => {
                         const link = document.createElement("a");
                         link.download = "movie-ticket.png";
