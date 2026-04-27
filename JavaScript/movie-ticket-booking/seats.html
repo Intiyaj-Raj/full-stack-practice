@@ -12,15 +12,14 @@
 
     <h1 id="movieTitle">Select Your Seats</h1>
     <div class="seat-legend-row">
-        <div>
-            <span class="legend unbooked"></span>Unbooked
-        </div>
-        <div>
-            <span class="legend selected"></span>Selected
-        </div>
-        <div>
-            <span class="legend booked"></span>Booked
-        </div>
+        <span class="legend unbooked"></span>Unbooked
+    </div>
+    <div>
+        <span class="legend selected"></span>Selected
+    </div>
+    <div>
+        <span class="legend booked"></span>Booked
+    </div>
     </div>
 
     <div class="screen"></div>
@@ -47,15 +46,8 @@
                 <div id="qrcode"></div>
             </div>
         </div>
-        <button onclick="downloadTicketAsImage()">Download Ticket</button>
+        <button onclick="downloadTicketAsImage()" class="downloadBtn">Download Ticket</button>
     </div>
-
-
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
         integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
