@@ -1,6 +1,6 @@
-// if (!localStorage.getItem("loggedInUser")) {
-//     window.location.href = "./auth.html";
-// }
+if (!localStorage.getItem("loggedInUser")) {
+    window.location.href = "./auth.html";
+}
 
 const movies = [
     {
