@@ -10,6 +10,25 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🖼️ Home / Hero Section
+![Hero](https://github.com/user-attachments/assets/78a122e0-28d0-471b-8cf2-561d495a426d)
+
+### 🛠️ Services Section
+![Services](https://github.com/user-attachments/assets/793ed468-ded1-4df1-b72d-a98b31f8e76b)
+
+### 📚 Courses Section
+![Courses](https://github.com/user-attachments/assets/695d63c2-6038-434d-a68a-4e30df6e33f7)
+
+### 📝 Contact Section
+![Contact](https://github.com/user-attachments/assets/d20daaeb-e133-48a1-88a5-d423a5868dc3)
+
+### 🦶 Footer
+![Footer](https://github.com/user-attachments/assets/aaaa7742-4c54-4e95-beae-029baa2aa4c5)
+
+---
+
 ## 🎯 Features
 
 | Feature                  | Description                                                                                |
