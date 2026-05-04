@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Courses from './components/Courses'
 import Contact from './components/Contact'
 import { Route, Routes } from 'react-router-dom'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
