@@ -9,9 +9,7 @@
 
 ## 🎬 **Live Demo Animations**
 
-<img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnd1d2Y0czd1b3NjM2I0eWltNXhkNGV6bWZuemw0eGg4YW9qYmNxMCZjdD1n/eIeNrQohbRMqM/giphy.gif\" alt=\"Typing Animation\" width=\"250\"/>
-<img src=\"https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif\" alt=\"Clear Animation\" width=\"250\"/>
-<img src=\"https://media.giphy.com/media/26ufnwz3wDUll5JKe/giphy.gif\" alt=\"Copy Success\" width=\"250\"/>
+<img width="1890" height="900" alt="Image" src="https://github.com/user-attachments/assets/89ec7c1c-1049-4a35-9ebb-e05a017894b8" />
 
 **Intiyaj Ansari's Text Analyzer – Transform Text with Magic! ✨**
 
