@@ -35,14 +35,11 @@
 
 ## 🛠 **Tech Stack**
 
-```mermaid
-graph TD
-    A[React 19.2.5 Hooks] --> B[useState text]
-    A --> C[useRef timeouts]
-    D[Vite 8.0 HMR] --> E[Fast Dev Server]
-    F[Bootstrap 5.3] --> G[Responsive UI]
-    A --> F
-```
+React.js (Frontend library) <br/>
+🟨 JavaScript (Logic) <br/>
+🎨 HTML5 <br/>
+🎨 CSS3 / Bootstrap (UI styling) <br/>
+🧠 React Hooks (useState, useRef) <br/>
 
 - **Performance**: Debounced onChange, timeout clears
 - **Zero extra deps**: Pure React + Bootstrap CDN
