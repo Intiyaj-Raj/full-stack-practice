@@ -74,7 +74,7 @@ const Textforms = () => {
                         onChange={handleOnChange}
                     ></textarea>
                 </div>
-                <div className="d-flex gap-2">
+                <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap">
                     <button className="btn btn-outline-secondary" onClick={handleUpClick}>Uppercase</button>
                     <button className="btn btn-outline-secondary" onClick={handleLoClick}>LowerCase</button>
                     <button className="btn btn-outline-secondary" onClick={handleTitleCase}>Captialize</button>
