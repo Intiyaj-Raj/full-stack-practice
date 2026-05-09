@@ -1,0 +1,41 @@
+body {
+    background: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-top: 50px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countVal {
+    padding: 6px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px #000000e6;
+}
+
+span button {
+    margin: 10px;
+    padding: 6px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #929191;
+    cursor: pointer;
+}
+
+span button:hover {
+    background: #ccc;
+}
+
+span button:active {
+    background: blue;
+    color: white;
+}
