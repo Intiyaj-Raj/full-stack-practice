@@ -1,78 +1,98 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
+import "./Quiz.css";
+import quizData from "./Questions";
 
 const Quiz = () => {
-    // Programming + MERN + Logical Interview Questions
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [score, setScore] = useState(0);
+    const [showResult, setShowResult] = useState(false);
+    const [time, setTime] = useState(10);
 
-    const quizData = [
-        {
-            question: "What does MERN stand for?",
-            options: [
-                "MongoDB Express React Node",
-                "MySQL Express React Node",
-                "MongoDB Electron React Node",
-                "Mongo React Next Node",
-            ],
-            answer: "MongoDB Express React Node",
-        },
-        {
-            question: "Which hook is used for state management in React?",
-            options: ["useEffect", "useRef", "useState", "useContext"],
-            answer: "useState",
-        },
-        {
-            question: "Which method is used to add an element at the end of an array?",
-            options: ["pop()", "shift()", "push()", "slice()"],
-            answer: "push()",
-        },
-        {
-            question: "Which company developed JavaScript?",
-            options: ["Google", "Netscape", "Microsoft", "Oracle"],
-            answer: "Netscape",
-        },
-        {
-            question: "Which database is mostly used in MERN stack?",
-            options: ["MySQL", "Oracle", "MongoDB", "PostgreSQL"],
-            answer: "MongoDB",
-        },
-        {
-            question: "What is the output of 2 + '2' in JavaScript?",
-            options: ["4", "22", "NaN", "undefined"],
-            answer: "22",
-        },
-        {
-            question: "Which keyword is used to declare a constant variable?",
-            options: ["let", "var", "const", "static"],
-            answer: "const",
-        },
-        {
-            question: "Which function converts JSON data into JavaScript object?",
-            options: [
-                "JSON.stringify()",
-                "JSON.parse()",
-                "JSON.convert()",
-                "JSON.object()",
-            ],
-            answer: "JSON.parse()",
-        },
-        {
-            question: "Find the missing number: 2, 4, 8, 16, ?",
-            options: ["18", "24", "32", "64"],
-            answer: "32",
-        },
-        {
-            question: "Which operator is used for strict equality in JavaScript?",
-            options: ["=", "==", "===", "!="],
-            answer: "===",
-        },
-    ];
+    const timerRef = useRef(null);
+
+    useEffect(() => {
+        timerRef.current = setInterval(() => {
+            setTime((prev) => {
+                if (prev === 1) {
+                    nextQuestion();
+                    return 10;
+                }
+
+                return prev - 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(timerRef.current);
+    }, [currentQuestion]);
+
+    const handleAnswer = (option) => {
+        if (option === quizData[currentQuestion]?.answer) {
+            setScore((prev) => prev + 1);
+        }
+
+        nextQuestion();
+    };
+
+    const nextQuestion = () => {
+        clearInterval(timerRef.current);
+
+        if (currentQuestion + 1 < quizData.length) {
+            setCurrentQuestion((prev) => prev + 1);
+            setTime(10);
+        } else {
+            setShowResult(true);
+        }
+    };
+
+    const restartQuiz = () => {
+        setCurrentQuestion(0);
+        setScore(0);
+        setShowResult(false);
+        setTime(10);
+    };
+
     return (
-        <div>
+        <div className="container">
             <div className="quiz-box">
                 <h1>Quiz App</h1>
 
+                {showResult ? (
+                    <div className="result">
+                        <h2>Your Score</h2>
+
+                        <p>
+                            {score} / {quizData.length}
+                        </p>
+
+                        <button onClick={restartQuiz}>Restart</button>
+                    </div>
+                ) : (
+                    <>
+                        <div className="top">
+                            <h3>
+                                Question {currentQuestion + 1} / {quizData.length}
+                            </h3>
+
+                            <span>⏰ {time}s</span>
+                        </div>
+
+                        <h2>{quizData[currentQuestion]?.question}</h2>
+
+                        <div className="options">
+                            {quizData[currentQuestion]?.options.map((option, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => handleAnswer(option)}
+                                >
+                                    {option}
+                                </button>
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Quiz
+export default Quiz;
