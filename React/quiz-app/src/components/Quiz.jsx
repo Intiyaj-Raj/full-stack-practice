@@ -53,46 +53,48 @@ const Quiz = () => {
 
     return (
         <div className="container">
-            <div className="quiz-box">
-                <h1>Quiz App</h1>
+            <div className="quiz-box-outer">
+                <div className="quiz-box">
+                    <h1>Quiz App</h1>
 
-                {showResult ? (
-                    <div className="result">
-                        <h2>Your Score</h2>
+                    {showResult ? (
+                        <div className="result">
+                            <h2>Your Score</h2>
 
-                        <p>
-                            {score} / {quizData.length}
-                        </p>
+                            <p>
+                                {score} / {quizData.length}
+                            </p>
 
-                        <button onClick={restartQuiz}>Restart</button>
-                    </div>
-                ) : (
-                    <>
-                        <div className="top">
-                            <h3>
-                                Question {currentQuestion + 1} / {quizData.length}
-                            </h3>
-
-                            <span>⏰ {time}s</span>
+                            <button onClick={restartQuiz}>Restart</button>
                         </div>
+                    ) : (
+                        <>
+                            <div className="top">
+                                <h3>
+                                    Question {currentQuestion + 1} / {quizData.length}
+                                </h3>
 
-                        <h2>{quizData[currentQuestion]?.question}</h2>
+                                <span>⏰ {time}s</span>
+                            </div>
 
-                        <div className="options">
-                            {quizData[currentQuestion]?.options.map((option, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => handleAnswer(option)}
-                                >
-                                    {option}
-                                </button>
-                            ))}
-                        </div>
-                    </>
-                )}
+                            <h2>{quizData[currentQuestion]?.question}</h2>
+
+                            <div className="options">
+                                {quizData[currentQuestion]?.options.map((option, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => handleAnswer(option)}
+                                    >
+                                        {option}
+                                    </button>
+                                ))}
+                            </div>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     );
 };
 
-export default Quiz;
+export default Quiz
