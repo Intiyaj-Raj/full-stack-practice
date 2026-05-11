@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Quiz = () => {
-    // Programming + MERN + Logical Interview Questions
+const Questions = () => {
 
-    const quizData = [
+    const quizQuestion = [
         {
             question: "What does MERN stand for?",
             options: [
@@ -65,14 +64,7 @@ const Quiz = () => {
             answer: "===",
         },
     ];
-    return (
-        <div>
-            <div className="quiz-box">
-                <h1>Quiz App</h1>
 
-            </div>
-        </div>
-    )
 }
 
-export default Quiz
+export default Questions
