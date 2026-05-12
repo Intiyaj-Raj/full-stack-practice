@@ -1,16 +1,48 @@
-# React + Vite
+# Counter App (React Context)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple counter application built with **React + Vite** using the **Context API** to manage shared state.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Shows the current counter value
+- Provides buttons to:
+  - Increment (+1)
+  - Decrement (-1)
+  - Increment by 5 (+5)
 
-## React Compiler
+## How it works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### `CounterContext.jsx`
 
-## Expanding the ESLint configuration
+- Creates `CounterContext`
+- Exposes `count` and `setCount` via a `CounterProvider`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### `main.jsx`
+
+- Wraps the app with `<CounterProvider>` so any component can access the context.
+
+### `App.jsx`
+
+- Reads `count` from the context to display: `Counter is {count}`
+
+### `Counter.jsx`
+
+- Uses `setCount` from the context to update the shared counter value.
+
+## Project structure
+
+- `src/context/CounterContext.jsx` — Context + Provider
+- `src/components/Counter.jsx` — Counter buttons
+- `src/App.jsx` — Displays the count
+- `src/main.jsx` — Provider wrapper
+
+## Run the app
+
+From the `counter-app-using-context` folder:
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL shown in the terminal (typically `http://localhost:5173`).
