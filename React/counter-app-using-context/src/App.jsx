@@ -2,14 +2,14 @@ import React, { useContext } from 'react'
 import Counter from './components/Counter'
 import { CounterContext } from './context/CounterContext'
 
-const App = () => {
+import './App.css'
 
-  const counterState = useContext(CounterContext);
-  console.log(("Context", counterState))
+const App = () => {
+  const counterState = useContext(CounterContext)
 
   return (
-    <div>
-      <h1>Counter is {counterState.count}</h1>
+    <div className="app-shell">
+      <h1 className="app-title">Count is {counterState.count}</h1>
       <Counter />
     </div>
   )
