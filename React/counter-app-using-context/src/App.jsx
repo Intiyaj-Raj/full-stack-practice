@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Counter from './components/Counter'
+import { CounterContext } from './context/CounterContext'
 
 const App = () => {
+
+  const counterState = useContext(CounterContext);
+  console.log(("Context", counterState))
+
   return (
-    <div>App</div>
+    <div>
+      <h1>Counter is {counterState.count}</h1>
+      <Counter />
+      <Counter />
+      <Counter />
+    </div>
   )
 }
 
