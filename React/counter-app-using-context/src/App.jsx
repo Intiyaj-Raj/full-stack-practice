@@ -11,8 +11,6 @@ const App = () => {
     <div>
       <h1>Counter is {counterState.count}</h1>
       <Counter />
-      <Counter />
-      <Counter />
     </div>
   )
 }

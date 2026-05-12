@@ -18,7 +18,12 @@ const Counter = () => {
             }}>
                 Decrement
             </button>
-        </div>
+
+            <button onClick={() => { counterContext.setCount(counterContext.count + 5) }}>
+                Increment 5
+            </button >
+
+        </div >
     )
 }
 
