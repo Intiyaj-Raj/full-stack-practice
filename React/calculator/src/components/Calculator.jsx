@@ -19,10 +19,19 @@ const Calculator = () => {
     const del = () => {
         setData(data.slice(0, -1))
     }
+    const handleChange = (e) => {
+
+        const value = e.target.value
+
+        if (/^[0-9+\-*/%().e]*$/.test(value)) {
+            setData(value)
+        }
+    }
     return (
         <div className='container'>
+            <h1>Basic Calculator</h1>
             <div>
-                <input placeholder='0' value={data} />
+                <input placeholder='0' value={data} onChange={handleChange} />
             </div>
 
             <button onClick={getValue} value="(">(</button>

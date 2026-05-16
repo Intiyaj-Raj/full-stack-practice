@@ -5,16 +5,26 @@
 }
 
 body {
-    background: #e3dcdc;
+    background: #025259;
 }
 
 .container {
     width: 390px;
-    background: lightblue;
+    background: #025259;
+    box-shadow: 0 0 10px #0c0101;
     margin: auto;
     text-align: center;
     padding: 20px;
     margin-top: 55px;
+}
+
+.container h1 {
+    display: inline-block;
+    border-bottom: 2px solid wheat;
+    color: #ff947a;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff947a;
+
 }
 
 .container input {
@@ -22,50 +32,58 @@ body {
     height: 80px;
     padding: 0 10px;
     font-weight: 550;
-    border: none;
+    border: 1px solid #ff947a;
+    color: #ff947a;
     font-size: 30px;
     margin-top: 11px;
     margin-bottom: 20px;
     border-radius: 3px;
     outline: none;
+    background: transparent;
 }
 
 button {
     width: 77px;
     padding: 7px;
     margin: 5px;
-    border: none;
+    border: 1px solid #ff947a;
+    color: #ff947a;
     font-size: 20px;
-    background: #ffffff;
+    background: transparent;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #000;
-    color: white;
+    background: #ff947a;
+    color: black;
 }
 
 button:active {
     background: blue;
+    scale: .9;
 }
 
 #equal {
-    background: rgb(37, 223, 37);
-    color: white;
+    background: transparent;
+    color: rgb(4, 196, 4);
+    border: 1px solid rgb(4, 196, 4);
 }
 
 #equal:hover {
     background: rgb(4, 196, 4);
+    color: white;
 }
 
 .container .del {
-    background: rgb(231, 28, 28);
-    color: white;
+    background: transparent;
+    border: 1px solid red;
+    color: red;
 }
 
 .container .del:hover {
     background: rgb(185, 1, 1);
+    color: white;
 }
 
 .container .del:active,
