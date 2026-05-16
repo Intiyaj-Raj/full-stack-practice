@@ -46,3 +46,11 @@ npm run dev
 ```
 
 Then open the local URL shown in the terminal (typically `http://localhost:5173`).
+
+## Styling
+
+This project includes a simple modern UI style:
+
+- `src/index.css`: global theme (background gradient, typography, CSS variables)
+- `src/App.css`: app layout/card + button styling
+- `src/App.jsx` / `src/components/Counter.jsx`: use classNames to apply the styles
