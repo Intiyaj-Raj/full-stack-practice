@@ -5,6 +5,8 @@ const Calculator = () => {
     const [data, setData] = useState("")
 
     const getValue = (e) => {
+
+        // print data in console 
         console.log(e.target.value)
         setData(data.concat(e.target.value))
     }
