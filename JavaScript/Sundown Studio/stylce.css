@@ -1,0 +1,104 @@
+@font-face {
+    font-family: neu;
+    src: url("./NeueHaasDisplayMediu.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+    color: #000000bb;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    text-decoration: none;
+    color: #000000bb;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-part2 h4:hover a {
+    color: white;
+}
+
+#center {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 70vh;
+    /* background: orange; */
+    justify-content: space-between;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid #0000003c;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+
+}
+
+#center h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
