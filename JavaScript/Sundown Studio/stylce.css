@@ -1,5 +1,11 @@
 @font-face {
     font-family: neu;
+    font-weight: 400;
+    src: url("./NeueHaasDisplayLight.ttf");
+}
+
+@font-face {
+    font-family: neu;
     src: url("./NeueHaasDisplayMediu.ttf");
 }
 
@@ -141,7 +147,7 @@ nav {
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background: linear-gradient(#fe1a01, orangered);
+    background: linear-gradient(#fe1a01, #fe5b0a);
     border-radius: 50%;
     filter: blur(15px);
     animation: anime1 5s infinite linear alternate;
@@ -165,4 +171,143 @@ nav {
     to {
         transform: translate(-20%, 30%);
     }
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+    position: relative;
+}
+
+#moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 22s linear infinite;
+}
+
+#moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+}
+
+#circle {
+    height: 50px;
+    width: 50px;
+    background: #FE330A;
+    border-radius: 50%;
+    margin: 1vw 2vw;
+    display: inline-block;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+#page2-bottom {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5vw;
+    position: relative;
+    z-index: 9;
+}
+
+#page2-bottom h1 {
+    font-size: 3.5vw;
+    width: 60%;
+    line-height: 4vw;
+
+}
+
+#bottom-part2 {
+    width: 25%;
+}
+
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p {
+    font-weight: 400;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+#page2 #gooey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: #fe1a01;
+    top: 60%;
+    left: 25%;
+    filter: blur(20px);
+    animation: gooey 4s ease-out infinite alternate;
+}
+
+@keyframes gooey {
+    from {
+        transform: translate(10%, -10%) skew(10deg);
+    }
+
+    to {
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4wv 0;
+}
+
+.elem {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #0000003c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 172, 18);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all 0.2s ease-in;
+}
+
+.elem:hover .overlay {
+    top: 0
 }
