@@ -1,6 +1,6 @@
 @font-face {
     font-family: neu;
-    font-weight: 400;
+    font-weight: 200;
     src: url("./NeueHaasDisplayLight.ttf");
 }
 
@@ -22,6 +22,11 @@ body {
     width: 100%;
 }
 
+#main {
+    position: relative;
+    z-index: 10;
+}
+
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -38,13 +43,13 @@ nav {
     justify-content: space-between;
 }
 
-#nav-part2 {
+.nav-part2 {
     display: flex;
     align-items: center;
     gap: 1vw;
 }
 
-#nav-part2 h4 {
+.nav-part2 h4 {
     padding: 10px 20px;
     border: 1px solid #8a8a8a89;
     border-radius: 50px;
@@ -57,7 +62,7 @@ nav {
     overflow: hidden;
 }
 
-#nav-part2 h4::after {
+.nav-part2 h4::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -69,19 +74,19 @@ nav {
     transition: all ease 0.4s;
 }
 
-#nav-part2 h4:hover::after {
+.nav-part2 h4:hover::after {
     bottom: 0;
     border-radius: 0;
 }
 
-#nav-part2 h4 a {
+.nav-part2 h4 a {
     text-decoration: none;
     color: #000000bb;
     z-index: 9;
     position: relative;
 }
 
-#nav-part2 h4:hover a {
+.nav-part2 h4:hover a {
     color: white;
 }
 
@@ -178,6 +183,7 @@ nav {
     width: 100%;
     padding: 8vw 0;
     position: relative;
+    background-color: #EFEAE3;
 }
 
 #moving-text {
@@ -221,7 +227,7 @@ nav {
 }
 
 #page2-bottom {
-    height: 60vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -248,9 +254,9 @@ nav {
 }
 
 #bottom-part2 p {
-    font-weight: 400;
+    font-weight: 200;
     margin-top: 2vw;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 #page2 #gooey {
@@ -259,7 +265,7 @@ nav {
     position: absolute;
     border-radius: 50%;
     background: #fe1a01;
-    top: 60%;
+    top: 50%;
     left: 25%;
     filter: blur(20px);
     animation: gooey 4s ease-out infinite alternate;
@@ -275,10 +281,31 @@ nav {
     }
 }
 
+.page2-featured {
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    padding-top: 3vw;
+}
+
+.page2-featured p {
+    font-weight: 200;
+}
+
+#f-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fe1a01;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
 #page3 {
     min-height: 100vh;
     width: 100%;
-    padding: 4wv 0;
+    padding: 4vw 0;
+    background-color: #EFEAE3;
+    cursor: pointer;
 }
 
 .elem {
@@ -298,6 +325,28 @@ nav {
     z-index: 9;
 }
 
+.page3-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.elem-right-side-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9;
+}
+
+.elem-right-side-text h3 {
+    font-weight: 300;
+}
+
+.elem-right-side-text p {
+    color: #0c0b0b3c;
+    font-weight: 200;
+}
+
 .elem .overlay {
     height: 100%;
     width: 100%;
@@ -309,5 +358,81 @@ nav {
 }
 
 .elem:hover .overlay {
-    top: 0
+    top: 0;
+}
+
+#fixed-image {
+    height: 32vw;
+    width: 25vw;
+    position: fixed;
+    z-index: 999;
+    border-radius: 10px;
+    left: 40%;
+    top: 27%;
+    background: red;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page4 {
+    height: auto;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 10vw 2vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 12px;
+    font-weight: 300;
+    border-left: 1px solid #0000003c;
+    width: 30%;
+    padding: 0 2vw;
+}
+
+.swiper-slide img {
+    margin-bottom: 20px;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #EFEAE3; */
+}
+
+#footer {
+    position: fixed;
+    z-index: 9;
+    height: 106vh;
+    width: 100%;
+    background: black;
+    color: white;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
+
+#footer h1 {
+    font-size: 22vw;
+}
+
+#footer-div {
+    height: 20vh;
+    width: 100%;
+    background: red;
+}
+
+#footer-bottom {
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
 }
