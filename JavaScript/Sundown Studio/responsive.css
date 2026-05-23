@@ -1,0 +1,174 @@
+@media (max-width: 677px) {
+  #page1 {
+    padding: 0;
+  }
+
+  nav {
+    padding: 5vw;
+    background-color: #efeae3;
+  }
+
+  nav img {
+    height: 10vw;
+    transition: all ease 0.8s;
+  }
+  .nav-part2 {
+    display: none;
+  }
+  nav h3 {
+    display: block;
+    padding: 2vw 5vw;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-size: 4vw;
+    font-weight: 300;
+    padding-left: 10vw;
+  }
+
+  #center {
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 7vw 5vw;
+    border-bottom: 1px solid #0000003c;
+  }
+
+  #left h3 {
+    width: 80%;
+    font-size: 5.5vw;
+    line-height: 7vw;
+  }
+
+  #center h1 {
+    padding-bottom: 20vw;
+    font-size: 14vw;
+    line-height: 13vw;
+  }
+
+  #page1 video {
+    width: 92%;
+    margin-left: 4%;
+    border-radius: 15px;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #hero-shape {
+    width: 80vw;
+    height: 70vw;
+    top: 100vw;
+    right: 0;
+  }
+
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+    position: relative;
+    background-color: #efeae3;
+  }
+
+  #moving-text h1 {
+    font-size: 15vw;
+  }
+
+  #circle {
+    height: 8vw;
+    width: 8vw;
+  }
+
+  #page2-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10vw 4vw;
+  }
+
+  #page2-bottom h1 {
+    font-size: 6vw;
+    width: 100%;
+    line-height: 8vw;
+  }
+
+  #bottom-part2 {
+    width: 100%;
+  }
+
+  #bottom-part2 img {
+    margin-top: 15vw;
+    border-radius: 10px;
+  }
+
+  #bottom-part2 p {
+    margin-top: 5vw;
+    font-size: 5vw;
+  }
+
+  #page2 #gooey {
+    width: 88vw;
+    height: 88vw;
+    top: 53%;
+    left: 33%;
+    max-width: 100vw;
+  }
+
+  .page2-featured p {
+    font-size: 5vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  #page3 {
+    padding: 2vw;
+  }
+
+  .elem h2 {
+    font-size: 5vw;
+  }
+
+  #fixed-image {
+    width: 280px;
+    height: 300px;
+    left: 12%;
+    top: 27%;
+  }
+
+  #footer {
+    height: 100vh;
+  }
+
+  #page3 #page3-card {
+    height: 66vh;
+    border-radius: 10px;
+  }
+
+  #page3-text-card {
+    width: 35%;
+    padding: 8vw 0 8vw 4vw;
+  }
+
+  #page3-text-card p {
+    padding: 8vw 0 0 0;
+  }
+
+  #page3-text-card span h1 {
+    line-height: 8vw;
+    font-size: 6vw;
+  }
+
+  #page3-image-card {
+    height: 100%;
+    width: 60%;
+  }
+  #page3-image-card img {
+    border-radius: 10px;
+  }
+  .f-hide {
+    display: none;
+  }
+  #loader h1 {
+    font-size: 30px;
+  }
+  #footerupper div h2 {
+    font-size: 40px;
+  }
+}

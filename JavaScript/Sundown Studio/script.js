@@ -69,20 +69,32 @@ function designFunc() {
     "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.";
 }
 
-let menu = document.querySelector("nav h3");
-let full = document.querySelector("#full-scr");
-let navImg = document.querySelector("nav img");
-let flag = 0;
-menu.addEventListener("click", function () {
-  if (flag == 0) {
-    full.style.top = 0;
-    navImg.style.opacity = 0;
-    flag = 1;
-  } else {
-    full.style.top = "-100%";
-    navImg.style.opacity = 1;
-    flag = 0;
-  }
-});
+function menuAnimation() {
+  let menu = document.querySelector("nav h3");
+  let full = document.querySelector("#full-scr");
+  let navImg = document.querySelector("nav img");
+  let flag = 0;
+  menu.addEventListener("click", function () {
+    if (flag == 0) {
+      full.style.top = 0;
+      navImg.style.opacity = 0;
+      flag = 1;
+    } else {
+      full.style.top = "-100%";
+      navImg.style.opacity = 1;
+      flag = 0;
+    }
+  });
+}
+
+function loaderAnimation() {
+  let loader = document.querySelector("#loader");
+  setTimeout(function () {
+    loader.style.top = "-100%";
+  }, 4200);
+}
+
 swiperAnimation();
 page4Animation();
+menuAnimation();
+loaderAnimation();
