@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Grid Gallery</title>
+    <title>Animated Grid Gallery</title>
 
     <style>
         * {
@@ -14,8 +14,8 @@
         }
 
         body {
-            background: #050505;
             min-height: 100vh;
+            background: #050505;
             padding: 40px;
             font-family: Arial, sans-serif;
         }
@@ -42,21 +42,74 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: all .6s ease;
+            transition: transform .6s ease;
+
+            animation: revealImage 1.5s cubic-bezier(.22, .61, .36, 1) forwards;
+            opacity: 0;
         }
 
         .parent div:hover img {
             transform: scale(1.1);
         }
 
-        .parent div::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top,
-                    rgba(0, 0, 0, .5),
-                    transparent);
-            z-index: 1;
+        @keyframes revealImage {
+            0% {
+                clip-path: inset(45% 45% 45% 45% round 20px);
+                transform: scale(1.4);
+                opacity: 0;
+            }
+
+            100% {
+                clip-path: inset(0% 0% 0% 0% round 24px);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Stagger Animation */
+
+        .div1 img {
+            animation-delay: .1s;
+        }
+
+        .div2 img {
+            animation-delay: .2s;
+        }
+
+        .div3 img {
+            animation-delay: .3s;
+        }
+
+        .div4 img {
+            animation-delay: .4s;
+        }
+
+        .div5 img {
+            animation-delay: .5s;
+        }
+
+        .div6 img {
+            animation-delay: .6s;
+        }
+
+        .div7 img {
+            animation-delay: .7s;
+        }
+
+        .div8 img {
+            animation-delay: .8s;
+        }
+
+        .div9 img {
+            animation-delay: .9s;
+        }
+
+        .div10 img {
+            animation-delay: 1s;
+        }
+
+        .div11 img {
+            animation-delay: 1.1s;
         }
 
         /* Grid Layout */
@@ -105,10 +158,7 @@
             grid-row-start: 3;
         }
 
-        /* Tablet */
-
-        @media(max-width:992px) {
-
+        @media (max-width: 992px) {
             .parent {
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: 250px;
@@ -124,10 +174,7 @@
             }
         }
 
-        /* Mobile */
-
-        @media(max-width:600px) {
-
+        @media (max-width: 600px) {
             .parent {
                 grid-template-columns: 1fr;
             }
@@ -144,47 +191,47 @@
     <div class="parent">
 
         <div class="div1">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200" alt="">
+            <img src="https://picsum.photos/id/1015/800/800" alt="">
         </div>
 
         <div class="div2">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200" alt="">
+            <img src="https://picsum.photos/id/1025/800/800" alt="">
         </div>
 
         <div class="div3">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600" alt="">
+            <img src="https://picsum.photos/id/1035/1200/800" alt="">
         </div>
 
         <div class="div4">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" alt="">
+            <img src="https://picsum.photos/id/1040/800/800" alt="">
         </div>
 
         <div class="div5">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200" alt="">
+            <img src="https://picsum.photos/id/1050/800/800" alt="">
         </div>
 
         <div class="div6">
-            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200" alt="">
+            <img src="https://picsum.photos/id/1060/800/800" alt="">
         </div>
 
         <div class="div7">
-            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200" alt="">
+            <img src="https://picsum.photos/id/1070/800/800" alt="">
         </div>
 
         <div class="div8">
-            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200" alt="">
+            <img src="https://picsum.photos/id/1080/800/800" alt="">
         </div>
 
         <div class="div9">
-            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200" alt="">
+            <img src="https://picsum.photos/id/1090/800/800" alt="">
         </div>
 
         <div class="div10">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200" alt="">
+            <img src="https://picsum.photos/id/110/800/800" alt="">
         </div>
 
         <div class="div11">
-            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=1200" alt="">
+            <img src="https://picsum.photos/id/111/800/800" alt="">
         </div>
 
     </div>
