@@ -1,0 +1,19 @@
+body {
+  background: pink;
+}
+
+img {
+  border-radius: 8px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+button {
+  border: 1px solid #000;
+  outline: none;
+  padding: 10px 5px;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

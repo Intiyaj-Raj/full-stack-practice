@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin</title>
+  </head>
+  <body>
+    <center>
+      <h1>Linkedin</h1>
+    </center>
+    <hr />
+    <h2>Welcome @ <%= username %> profile page</h2>
+    <button>Connect</button>
+    <button>Message</button>
+    <h3>Accounts that follow you:</h3>
+       <ul>
+        <% for(let name of follwers){ %>
+            <li><%=name %></li>
+        <% } %>
+    </ul>
+  </body>
+</html>
