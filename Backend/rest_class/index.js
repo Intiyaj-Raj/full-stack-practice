@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 });
 // get data
 app.get("/posts", (req, res) => {
-  console.log(posts);
+  // console.log(posts);
   res.render("index.ejs", { posts });
 });
 
@@ -53,7 +53,7 @@ app.post("/posts", (req, res) => {
 
 app.get("/posts/:id", (req, res) => {
   let { id } = req.params;
-  console.log(id);
+  // console.log(id);
   let post = posts.find((p) => p.id === id);
   res.render("show.ejs", { post });
 });
@@ -71,6 +71,13 @@ app.get("/posts/:id/edit", (req, res) => {
   let { id } = req.params;
   let post = posts.find((p) => p.id === id);
   res.render("edit.ejs", { post });
+});
+
+// DELETE METHOD
+app.delete("/posts/:id", (req, res) => {
+  let { id } = req.params;
+  posts = posts.filter((p) => p.id !== id);
+  res.redirect("/posts");
 });
 
 app.listen(3000, (req, res) => {
