@@ -102,10 +102,10 @@ const User = new mongoose.model("User", userSchema);
 
 // delete data
 
-User.deleteOne({ name: "john" })
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// User.deleteOne({ name: "john" })
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });

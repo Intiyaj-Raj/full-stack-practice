@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            background:rgb(202, 227, 249);
+            padding: 20px 30px;
+            margin: 10px 0 ;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+        div img{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+        button{
+            border-radius: 5px;
+            padding: 8px 15px;
+            outline: none;
+            border: 1px solid black;
+             color: blue;
+             cursor: pointer;
+             margin: 15px 0 ;
+        }
+    </style>
+  </head>
+  <body>
+   <center>
+     <h1>Store All Data</h1>
+     <form method="GET" action="/store/new">
+        <button>Add Data</button>
+     </form>
+   </center>
+
+
+
+    <% for (let data of allData) { %>
+        <div>
+            <img src="<%=data.image %>" alt="">
+            <h3> <%=data.title  %></h3>
+            <p><%=data.description  %></p>
+            <h4>₹ <%= data.price.toLocaleString("en-IN") %></h4>
+            <p>Category: <%=data.category  %></p>
+            <p>Brand: <%=data.brand  %></p>
+            <h4>Stock: <%=data.stock %></h4>
+            <form method="GET" action="/store/<%=data._id%>/edit">
+             <button>Edit</button>
+            </form>
+                
+            <form method="POST" action="/store/<%= data._id %>?_method=DELETE">
+                      <button>Delete</button>
+            </form>
+        </div>
+    <% } %>
+  </body>
+</html>

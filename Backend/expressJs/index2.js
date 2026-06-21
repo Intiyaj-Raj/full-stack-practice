@@ -74,6 +74,6 @@ app.post("/", (req, res) => {
 app.post("/*path", (req, res) => {
   res.send("This is not found.");
 });
-http: app.listen(3000, () => {
+app.listen(3000, () => {
   console.log("server is running on port 3000");
 });
